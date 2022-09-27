@@ -5,3 +5,22 @@
 div {
   font-family: "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
 }
+
+.button {
+  transition: font-weight 0.1s ease;
+  display: inline-block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  line-height: normal;
+  background-color: rgb(255,232,1);
+  border: 0;
+  font-weight: 500;
+  box-shadow: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
