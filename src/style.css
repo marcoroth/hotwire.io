@@ -1,26 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=fallback');
 
-div {
-  font-family: "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
 
-.button {
-  transition: font-weight 0.1s ease;
-  display: inline-block;
-  padding: 0.75em 1em;
-  text-decoration: none;
-  text-align: center;
-  line-height: normal;
-  background-color: rgb(255,232,1);
-  border: 0;
-  font-weight: 500;
-  box-shadow: none;
-}
+@import 'devicon/devicon.min.css';
+@import 'swiper/swiper-bundle.css';
 
-.button:hover {
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 700;
-}
+@import 'css/utility-patterns.css';
+@import 'css/theme.css';
+
+@import 'tailwindcss/utilities';
