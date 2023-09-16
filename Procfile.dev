@@ -1,0 +1,2 @@
+web: env RUBY_DEBUG_OPEN=true bin/rails server
+vite: vite: bin/vite dev

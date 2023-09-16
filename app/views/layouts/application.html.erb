@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hotwire.io</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= vite_client_tag %>
+
+    <%= vite_javascript_tag "packs/application", media: 'all', "data-turbo-track": "reload" %>
+    <%= vite_stylesheet_tag "packs/application", media: 'all', "data-turbo-track": "reload" unless ViteRuby.instance.dev_server_running? %>
+
+    <script defer data-domain="hotwire.io" src="https://plausible.io/js/plausible.js"></script>
+  </head>
+
+  <body class="font-inter antialiased bg-black text-slate-100 tracking-tight">
+    <%= yield %>
+  </body>
+</html>
