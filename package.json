@@ -2,8 +2,7 @@
   "name": "hotwire.io",
   "private": true,
   "scripts": {
-    "build": "bin/vite build",
-    "build:tailwind": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/builds/tailwind.css --minify"
+    "build": "bin/vite build"
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.2.2",
