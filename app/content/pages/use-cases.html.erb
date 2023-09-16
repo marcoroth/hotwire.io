@@ -4,4 +4,12 @@ title: Use Cases
 
 <%= render UI::ContainerComponent.new do %>
   <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+
+  <div class="grid grid-cols-3">
+    <% UseCasesModel.all.sort_by(&:title).each do |page| %>
+      <div class="flex flex-col gap-x-4">
+        <h2 class="font-bold text-lg underline"><%= link_to page.title, page.request_path %></h2>
+      </div>
+    <% end %>
+  </div>
 <% end %>
