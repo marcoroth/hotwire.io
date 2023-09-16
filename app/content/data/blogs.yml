@@ -1,0 +1,47 @@
+- name: Boring Rails
+  url: https://boringrails.com
+
+- name: RailsNotes
+  url: https://railsnotes.xyz
+
+- name: Dom Christie
+  url: https://domchristie.co.uk
+
+- name: Evil Martians
+  url: https://evilmartians.com/chronicles
+
+- name: Minthesize
+  url: https://blog.minthesize.com
+
+- name: RailsReviews
+  url: https://www.railsreviews.com/learn
+
+- name: Joe Masilotti
+  url: https://masilotti.com/articles/
+
+- name: Marco Roth
+  url: https://marcoroth.dev/blog
+
+- name: thoughtbot
+  url: https://thoughtbot.com/blog
+
+- name: Flagrant
+  url: https://www.beflagrant.com/blog/
+
+- name: David Colby
+  url: https://www.colby.so
+
+- name: William Kennedy
+  url: https://williamkennedy.ninja/posts
+
+- name: Akshay Khot
+  url: https://www.akshaykhot.com
+
+- name: Rob Race
+  url: https://robrace.dev
+
+- name: Mansa Keïta
+  url: https://dev.to/mansakondo
+
+- name: Avi Flombaum
+  url: https://code.avi.nyc

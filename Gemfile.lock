@@ -103,6 +103,8 @@ GEM
     dry-cli (1.0.0)
     error_highlight (0.5.1)
     erubi (1.12.0)
+    frozen_record (0.27.0)
+      activemodel
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -274,6 +276,7 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  frozen_record (~> 0.27.0)
   jbuilder
   jsbundling-rails
   markdown-rails (~> 1.0)
