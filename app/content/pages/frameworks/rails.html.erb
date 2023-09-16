@@ -1,0 +1,9 @@
+---
+title: Getting started with Hotwire in Ruby on Rails
+framework: Ruby on Rails
+language: Ruby
+---
+
+<%= render UI::ContainerComponent.new do %>
+  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<% end %>

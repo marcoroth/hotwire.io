@@ -18,6 +18,13 @@
   </head>
 
   <body class="font-inter antialiased bg-black text-slate-100 tracking-tight">
-    <%= yield %>
+
+    <div class="flex flex-col min-h-screen overflow-hidden">
+      <%= render partial: "header" %>
+      <main class="grow">
+        <%= yield %>
+      </main>
+      <%= render partial: "footer" %>
+    </div>
   </body>
 </html>

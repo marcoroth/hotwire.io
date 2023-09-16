@@ -1,0 +1,85 @@
+---
+title: Stimulus LSP
+---
+
+<%= render UI::ContainerComponent.new do %>
+  <header class="flex flex-col items-center justify-center px-5 pb-10 mt-16 text-center">
+    <img class="rounded-lg border border-gray-700 max-w-3xl" src="<%= image_path("stimulus-intellisense.png") %>">
+
+    <h1 class="pt-8 font-text text-4xl font-bold sm:text-5xl">More efficient with Stimulus in VSCode</h1>
+    <h2 class="max-w-[38ch] pt-8 text-lg text-gray-300 md:text-xl">
+      Get helpful hints on controllers, actions, targets, values and a bunch of other Stimulus features.
+    </h2>
+
+    <a
+      href="https://marketplace.visualstudio.com/items?itemName=marcoroth.TODO"
+      target="_blank"
+      class="mt-16 rounded-lg bg-[#77e8b9] px-7 py-4 text-lg font-semibold text-black shadow-xl transition hover:brightness-110"
+      rel="noreferrer">
+      Install the extension
+    </a>
+
+    <div class="flex flex-wrap items-center justify-center gap-10 pt-16 text-sm text-gray-300 sm:text-base">
+
+      <a href="https://marketplace.visualstudio.com/items?itemName=marcoroth.TODO" class="flex items-center gap-2 hover:text-gray-400">
+        <i class="devicon-vscode-plain text-3xl"></i>
+
+        Visual Studio Code
+      </a>
+
+      <a href="https://github.com/marcoroth/stimulus-intellisense" class="flex items-center gap-2 hover:text-gray-400">
+        <i class="devicon-vim-plain text-3xl"></i>
+
+        NeoVim (coming soon)
+      </a>
+
+      <a href="https://github.com/marcoroth/stimulus-intellisense" class="flex items-center gap-2 hover:text-gray-400">
+        <i class="devicon-github-plain text-3xl"></i>
+        Source
+      </a>
+
+    </div>
+  </header>
+
+  <main class="relative flex w-full flex-col gap-10 overflow-hidden bg-gray-950 py-16 lg:gap-24">
+    <section class="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-center lg:flex-row">
+      <div class="max-w-xl p-6 sm:p-10 lg:max-w-none xl:p-24">
+        <h3 class="text-3xl font-bold">
+          Missing controllers
+        </h3>
+        <p class="pt-5 text-lg opacity-80">
+          Get helpful hints when you are referencing a Stimulus controller that doesn't exist.
+        </p>
+      </div>
+
+      <div class="-mr-5 flex max-w-2xl flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-white/5 shadow-2xl shadow-black/50">
+        <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+          <img src="<%= image_path("stimulus-intellisense.png") %>">
+        </span>
+      </div>
+    </section>
+
+    <section class="mx-auto flex max-w-screen-xl flex-col items-center justify-center lg:flex-row lg:justify-start">
+      <div class="-ml-3 flex max-w-2xl flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-white/5 shadow-2xl shadow-black/50">
+        <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+          <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+
+            <img src="<%= image_path("stimulus-intellisense.png") %>">
+          </span>
+        </div>
+
+        <div class="max-w-xl p-6 sm:p-10 lg:max-w-none xl:p-24">
+          <h3 class="text-3xl font-bold">
+            Missing targets
+          </h3>
+          <p class="pt-5 text-lg opacity-80">
+            Did you reference a target on a controller which Stimulus doesn't know about? Get instant warnings so you don't lose time on typos.
+          </p>
+        </div>
+      </section>
+
+  </main>
+
+</div>
+
+<% end %>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "up" => "rails/health#show", as: :rails_health_check
+  sitepress_pages
+  sitepress_root
 
-  root "page#home"
+  get "up" => "rails/health#show", as: :rails_health_check
 end

@@ -1,0 +1,7 @@
+---
+title: Extending Core Functionality
+---
+
+<%= render UI::ContainerComponent.new do %>
+  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<% end %>

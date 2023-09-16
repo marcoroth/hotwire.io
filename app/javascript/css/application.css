@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=fallback');
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-
 @import 'devicon/devicon.min.css';
 @import 'swiper/swiper-bundle.css';
 
 @import './utility-patterns.css';
 @import './theme.css';
 
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

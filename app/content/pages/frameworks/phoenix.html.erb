@@ -1,0 +1,9 @@
+---
+title: Getting started with Hotwire in Phoenix
+framework: Phoenix
+language: Elixir
+---
+
+<%= render UI::ContainerComponent.new do %>
+  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<% end %>

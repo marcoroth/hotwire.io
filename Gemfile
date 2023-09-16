@@ -50,6 +50,15 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# File-backed website content manager
+gem "sitepress-rails"
+
+# Markdown as a static templating language
+gem "markdown-rails", "~> 1.0"
+
+# A framework for building reusable, testable & encapsulated view components in Ruby on Rails.
+gem "view_component", "~> 3.6"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]

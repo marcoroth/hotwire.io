@@ -1,0 +1,9 @@
+---
+title: Getting started with Hotwire in Roda
+framework: Roda
+language: Ruby
+---
+
+<%= render UI::ContainerComponent.new do %>
+  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<% end %>
