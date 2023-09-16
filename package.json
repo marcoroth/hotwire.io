@@ -2,7 +2,7 @@
   "name": "hotwire.io",
   "private": true,
   "scripts": {
-    "build": "node esbuild.config.mjs",
+    "build": "bin/vite build",
     "build:tailwind": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/builds/tailwind.css --minify"
   },
   "devDependencies": {
