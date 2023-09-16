@@ -15,6 +15,7 @@ module Hotwire
     config.autoload_lib(ignore: %w(assets tasks))
 
     config.autoload_paths << Rails.root.join("app/content/models")
+    config.autoload_paths << Rails.root.join("app/content/helpers")
 
     # Configuration for the application, engines, and railties goes here.
     #
