@@ -4,4 +4,10 @@ title: Turbo
 
 <%= render UI::ContainerComponent.new do %>
   <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+
+  <% site.resources.glob("documentation/turbo/guides/*.html.*").sort_by(&:request_path).each do |page| %>
+    <li>
+      <a href="<%= page.request_path %>"> <%= page.data.fetch("title") %></a>
+    </li>
+  <% end %>
 <% end %>
