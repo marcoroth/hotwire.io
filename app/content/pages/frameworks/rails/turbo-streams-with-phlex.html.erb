@@ -1,10 +1,9 @@
 ---
-title: View Transitions
+title: Turbo Streams with Phlex
+framework: rails
+library: turbo
 ---
 
 <%= render UI::ContainerComponent.new do %>
   <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
-
-  https://github.com/domchristie/turn<br/>
-  https://github.com/hotwired/turbo/pull/935<br/>
 <% end %>
