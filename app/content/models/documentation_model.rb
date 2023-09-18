@@ -1,4 +1,4 @@
 class DocumentationModel < Sitepress::Model
-  collection glob: "**/documentation/**/*.html*"
+  collection glob: "**/documentation/*.html*"
   data :title
 end
