@@ -9,10 +9,18 @@ class Page::AuthorsComponent < ViewComponent::Base
     @git ||= Git.open(Rails.root)
   end
 
+  def commits
+    git.gblob(@path).log
+  end
+
   def page_authors
-    git.gblob(@path).log.map(&:author).map { |a| [a.name, a.email] }.tally.keys
+    commits.map(&:author).map { |a| [a.name, a.email] }.tally.keys
   rescue => e
     puts e
     []
+  end
+
+  def last_commit_date
+    commits.first.author_date
   end
 end
