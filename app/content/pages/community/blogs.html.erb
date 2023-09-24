@@ -2,8 +2,8 @@
 title: Blogs publishing Hotwire content
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <% Blog.order(name: :asc).each do |blog| %>
     <%= link_to blog.name, blog.url, target: :blank %><br/>

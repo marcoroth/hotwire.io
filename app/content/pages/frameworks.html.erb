@@ -2,8 +2,8 @@
 title: Getting started with Hotwire in any framework
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <div class="grid grid-cols-3">
     <% FrameworkModel.all.each do |page| %>

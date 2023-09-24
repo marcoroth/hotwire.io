@@ -2,8 +2,8 @@
 title: Bulk Operations
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://gorails.com/episodes/bulk-operations-in-rails<br/>
   https://www.stimulus-components.com/docs/stimulus-checkbox-select-all<br/>

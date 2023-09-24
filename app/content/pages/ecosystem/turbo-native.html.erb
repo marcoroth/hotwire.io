@@ -2,13 +2,12 @@
 title: Turbo Native
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://github.com/joemasilotti/TurboNavigator<br/>
   https://github.com/joemasilotti/turbo-native-example<br/>
   https://github.com/lazaronixon/turbo-native-initializer<br/>
-
 
   https://github.com/robzolkos/turbonativedirectory - https://twitter.com/robzolkos/status/1705382529900196299<br/>
 <% end %>

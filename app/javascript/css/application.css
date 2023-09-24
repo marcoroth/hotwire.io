@@ -2,6 +2,7 @@
 
 @import 'devicon/devicon.min.css';
 @import 'swiper/swiper-bundle.css';
+@import 'tippy.js/dist/tippy.css';
 
 @import './utility-patterns.css';
 @import './theme.css';

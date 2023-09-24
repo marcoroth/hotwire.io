@@ -2,8 +2,8 @@
 title: WYSIWYG Editors
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://trix-editor.org<br/>
   https://tiptap.dev<br/>

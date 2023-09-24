@@ -105,6 +105,9 @@ GEM
     erubi (1.12.0)
     frozen_record (0.27.0)
       activemodel
+    git (1.18.0)
+      addressable (~> 2.8)
+      rchardet (~> 1.8)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -200,6 +203,7 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.0.6)
+    rchardet (1.8.0)
     rdiscount (2.2.7.1)
     rdoc (6.5.0)
       psych (>= 4.0.0)
@@ -277,6 +281,7 @@ DEPENDENCIES
   debug
   error_highlight (>= 0.4.0)
   frozen_record (~> 0.27.0)
+  git (~> 1.18)
   jbuilder
   jsbundling-rails
   markdown-rails (~> 1.0)

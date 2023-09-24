@@ -1,0 +1,5 @@
+<div class="flex mt-6 mb-3">
+  <% page_authors.each_with_index do |(name, email), index| %>
+    <%= image_tag "https://avatars.githubusercontent.com/u/e?email=#{email}&s=128", class: "relative z-#{index * 10} inline-block h-10 w-10 rounded-full ring-2 ring-white", data: { controller: "tippy", tippy_content: name } %>
+  <% end %>
+</div>

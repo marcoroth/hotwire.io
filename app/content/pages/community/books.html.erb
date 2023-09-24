@@ -2,8 +2,8 @@
 title: Books
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <% Book.order(name: :asc).each do |book| %>
     <%= link_to book.name, book.url, target: :blank %><br/>

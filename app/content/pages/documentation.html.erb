@@ -2,8 +2,8 @@
 title: Documentation
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <div class="grid grid-cols-3">
     <% DocumentationModel.all.sort_by(&:title).each do |page| %>

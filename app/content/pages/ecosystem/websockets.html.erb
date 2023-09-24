@@ -2,8 +2,8 @@
 title: Websockets
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://guides.rubyonrails.org/action_cable_overview.html<br/>
   https://mercure.rocks/docs/ecosystem/hotwire<br/>

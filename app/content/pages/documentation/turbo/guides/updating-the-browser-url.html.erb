@@ -3,8 +3,8 @@ title: Updating The Browser URL
 library: turbo
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   * After submitting a form<br/>
   * After clicking a button<br/>

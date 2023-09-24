@@ -3,7 +3,7 @@ title: AJAX
 subtitle: Asynchronous JavaScript HTTP Requests (AJAX)
 ---
 
-<%= render UI::ContainerComponent.new do %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <%= render UI::TitleComponent.new(title: current_page.data.fetch("subtitle")) %>
 
 

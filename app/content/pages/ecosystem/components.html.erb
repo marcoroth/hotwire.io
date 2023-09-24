@@ -2,8 +2,8 @@
 title: Components
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://github.com/excid3/tailwindcss-stimulus-components<br/>
   https://www.stimulus-components.com<br/>

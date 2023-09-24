@@ -4,8 +4,8 @@ framework: Django
 language: Python
 ---
 
-<%= render UI::ContainerComponent.new do %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://github.com/hotwire-django<br/>
   https://discuss.hotwired.dev/t/django-backend-support-for-hotwire/1570<br/>

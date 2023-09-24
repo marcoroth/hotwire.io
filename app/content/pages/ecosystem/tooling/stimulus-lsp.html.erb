@@ -2,7 +2,7 @@
 title: Stimulus LSP
 ---
 
-<%= render UI::ContainerComponent.new do %>
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <header class="flex flex-col items-center justify-center px-5 pb-10 mt-16 text-center">
     <img class="rounded-lg border border-gray-700 max-w-3xl" src="<%= image_path("stimulus-intellisense.png") %>">
 

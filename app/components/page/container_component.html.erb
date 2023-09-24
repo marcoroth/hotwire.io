@@ -1,0 +1,9 @@
+<%= render UI::ContainerComponent.new do %>
+  <% if title? %>
+    <%= title %>
+  <% end %>
+
+  <%= content %>
+
+  <%= render Page::AuthorsComponent.new(path: @page.asset.path.path) %>
+<% end %>

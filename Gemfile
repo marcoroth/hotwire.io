@@ -62,6 +62,9 @@ gem "view_component", "~> 3.6"
 # Read only ActiveRecord-like interface to query static YAML files
 gem "frozen_record", "~> 0.27.0"
 
+# Library to create, read and manipulate Git repositories
+gem "git", "~> 1.18"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
