@@ -1,9 +1,10 @@
 ---
-title: Channels publishing Hotwire content
+title: Channels
+subtitle: Channels publishing Hotwire content
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
+  <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
   <% Channel.order(name: :asc).each do |channel| %>
     <%= link_to channel.name, channel.url, target: :blank %><br/>

@@ -1,9 +1,10 @@
 ---
-title: Blogs publishing Hotwire content
+title: Blogs
+subtitle: Blogs publishing Hotwire content
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
+  <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
   <% Blog.order(name: :asc).each do |blog| %>
     <%= link_to blog.name, blog.url, target: :blank %><br/>
