@@ -25,6 +25,6 @@ class Page::AuthorsComponent < ViewComponent::Base
   end
 
   def last_commit_date
-    commits.first.author_date
+    commits.first&.author_date
   end
 end

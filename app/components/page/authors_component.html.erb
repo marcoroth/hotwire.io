@@ -1,9 +1,11 @@
-<div class="flex mt-24 mb-3 justify-content items-center content-center gap-3 border-t pt-6 border-gray-600">
-  <% page_authors.each_with_index do |(name, email), index| %>
-    <%= image_tag "https://avatars.githubusercontent.com/u/e?email=#{email}&s=128", class: "relative z-#{index * 10} inline-block h-6 w-6 rounded-full ring-1 ring-white", data: { controller: "tippy", tippy_content: name } %>
-  <% end %>
+<% if last_commit_date %>
+  <div class="flex mt-24 mb-3 justify-content items-center content-center gap-3 border-t pt-6 border-gray-600">
+    <% page_authors.each_with_index do |(name, email), index| %>
+      <%= image_tag "https://avatars.githubusercontent.com/u/e?email=#{email}&s=128", class: "relative z-#{index * 10} inline-block h-6 w-6 rounded-full ring-1 ring-white", data: { controller: "tippy", tippy_content: name } %>
+    <% end %>
 
-  <span class="text-gray-300">
-    Last modified: <%= time_ago_in_words(last_commit_date) %> ago
-  </span>
-</div>
+    <span class="text-gray-300">
+      Last modified: <%= time_ago_in_words(last_commit_date) %> ago
+    </span>
+  </div>
+<% end %>

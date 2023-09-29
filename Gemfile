@@ -56,6 +56,12 @@ gem "sitepress-rails"
 # Markdown as a static templating language
 gem "markdown-rails", "~> 1.0"
 
+# The safe Markdown parser, reloaded.
+gem "redcarpet", "~> 3.6"
+
+# A pure Ruby code highlighter that is compatible with Pygments
+gem "rouge", "~> 4.1"
+
 # A framework for building reusable, testable & encapsulated view components in Ruby on Rails.
 gem "view_component", "~> 3.6"
 

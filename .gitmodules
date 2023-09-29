@@ -1,0 +1,3 @@
+[submodule "app/content/pages/documentation/turbo/turbo-site"]
+	path = app/content/pages/documentation/turbo/turbo-site
+	url = https://github.com/hotwired/turbo-site

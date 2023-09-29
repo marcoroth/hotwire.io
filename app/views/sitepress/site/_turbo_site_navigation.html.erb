@@ -1,0 +1,15 @@
+<% pages = model.all.sort_by { |page| page.page.asset.path.to_s }.to_a %>
+<% page = pages.find { |page| page.page.asset.path == current_page.asset.path } %>
+
+<% prev_page = pages[pages.index(page) - 1] %>
+<% next_page = pages[pages.index(page) + 1] %>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <% if prev_page %>
+    <%= link_to "Previous page: #{prev_page.title}", prev_page.request_path, class: "w-full bg-gray-900 border border-gray-700 px-6 py-6 rounded hover:bg-gray-800" %>
+  <% end %>
+
+  <% if next_page %>
+    <%= link_to "Next page: #{next_page.title}", next_page.request_path, class: "w-full bg-gray-900 border border-gray-700 px-6 py-6 rounded hover:bg-gray-800 text-right" %>
+  <% end %>
+</div>
