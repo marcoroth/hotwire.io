@@ -1,19 +1,15 @@
 ---
-title: NPM packages
-subtitle: NPM packages supporting the Hotwire approach
+title: NPM packages supporting the Hotwire approach
+order: 8
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://chartkick.com<br/>
-  https://www.chartjs.org<br/>
-  https://tom-select.js.org<br/>
-  https://github.com/js-cookie/js-cookie<br/>
-
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 
   Stimulus-related:<br/>
   https://github.com/adrienpoly/stimulus-conductor<br/>
   https://github.com/vytant/stimulus-decorators<br/>
-
 <% end %>

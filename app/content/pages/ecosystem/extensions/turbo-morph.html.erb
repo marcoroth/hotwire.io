@@ -1,8 +1,10 @@
 ---
-title: Turbo
-image: turbo.png
+title: Turbo Morph
+image: morph.png
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "marcoroth/turbo-morph", "https://github.com/marcoroth/turbo-morph", target: :blank %><br/>
 <% end %>

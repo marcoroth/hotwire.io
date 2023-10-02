@@ -1,11 +1,11 @@
 ---
 title: Websockets
+order: 10
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://guides.rubyonrails.org/action_cable_overview.html<br/>
-  https://mercure.rocks/docs/ecosystem/hotwire<br/>
-  https://docs.anycable.io/guides/hotwire<br/>
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 <% end %>

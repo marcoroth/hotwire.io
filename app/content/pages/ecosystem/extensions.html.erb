@@ -1,12 +1,11 @@
 ---
 title: Extending Core Functionality
+order: 2
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://github.com/stimulus-use/stimulus-use<br/>
-  https://github.com/marcoroth/turbo-morph<br/>
-  https://github.com/marcoroth/turbo_power<br/>
-  https://github.com/marcoroth/turbo_power-rails<br/>
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 <% end %>

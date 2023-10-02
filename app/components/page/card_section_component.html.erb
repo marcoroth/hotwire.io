@@ -1,0 +1,15 @@
+<h2 class="text-2xl font-bold mt-12 mb-6">
+  <%= @title %>
+</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+  <% @resources.each do |resource| %>
+    <%= render Page::ResourceCardComponent.new(resource: resource) %>
+  <% end %>
+</div>
+
+<% if @all_url %>
+  <%= link_to @all_url do %>
+    View all <span class="tracking-normal text-white ml-1">-&gt;</span>
+  <% end %>
+<% end %>

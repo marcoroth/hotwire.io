@@ -1,13 +1,11 @@
 ---
-title: Ruby gems
-subtitle: Ruby gems supporting the Hotwire approach
+title: Ruby gems supporting the Hotwire approach
+order: 6
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://viewcomponent.org<br/>
-  https://www.phlex.fun<br/>
-  http://github.com/rails/kredis<br/>
-  https://chartkick.com<br/>
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 <% end %>

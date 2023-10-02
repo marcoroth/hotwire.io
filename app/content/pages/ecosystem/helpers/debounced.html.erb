@@ -1,8 +1,9 @@
 ---
-title: Turbo
-image: turbo.png
+title: Debounced
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "hopsoft/debounced", "https://github.com/hopsoft/debounced", target: :blank %><br/>
 <% end %>

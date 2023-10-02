@@ -1,8 +1,9 @@
 ---
-title: Turbo
-image: turbo.png
+title: JS Cookie
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "js-cookie/js-cookie", "https://github.com/js-cookie/js-cookie", target: :blank %><br/>
 <% end %>

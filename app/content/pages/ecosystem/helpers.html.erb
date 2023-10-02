@@ -1,15 +1,11 @@
 ---
 title: Helper Libraries
+order: 4
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://github.com/hopsoft/debounced<br/>
-  https://github.com/marcoroth/current.js<br/>
-  https://github.com/marcoroth/morphkit<br/>
-  https://github.com/marcoroth/turbo-ruby<br/>
-  https://github.com/basecamp/local_time<br/>
-  https://github.com/github/relative-time-element<br/>
-  https://github.com/rails/request.js<br/>
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 <% end %>

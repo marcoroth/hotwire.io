@@ -1,0 +1,11 @@
+---
+title: Tippy.js
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "atomiks/tippyjs", "https://github.com/atomiks/tippyjs", target: :blank %><br/>
+  <%= link_to "Documentation", "https://tippyjs.bootcss.com", target: :blank %><br/>
+
+<% end %>

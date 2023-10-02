@@ -1,8 +1,9 @@
 ---
-title: Turbo
-image: turbo.png
+title: Relative Time Element
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "github/relative-time-element", "https://github.com/github/relative-time-element", target: :blank %><br/>
 <% end %>

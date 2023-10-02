@@ -1,20 +1,11 @@
 ---
 title: Deployment
+order: 11
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  Tools:<br/>
-  https://anycable.io<br/>
-
-  <br/><br/>
-
-  Hosting:<br/>
-  https://fly.io<br/>
-
-  <br/><br/>
-
-  Deployment Tools:<br/>
-  https://kamal-deploy.org<br/>
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 <% end %>

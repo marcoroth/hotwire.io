@@ -1,5 +1,6 @@
 ---
 title: Components
+order: 7
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
@@ -7,4 +8,9 @@ title: Components
 
   https://github.com/excid3/tailwindcss-stimulus-components<br/>
   https://www.stimulus-components.com<br/>
+
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
 <% end %>

@@ -1,8 +1,9 @@
 ---
-title: Turbo
-image: turbo.png
+title: Radiolabel
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "leastbad/radiolabel", "https://github.com/leastbad/radiolabel" %><br/>
 <% end %>
