@@ -54,7 +54,7 @@ title: Stimulus LSP
 
       <div class="-mr-5 flex max-w-2xl flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-white/5 shadow-2xl shadow-black/50">
         <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
-          <img src="<%= image_path("stimulus-intellisense.png") %>">
+          <img src="<%= image_path("stimulus-intellisense-missing-controllers.png") %>">
         </span>
       </div>
     </section>
@@ -64,17 +64,35 @@ title: Stimulus LSP
         <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
           <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
 
-            <img src="<%= image_path("stimulus-intellisense.png") %>">
+            <img src="<%= image_path("stimulus-intellisense-missing-targets.png") %>">
           </span>
-        </div>
+        </span>
+      </div>
 
+      <div class="max-w-xl p-6 sm:p-10 lg:max-w-none xl:p-24">
+        <h3 class="text-3xl font-bold">
+          Missing targets
+        </h3>
+        <p class="pt-5 text-lg opacity-80">
+          Did you reference a target on a controller which Stimulus doesn't know about? Get instant warnings so you don't lose time on typos.
+        </p>
+      </div>
+    </section>
+
+      <section class="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-center lg:flex-row">
         <div class="max-w-xl p-6 sm:p-10 lg:max-w-none xl:p-24">
           <h3 class="text-3xl font-bold">
-            Missing targets
+            Controller action autocomplete
           </h3>
           <p class="pt-5 text-lg opacity-80">
-            Did you reference a target on a controller which Stimulus doesn't know about? Get instant warnings so you don't lose time on typos.
+            Always make sure you are referencing the right controller actions.
           </p>
+        </div>
+
+        <div class="-mr-5 flex max-w-2xl flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-white/5 shadow-2xl shadow-black/50">
+          <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+            <img src="<%= image_path("stimulus-intellisense-action-autocomplete.png") %>">
+          </span>
         </div>
       </section>
 
