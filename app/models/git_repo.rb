@@ -1,6 +1,10 @@
 class GitRepo
   def self.path
-    Rails.root.join("tmp/hotwire.io")
+    if Rails.env.development?
+      Rails.root
+    else
+      Rails.root.join("tmp/hotwire.io")
+    end
   end
 
   def self.exists?
