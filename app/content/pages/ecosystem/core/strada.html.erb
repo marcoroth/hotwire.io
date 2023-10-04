@@ -5,4 +5,6 @@ image: strada.png
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
 <% end %>
