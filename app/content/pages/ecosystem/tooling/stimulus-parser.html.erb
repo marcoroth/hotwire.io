@@ -5,5 +5,5 @@ title: Stimulus Parser
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "marcoroth/stimulus-parser", "https://github.com/marcoroth/stimulus-parser", target: :blank %><br/>
+  <%= link_to "marcoroth/stimulus-parser", "https://github.com/marcoroth/stimulus-parser", target: '_blank' %><br/>
 <% end %>

@@ -5,6 +5,6 @@ title: Kamal
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "basecamp/kamal", "https://github.com/basecamp/kamal", target: :blank %><br/>
-  <%= link_to "Website", "https://kamal-deploy.org", target: :blank %><br/>
+  <%= link_to "basecamp/kamal", "https://github.com/basecamp/kamal", target: '_blank' %><br/>
+  <%= link_to "Website", "https://kamal-deploy.org", target: '_blank' %><br/>
 <% end %>
