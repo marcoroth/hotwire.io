@@ -1,24 +1,7 @@
-# README
+# Hotwire.io
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The JavaScript Ecosystem for Server-rendered Web-Applications.
 
-Things you may want to cover:
+## License
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project is available as open source under the terms of the [MIT License](https://opensource.org/license/mit/).
