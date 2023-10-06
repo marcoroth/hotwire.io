@@ -5,11 +5,11 @@ title: Getting started with Hotwire in any framework
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
     <% FrameworkModel.all.each do |page| %>
-      <div class="flex flex-col gap-x-4">
-        <h2 class="font-bold text-lg underline"><%= link_to page.framework, page.request_path %></h2>
-      </div>
+      <%= link_to page.framework,
+                  page.request_path,
+                  class: "p-6 h-48 flex items-center justify-center bg-gray-950 hover:bg-gray-900 border border-gray-700 rounded-lg w-full font-bold text-2xl text-center" %>
     <% end %>
   </div>
 <% end %>
