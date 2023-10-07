@@ -1,0 +1,11 @@
+---
+title: Interacting with HTML5 Canvas
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <ul>
+    <li><a href="https://www.fogel.dev/canvas_on_rails_1">HTML5 Canvas on Rails? - Ariel Fogel</a></li>
+  </ul>
+<% end %>
