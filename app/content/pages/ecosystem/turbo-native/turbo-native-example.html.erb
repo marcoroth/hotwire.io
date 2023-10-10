@@ -5,5 +5,5 @@ title: Turbo Native Example
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "joemasilotti/turbo-native-example", "https://github.com/joemasilotti/turbo-native-example", target: :blank %>
+  <%= link_to "joemasilotti/turbo-native-example", "https://github.com/joemasilotti/turbo-native-example", target: '_blank' %>
 <% end %>

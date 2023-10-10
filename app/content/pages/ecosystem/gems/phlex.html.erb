@@ -5,6 +5,6 @@ title: Phlex
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "phlex-ruby/phlex", "https://github.com/phlex-ruby/phlex", target: :blank %><br/>
-  <%= link_to "phlex-ruby/phlex-rails", "https://github.com/phlex-ruby/phlex-rails", target: :blank %><br/>
+  <%= link_to "phlex-ruby/phlex", "https://github.com/phlex-ruby/phlex", target: '_blank' %><br/>
+  <%= link_to "phlex-ruby/phlex-rails", "https://github.com/phlex-ruby/phlex-rails", target: '_blank' %><br/>
 <% end %>

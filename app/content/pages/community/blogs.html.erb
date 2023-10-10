@@ -7,6 +7,6 @@ subtitle: Blogs publishing Hotwire content
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
   <% Blog.order(name: :asc).each do |blog| %>
-    <%= link_to blog.name, blog.url, target: :blank %><br/>
+    <%= link_to blog.name, blog.url, target: '_blank' %><br/>
   <% end %>
 <% end %>

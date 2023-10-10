@@ -5,5 +5,5 @@ title: Turbo Navigator
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "joemasilotti/TurboNavigator", "https://github.com/joemasilotti/TurboNavigator", target: :blank %>
+  <%= link_to "joemasilotti/TurboNavigator", "https://github.com/joemasilotti/TurboNavigator", target: '_blank' %>
 <% end %>

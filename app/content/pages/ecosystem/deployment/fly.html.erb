@@ -5,6 +5,6 @@ title: Fly.io
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "Website", "https://fly.io", target: :blank %><br/>
-  <%= link_to "Documentation", "https://fly.io/docs/languages-and-frameworks/ruby", target: :blank %><br/>
+  <%= link_to "Website", "https://fly.io", target: '_blank' %><br/>
+  <%= link_to "Documentation", "https://fly.io/docs/languages-and-frameworks/ruby", target: '_blank' %><br/>
 <% end %>

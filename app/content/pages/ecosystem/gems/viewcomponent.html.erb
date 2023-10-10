@@ -5,6 +5,6 @@ title: ViewComponent
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "viewcomponent/view_component", "https://github.com/viewcomponent/view_component", target: :blank %><br/>
-  <%= link_to "Documentation", "https://viewcomponent.org", target: :blank %><br/>
+  <%= link_to "viewcomponent/view_component", "https://github.com/viewcomponent/view_component", target: '_blank' %><br/>
+  <%= link_to "Documentation", "https://viewcomponent.org", target: '_blank' %><br/>
 <% end %>
