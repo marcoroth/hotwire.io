@@ -7,6 +7,6 @@ subtitle: Channels publishing Hotwire content
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
   <% Channel.order(name: :asc).each do |channel| %>
-    <%= link_to channel.name, channel.url, target: '_blank' %><br/>
+    <%= link_to channel.name, channel.url, target: :_blank %><br>
   <% end %>
 <% end %>

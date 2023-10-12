@@ -5,6 +5,6 @@ title: Tailwindcss Stimulus Components
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "excid3/tailwindcss-stimulus-components", "https://github.com/excid3/tailwindcss-stimulus-components", target: '_blank' %><br/>
-  <%= link_to "Documentation", "https://excid3.github.io/tailwindcss-stimulus-components/", target: '_blank' %><br/>
+  <%= link_to "excid3/tailwindcss-stimulus-components", "https://github.com/excid3/tailwindcss-stimulus-components", target: :_blank %><br>
+  <%= link_to "Documentation", "https://excid3.github.io/tailwindcss-stimulus-components/", target: :_blank %><br>
 <% end %>

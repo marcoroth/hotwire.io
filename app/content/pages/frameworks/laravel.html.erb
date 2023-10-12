@@ -7,11 +7,11 @@ language: PHP
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://github.com/hotwired-laravel<br/>
-  https://turbo-laravel.com<br/>
-  https://laravel-news.com/use-basecamps-hotwire-in-laravel<br/>
-  https://symfonycasts.com/screencast/stimulus<br/>
-  https://github.com/tonysm/rich-text-laravel<br/>
-  https://github.com/tonysm/importmap-laravel<br/>
-  https://github.com/tonysm/globalid-laravel<br/>
+  <%= link_to "https://github.com/hotwired-laravel", "https://github.com/hotwired-laravel", target: :_blank %><br>
+  <%= link_to "https://turbo-laravel.com", "https://turbo-laravel.com", target: :_blank %><br>
+  <%= link_to "https://laravel-news.com/use-basecamps-hotwire-in-laravel", "https://laravel-news.com/use-basecamps-hotwire-in-laravel", target: :_blank %><br>
+  <%= link_to "https://symfonycasts.com/screencast/stimulus", "https://symfonycasts.com/screencast/stimulus", target: :_blank %><br>
+  <%= link_to "https://github.com/tonysm/rich-text-laravel", "https://github.com/tonysm/rich-text-laravel", target: :_blank %><br>
+  <%= link_to "https://github.com/tonysm/importmap-laravel", "https://github.com/tonysm/importmap-laravel", target: :_blank %><br>
+  <%= link_to "https://github.com/tonysm/globalid-laravel", "https://github.com/tonysm/globalid-laravel", target: :_blank %><br>
 <% end %>

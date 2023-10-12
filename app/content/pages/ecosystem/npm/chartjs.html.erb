@@ -5,6 +5,6 @@ title: Chart.js
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "chartjs/Chart.js", "https://github.com/chartjs/Chart.js", target: '_blank' %><br/>
-  <%= link_to "Documentation", "https://www.chartjs.org", target: '_blank' %><br/>
+  <%= link_to "chartjs/Chart.js", "https://github.com/chartjs/Chart.js", target: :_blank %><br>
+  <%= link_to "Documentation", "https://www.chartjs.org", target: :_blank %><br>
 <% end %>

@@ -5,5 +5,5 @@ title: Turbo Boost Dev Tools
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "hopsoft/turbo_boost-devtools", "https://github.com/hopsoft/turbo_boost-devtools", target: '_blank' %><br/>
+  <%= link_to "hopsoft/turbo_boost-devtools", "https://github.com/hopsoft/turbo_boost-devtools", target: :_blank %><br>
 <% end %>

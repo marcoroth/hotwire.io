@@ -5,7 +5,7 @@ title: AnyCable
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "anycable/anycable", "https://github.com/anycable/anycable", target: '_blank' %><br/>
-  <%= link_to "anycable.io", "https://anycable.io", target: '_blank' %><br/>
-  <%= link_to "Documentation", "https://docs.anycable.io/guides/hotwire", target: '_blank' %><br/>
+  <%= link_to "anycable/anycable", "https://github.com/anycable/anycable", target: :_blank %><br>
+  <%= link_to "anycable.io", "https://anycable.io", target: :_blank %><br>
+  <%= link_to "Documentation", "https://docs.anycable.io/guides/hotwire", target: :_blank %><br>
 <% end %>

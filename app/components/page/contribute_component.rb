@@ -2,7 +2,7 @@
 
 class Page::ContributeComponent < ViewComponent::Base
   def initialize(file:)
-    @file = file.gsub("#{Rails.root.to_s}/", "")
+    @file = file.gsub("#{Rails.root}/", "")
   end
 
   def github_edit_file_url

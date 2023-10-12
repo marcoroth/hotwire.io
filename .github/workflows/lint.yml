@@ -1,0 +1,24 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Ruby
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Run Standard
+        run: bundle exec standardrb
+
+      - name: Run ERB Lint
+        run: bundle exec erblint --lint-all

@@ -6,6 +6,6 @@ image: boost.png
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "hopsoft/turbo_boost-commands", "https://github.com/hopsoft/turbo_boost-commands", target: '_blank' %><br/>
-  <%= link_to "Documentation", "https://hopsoft.io/@turbo-boost/commands", target: '_blank' %><br/>
+  <%= link_to "hopsoft/turbo_boost-commands", "https://github.com/hopsoft/turbo_boost-commands", target: :_blank %><br>
+  <%= link_to "Documentation", "https://hopsoft.io/@turbo-boost/commands", target: :_blank %><br>
 <% end %>

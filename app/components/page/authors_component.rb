@@ -2,14 +2,12 @@
 
 class Page::AuthorsComponent < ViewComponent::Base
   def initialize(path:)
-    @path = path.gsub("#{Rails.root.to_s}/", "")
+    @path = path.gsub("#{Rails.root}/", "")
   end
 
   def git
-    @git ||= begin
-      GitRepo.with_cloned_repo do
-        Git.open(GitRepo.path)
-      end
+    @git ||= GitRepo.with_cloned_repo do
+      Git.open(GitRepo.path)
     end
   end
 
