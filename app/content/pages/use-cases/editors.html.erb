@@ -5,19 +5,29 @@ title: WYSIWYG Editors
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://trix-editor.org<br/>
-  https://tiptap.dev<br/>
-  https://rhino-editor.vercel.app<br/>
-  https://richer-text.vercel.app<br/>
+  Rich Text Editors:
+
+    <a href="https://trix-editor.org" rel="nofollow" target="_blank">https://trix-editor.org</a><br/>
+    <a href="https://rhino-editor.vercel.app" rel="nofollow" target="_blank">https://rhino-editor.vercel.app</a><br/>
+    <a href="https://richer-text.vercel.app" rel="nofollow" target="_blank">https://richer-text.vercel.app</a><br/>
 
   <br/><br/>
 
   Rails: <br/>
-  https://edgeguides.rubyonrails.org/action_text_overview.html<br/>
+  <a href="https://edgeguides.rubyonrails.org/action_text_overview.html" rel="nofollow" target="_blank">https://edgeguides.rubyonrails.org/action_text_overview.html</a><br/>
 
   <br/><br/>
 
   Laravel: <br/>
-  https://github.com/tonysm/rich-text-laravel<br/>
-  https://www.youtube.com/watch?v=VX4-4iWnGIo<br/>
+  <a href="https://github.com/tonysm/rich-text-laravel" rel="nofollow" target="_blank">https://github.com/tonysm/rich-text-laravel</a><br/>
+  <a href="https://www.youtube.com/watch?v=VX4-4iWnGIo" rel="nofollow" target="_blank">https://www.youtube.com/watch?v=VX4-4iWnGIo</a><br/>
+
+  <br/><br/>
+  
+  Libraries for building Rich Text Editors:
+
+    <a href="https://tiptap.dev" rel="nofollow" target="_blank">https://tiptap.dev</a><br/>
+    <a href="https://prosemirror.net" rel="nofollow" target="_blank">https://prosemirror.net</a>/<br/>
+    <a href="https://lexical.dev/" rel="nofollow" target="_blank">https://lexical.dev/</a><br/>
+    
 <% end %>
