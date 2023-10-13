@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class Page::AuthorsComponent < ViewComponent::Base
-  def initialize(path:)
-    @path = path.gsub("#{Rails.root}/", "")
+  def initialize(paths:)
+    @paths = Array.wrap(paths).map { |path| path.gsub("#{Rails.root}/", "") }
   end
 
   def git
@@ -12,7 +12,7 @@ class Page::AuthorsComponent < ViewComponent::Base
   end
 
   def commits
-    git.gblob(@path).log
+    @paths.flat_map { |path| git.gblob(path).log.to_a }.sort_by(&:author_date)
   end
 
   def page_authors
@@ -23,6 +23,6 @@ class Page::AuthorsComponent < ViewComponent::Base
   end
 
   def last_commit_date
-    commits.first&.author_date
+    commits.last&.author_date
   end
 end
