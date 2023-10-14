@@ -6,4 +6,8 @@ title: Current.js
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "marcoroth/current.js", "https://github.com/marcoroth/current.js", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/current.js/README.md")) %>
+  </div>
 <% end %>

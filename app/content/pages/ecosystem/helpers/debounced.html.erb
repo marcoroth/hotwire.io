@@ -6,4 +6,8 @@ title: Debounced
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "hopsoft/debounced", "https://github.com/hopsoft/debounced", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/debounced/README.md")) %>
+  </div>
 <% end %>

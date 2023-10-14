@@ -6,4 +6,8 @@ title: Stimulus Parser
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "marcoroth/stimulus-parser", "https://github.com/marcoroth/stimulus-parser", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/stimulus-parser/README.md")) %>
+  </div>
 <% end %>

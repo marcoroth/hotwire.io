@@ -6,4 +6,8 @@ title: Turbo Native Initializer
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "lazaronixon/turbo-native-initializer", "https://github.com/lazaronixon/turbo-native-initializer", target: :_blank %>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/turbo-native-initializer/README.md")) %>
+  </div>
 <% end %>

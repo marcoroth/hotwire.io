@@ -7,4 +7,8 @@ title: Request.js
 
   <%= link_to "rails/request.js", "https://github.com/rails/request.js", target: :_blank %><br>
   <%= link_to "rails/requestjs-rails", "https://github.com/rails/requestjs-rails", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/request.js/README.md")) %>
+  </div>
 <% end %>

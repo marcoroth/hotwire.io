@@ -6,4 +6,8 @@ title: JS Cookie
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "js-cookie/js-cookie", "https://github.com/js-cookie/js-cookie", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/js-cookie/README.md")) %>
+  </div>
 <% end %>

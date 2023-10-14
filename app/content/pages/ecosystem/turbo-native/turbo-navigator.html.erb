@@ -6,4 +6,8 @@ title: Turbo Navigator
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "joemasilotti/TurboNavigator", "https://github.com/joemasilotti/TurboNavigator", target: :_blank %>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/turbonavigator/README.md")) %>
+  </div>
 <% end %>

@@ -5,6 +5,10 @@ title: Chart.js
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "chartjs/Chart.js", "https://github.com/chartjs/Chart.js", target: :_blank %><br>
+  <%= link_to "chartjs/chart.js", "https://github.com/chartjs/chart.js", target: :_blank %><br>
   <%= link_to "Documentation", "https://www.chartjs.org", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/chart.js/README.md")) %>
+  </div>
 <% end %>

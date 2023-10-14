@@ -7,4 +7,8 @@ title: Tom Select
 
   <%= link_to "orchidjs/tom-select", "https://github.com/orchidjs/tom-select", target: :_blank %><br>
   <%= link_to "Documentation", "https://tom-select.js.org", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/tom-select/README.md")) %>
+  </div>
 <% end %>

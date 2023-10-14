@@ -1,3 +1,81 @@
-[submodule "app/content/pages/documentation/turbo/turbo-site"]
-	path = app/content/pages/documentation/turbo/turbo-site
+[submodule "modules/turbo-site"]
+	path = modules/turbo-site
 	url = https://github.com/hotwired/turbo-site
+[submodule "modules/stimulus-parser"]
+	path = modules/stimulus-parser
+	url = https://github.com/marcoroth/stimulus-parser
+[submodule "modules/turbo_power"]
+	path = modules/turbo_power
+	url = https://github.com/marcoroth/turbo_power
+[submodule "modules/turbo-morph"]
+	path = modules/turbo-morph
+	url = https://github.com/marcoroth/turbo-morph
+[submodule "modules/stimulus-use"]
+	path = modules/stimulus-use
+	url = https://github.com/stimulus-use/stimulus-use
+[submodule "modules/current.js"]
+	path = modules/current.js
+	url = https://github.com/marcoroth/current.js
+[submodule "modules/turbo-ruby"]
+	path = modules/turbo-ruby
+	url = https://github.com/marcoroth/turbo-ruby
+[submodule "modules/debounced"]
+	path = modules/debounced
+	url = https://github.com/hopsoft/debounced
+[submodule "modules/tailwindcss-stimulus-components"]
+	path = modules/tailwindcss-stimulus-components
+	url = https://github.com/excid3/tailwindcss-stimulus-components
+[submodule "modules/stimulus-components"]
+	path = modules/stimulus-components
+	url = https://github.com/stimulus-components/.github
+[submodule "modules/js-cookie"]
+	path = modules/js-cookie
+	url = https://github.com/js-cookie/js-cookie
+[submodule "modules/formulus"]
+	path = modules/formulus
+	url = https://github.com/marcoroth/formulus
+[submodule "modules/turbo_boost-commands"]
+	path = modules/turbo_boost-commands
+	url = https://github.com/hopsoft/turbo_boost-commands
+[submodule "modules/request.js"]
+	path = modules/request.js
+	url = https://github.com/rails/request.js
+[submodule "modules/local_time"]
+	path = modules/local_time
+	url = https://github.com/basecamp/local_time
+[submodule "modules/relative-time-element"]
+	path = modules/relative-time-element
+	url = https://github.com/github/relative-time-element
+[submodule "modules/tom-select"]
+	path = modules/tom-select
+	url = https://github.com/orchidjs/tom-select
+[submodule "modules/tippyjs"]
+	path = modules/tippyjs
+	url = https://github.com/atomiks/tippyjs
+[submodule "modules/chartkick"]
+	path = modules/chartkick
+	url = https://github.com/ankane/chartkick
+[submodule "modules/kredis"]
+	path = modules/kredis
+	url = https://github.com/rails/kredis
+[submodule "modules/phlex"]
+	path = modules/phlex
+	url = https://github.com/phlex-ruby/phlex
+[submodule "modules/view_component"]
+	path = modules/view_component
+	url = https://github.com/viewcomponent/view_component
+[submodule "modules/chart.js"]
+	path = modules/chart.js
+	url = https://github.com/chartjs/chart.js
+[submodule "modules/list.js"]
+	path = modules/list.js
+	url = https://github.com/javve/list.js
+[submodule "modules/anycable"]
+	path = modules/anycable
+	url = https://github.com/anycable/anycable
+[submodule "modules/turbo-native-initializer"]
+	path = modules/turbo-native-initializer
+	url = https://github.com/lazaronixon/turbo-native-initializer
+[submodule "modules/turbonavigator"]
+	path = modules/turbonavigator
+	url = https://github.com/joemasilotti/turbonavigator

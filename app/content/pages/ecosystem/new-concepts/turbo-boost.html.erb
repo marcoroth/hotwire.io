@@ -8,4 +8,8 @@ image: boost.png
 
   <%= link_to "hopsoft/turbo_boost-commands", "https://github.com/hopsoft/turbo_boost-commands", target: :_blank %><br>
   <%= link_to "Documentation", "https://hopsoft.io/@turbo-boost/commands", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/turbo_boost-commands/README.md")) %>
+  </div>
 <% end %>

@@ -7,4 +7,8 @@ image: morph.png
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "marcoroth/turbo-morph", "https://github.com/marcoroth/turbo-morph", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/turbo-morph/README.md")) %>
+  </div>
 <% end %>

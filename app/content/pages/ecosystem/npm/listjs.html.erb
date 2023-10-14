@@ -1,0 +1,14 @@
+---
+title: List.js
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "javve/list.js", "https://github.com/javve/list.js", target: :_blank %><br>
+  <%= link_to "Documentation", "https://listjs.com", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/list.js/README.md")) %>
+  </div>
+<% end %>

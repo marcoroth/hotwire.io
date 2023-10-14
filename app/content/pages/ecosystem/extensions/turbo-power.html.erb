@@ -8,4 +8,8 @@ image: power.png
 
   <%= link_to "marcoroth/turbo_power", "https://github.com/marcoroth/turbo_power", target: :_blank %><br>
   <%= link_to "marcoroth/turbo_power-rails", "https://github.com/marcoroth/turbo_power-rails", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/turbo_power/README.md")) %>
+  </div>
 <% end %>

@@ -7,4 +7,8 @@ title: Tailwindcss Stimulus Components
 
   <%= link_to "excid3/tailwindcss-stimulus-components", "https://github.com/excid3/tailwindcss-stimulus-components", target: :_blank %><br>
   <%= link_to "Documentation", "https://excid3.github.io/tailwindcss-stimulus-components/", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/tailwindcss-stimulus-components/README.md")) %>
+  </div>
 <% end %>

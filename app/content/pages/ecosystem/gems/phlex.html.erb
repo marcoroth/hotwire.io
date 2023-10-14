@@ -7,4 +7,8 @@ title: Phlex
 
   <%= link_to "phlex-ruby/phlex", "https://github.com/phlex-ruby/phlex", target: :_blank %><br>
   <%= link_to "phlex-ruby/phlex-rails", "https://github.com/phlex-ruby/phlex-rails", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/phlex/README.md")) %>
+  </div>
 <% end %>

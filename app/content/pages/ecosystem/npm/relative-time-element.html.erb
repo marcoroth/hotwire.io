@@ -6,4 +6,8 @@ title: Relative Time Element
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "github/relative-time-element", "https://github.com/github/relative-time-element", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/relative-time-element/README.md")) %>
+  </div>
 <% end %>

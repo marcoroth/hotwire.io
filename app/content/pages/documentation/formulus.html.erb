@@ -6,4 +6,8 @@ title: Formulus
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/formulus/README.md")) %>
+  </div>
 <% end %>

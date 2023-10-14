@@ -6,4 +6,8 @@ title: Local Time
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "basecamp/local_time", "https://github.com/basecamp/local_time", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/local_time/README.md")) %>
+  </div>
 <% end %>

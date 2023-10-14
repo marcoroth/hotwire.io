@@ -8,4 +8,8 @@ image: formulus.png
 
   <%= link_to "marcoroth/formulus", "https://github.com/marcoroth/formulus", target: :_blank %><br>
   <%= link_to "marcoroth/formulus-rails", "https://github.com/marcoroth/formulus-rails", target: :_blank %><br>
+
+  <div class="prose prose-invert max-w-full">
+    <%== render_markdown(File.read("modules/formulus/README.md")) %>
+  </div>
 <% end %>

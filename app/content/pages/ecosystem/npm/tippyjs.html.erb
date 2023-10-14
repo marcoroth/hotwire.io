@@ -8,4 +8,7 @@ title: Tippy.js
   <%= link_to "atomiks/tippyjs", "https://github.com/atomiks/tippyjs", target: :_blank %><br>
   <%= link_to "Documentation", "https://tippyjs.bootcss.com", target: :_blank %><br>
 
+  <div class="prose prose-invert max-w-full mt-12">
+    <%== render_markdown(File.read("modules/tippyjs/README.md")) %>
+  </div>
 <% end %>
