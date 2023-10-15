@@ -1,13 +1,12 @@
 ---
-title: Turbo Test Helpers
-framework: rails
+title: Cache API
 library: turbo
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://github.com/rails/rails/pull/48798
+  https://github.com/hotwired/turbo/pull/949
 
   <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
 <% end %>

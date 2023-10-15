@@ -1,0 +1,9 @@
+---
+title: Turbo Train
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "Uscreen-video/turbo-train", "https://github.com/Uscreen-video/turbo-train", target: :_blank %><br>
+<% end %>
