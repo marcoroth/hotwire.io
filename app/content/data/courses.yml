@@ -27,3 +27,6 @@
 
 - name: "SymfonyCasts - Symfony UX: Turbo Series"
   url: https://symfonycasts.com/screencast/turbo
+
+- name: Hotwire Cookbook
+  url: https://www.hotwirecookbook.com
