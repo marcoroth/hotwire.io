@@ -22,5 +22,8 @@
 - name: Interactive Rails with StimulusReflex
   url: https://courses.jasoncharnes.com/stimulus-reflex
 
-- name: The Hotwire Club
-  url: https://www.patreon.com/TheHotwireClub
+- name: "SymfonyCasts - Symfony UX: Stimulus Series"
+  url: https://symfonycasts.com/screencast/stimulus
+
+- name: "SymfonyCasts - Symfony UX: Turbo Series"
+  url: https://symfonycasts.com/screencast/turbo
