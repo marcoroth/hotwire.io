@@ -1,0 +1,19 @@
+- name: Hotwire Discussion
+  type: Forum
+  url: https://discuss.hotwired.dev
+
+- name: The Hotwire Club
+  type: Patreon
+  url: https://www.patreon.com/TheHotwireClub
+
+- name: Hotwired Discord
+  type: Discord
+  url: https://discord.gg/uRrCHsYbmh
+
+- name: StimulusReflex Discord
+  type: Discord
+  url: https://discord.gg/stimulus-reflex
+
+- name: GoRails Discord
+  type: Discord
+  url: https://discord.gg/gorails
