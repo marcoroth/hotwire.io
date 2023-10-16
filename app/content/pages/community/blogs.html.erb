@@ -1,12 +1,15 @@
 ---
 title: Blogs
 subtitle: Blogs publishing Hotwire content
+
+additional_credit_paths:
+  - app/content/data/blogs.yml
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
   <% Blog.order(name: :asc).each do |blog| %>
-    <%= link_to blog.name, blog.url, target: :blank %><br/>
+    <%= link_to blog.name, blog.url, target: :_blank %><br>
   <% end %>
 <% end %>

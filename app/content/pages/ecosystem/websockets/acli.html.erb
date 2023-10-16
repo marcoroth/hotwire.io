@@ -1,0 +1,9 @@
+---
+title: Action Cable CLI
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "palkan/acli", "https://github.com/palkan/acli", target: :_blank %><br>
+<% end %>

@@ -7,10 +7,10 @@ language: PHP
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://ux.symfony.com<br/>
-  https://ux.symfony.com/turbo<br/>
-  https://symfony.com/blog/new-in-symfony-the-ux-initiative-a-new-javascript-ecosystem-for-symfony<br/>
-  https://symfony.com/bundles/StimulusBundle/current/index.html<br/>
-  https://github.com/symfony/stimulus-bridge<br/>
-  https://symfony.com/blog/symfony-ux-2-0-and-stimulus-3-support<br/>
+  <%= link_to "https://ux.symfony.com", "https://ux.symfony.com", target: :_blank %><br>
+  <%= link_to "https://ux.symfony.com/turbo", "https://ux.symfony.com/turbo", target: :_blank %><br>
+  <%= link_to "https://symfony.com/blog/new-in-symfony-the-ux-initiative-a-new-javascript-ecosystem-for-symfony", "https://symfony.com/blog/new-in-symfony-the-ux-initiative-a-new-javascript-ecosystem-for-symfony", target: :_blank %><br>
+  <%= link_to "https://symfony.com/bundles/StimulusBundle/current/index.html", "https://symfony.com/bundles/StimulusBundle/current/index.html", target: :_blank %><br>
+  <%= link_to "https://github.com/symfony/stimulus-bridge", "https://github.com/symfony/stimulus-bridge", target: :_blank %><br>
+  <%= link_to "https://symfony.com/blog/symfony-ux-2-0-and-stimulus-3-support", "https://symfony.com/blog/symfony-ux-2-0-and-stimulus-3-support", target: :_blank %><br>
 <% end %>

@@ -5,6 +5,6 @@ title: shadcn/ui on Rails
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "aviflombaum/shadcn-rails", "https://github.com/aviflombaum/shadcn-rails", target: :blank %><br/>
-  <%= link_to "Documentation", "https://shadcn.rails-components.com", target: :blank %><br/>
+  <%= link_to "aviflombaum/shadcn-rails", "https://github.com/aviflombaum/shadcn-rails", target: :_blank %><br>
+  <%= link_to "Documentation", "https://shadcn.rails-components.com", target: :_blank %><br>
 <% end %>

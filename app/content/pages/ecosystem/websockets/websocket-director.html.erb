@@ -1,0 +1,10 @@
+---
+title: WebSocket Director
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "palkan/wsdirector", "https://github.com/palkan/wsdirector", target: :_blank %><br>
+  <%= link_to "Blog Post", "https://evilmartians.com/chronicles/websocket-director-scenario-based-integration-tests-for-real-time-apps", target: :_blank %><br>
+<% end %>

@@ -26,7 +26,7 @@ class MarkdownRenderer
   def renderer
     Redcarpet::Markdown.new(
       DefaultRenderer.new(**markdown_settings),
-      renderer_settings,
+      renderer_settings
     )
   end
 
@@ -35,7 +35,7 @@ class MarkdownRenderer
       hard_wrap: true,
       no_images: false,
       no_links: false,
-      with_toc_data: false,
+      with_toc_data: false
     }
   end
 
@@ -52,7 +52,7 @@ class MarkdownRenderer
       strikethrough: true,
       superscript: true,
       tables: true,
-      underline: true,
+      underline: true
     }
   end
 end

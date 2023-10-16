@@ -5,6 +5,6 @@ title: Stimulus Use
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "stimulus-use/stimulus-use", "https://github.com/stimulus-use/stimulus-use", target: :blank %><br/>
-  <%= link_to "Documentation", "https://stimulus-use.github.io/stimulus-use", target: :blank %>
+  <%= link_to "stimulus-use/stimulus-use", "https://github.com/stimulus-use/stimulus-use", target: :_blank %><br>
+  <%= link_to "Documentation", "https://stimulus-use.github.io/stimulus-use", target: :_blank %>
 <% end %>

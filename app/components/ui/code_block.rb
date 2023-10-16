@@ -22,7 +22,7 @@ class UI::CodeBlock < ViewComponent::Base
 
   def lexer
     "Rouge::Lexers::#{language}".constantize.new
-  rescue StandardError
+  rescue
     Rouge::Lexers::PlainText.new
   end
 
