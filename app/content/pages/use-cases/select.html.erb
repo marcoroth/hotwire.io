@@ -5,9 +5,15 @@ title: Select Boxes
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <ul>
-    <li><a href="https://tom-select.js.org">https://tom-select.js.org</a></li>
-    <li><a href="https://gist.github.com/tabishiqbal/dc78239aa5b81b257db0633ace75ecc0">Stimulus Integration with Tom Select</a></li>
-    <li><a href="https://gist.github.com/tabishiqbal/32fe6c17f74c7da09c24d33feee77e26">Tom Select for Multiselect (Without Stimulus)</a></li>
-  </ul>
+  <a href="https://tom-select.js.org" target="_blank">https://tom-select.js.org</a>
+
+  <details>
+    <summary>Stimulus Integration with Tom Select</summary>
+    <%= render UI::GistComponent.new(author: "tabishiqbal", id: "dc78239aa5b81b257db0633ace75ecc0") %>
+  </details>
+
+  <details>
+    <summary>Tom Select for Multiselect (Without Stimulus)</summary>
+    <%= render UI::GistComponent.new(author: "tabishiqbal", id: "32fe6c17f74c7da09c24d33feee77e26") %>
+  </details>
 <% end %>
