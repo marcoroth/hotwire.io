@@ -6,7 +6,7 @@ title: Getting started with Hotwire in any framework
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <ul class="grid md:grid-cols-2 gap-4">
-    <% FrameworkModel.all.each do |page| %>
+    <% FrameworkModel.all.sort_by {|p| p.framework }.each do |page| %>
       <li class="flex">
         <%= link_to page.request_path, class: "p-6 space-x-6 md:h-39 flex items-center hover:bg-gray-900 border border-gray-800 hover:border-gray-700 rounded-lg w-full" do %>
           <div class="rounded-full max-w-[60px] relative flex justify-center items-center">
