@@ -5,11 +5,6 @@ title: Documentation
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    <% DocumentationModel.all.sort_by(&:title).each do |page| %>
-      <%= link_to page.title,
-                  page.request_path,
-                  class: "p-6 h-48 flex items-center justify-center bg-gray-950 hover:bg-gray-900 border border-gray-700 rounded-lg w-full font-bold text-2xl text-center" %>
-    <% end %>
-  </div>
+  <% pages = DocumentationModel.all.sort_by(&:title) %>
+  <%= render Page::CardSectionComponent.new(resources: pages) %>
 <% end %>
