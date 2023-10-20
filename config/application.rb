@@ -12,7 +12,7 @@ module Hotwire
     config.load_defaults 7.1
 
     # Please, see https://guides.rubyonrails.org/autoloading_and_reloading_constants.html#config-autoload-lib-ignore.
-    config.autoload_lib(ignore: %w(assets tasks))
+    config.autoload_lib(ignore: %w[assets tasks])
 
     config.autoload_paths << Rails.root.join("app/content/models")
     config.autoload_paths << Rails.root.join("app/content/helpers")

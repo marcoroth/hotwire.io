@@ -5,5 +5,9 @@
 
   <%= content %>
 
-  <%= render Page::AuthorsComponent.new(path: @page.asset.path.path) %>
+  <% if authors? %>
+    <%= authors %>
+  <% else %>
+    <%= render Page::AuthorsComponent.new(paths: credit_paths) %>
+  <% end %>
 <% end %>

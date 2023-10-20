@@ -1,11 +1,14 @@
 ---
 title: Books
+
+additional_credit_paths:
+  - app/content/data/books.yml
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <% Book.order(name: :asc).each do |book| %>
-    <%= link_to book.name, book.url, target: :blank %><br/>
+    <%= link_to book.name, book.url, target: :_blank %><br>
   <% end %>
 <% end %>

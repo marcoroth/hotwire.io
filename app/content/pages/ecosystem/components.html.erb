@@ -6,8 +6,8 @@ order: 7
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://github.com/excid3/tailwindcss-stimulus-components<br/>
-  https://www.stimulus-components.com<br/>
+  https://github.com/excid3/tailwindcss-stimulus-components<br>
+  https://www.stimulus-components.com<br>
 
   <%= render Page::CardSectionComponent.new(
     title: current_page.data.fetch("title"),

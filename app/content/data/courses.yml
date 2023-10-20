@@ -7,7 +7,7 @@
 - name: Modern Application Development with Rails
   url: https://www.learnrailshotwire.com
 
-- name: The Pragmatic Studio: Hotwire for Rails Developers
+- name: "The Pragmatic Studio: Hotwire for Rails Developers"
   url: https://pragmaticstudio.com/hotwire-rails
 
 - name: Turbo Laravel Bootcamp
@@ -21,3 +21,12 @@
 
 - name: Interactive Rails with StimulusReflex
   url: https://courses.jasoncharnes.com/stimulus-reflex
+
+- name: "SymfonyCasts - Symfony UX: Stimulus Series"
+  url: https://symfonycasts.com/screencast/stimulus
+
+- name: "SymfonyCasts - Symfony UX: Turbo Series"
+  url: https://symfonycasts.com/screencast/turbo
+
+- name: Hotwire Cookbook
+  url: https://www.hotwirecookbook.com

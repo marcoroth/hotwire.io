@@ -5,6 +5,6 @@ title: Turbo Native Directory
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "robzolkos/turbonativedirectory", "https://github.com/robzolkos/turbonativedirectory", target: :blank %><br/>
-  <%= link_to "Website", "https://turbonative.directory", target: :blank %><br/>
+  <%= link_to "robzolkos/turbonativedirectory", "https://github.com/robzolkos/turbonativedirectory", target: :_blank %><br>
+  <%= link_to "Website", "https://turbonative.directory", target: :_blank %><br>
 <% end %>

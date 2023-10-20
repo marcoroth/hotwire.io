@@ -2,11 +2,13 @@
 title: Getting started with Hotwire in Micronaut
 framework: Micronaut
 language: Java
+description: A modern, JVM-based, full-stack framework for building modular serverless applications.
+image: frameworks/micronaut.png
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://guides.micronaut.io/latest/tag-hotwire.html<br/>
-  https://discuss.hotwired.dev/t/turbo-integration-with-the-micronaut-framework/4284
+  <%= link_to "https://guides.micronaut.io/latest/tag-hotwire.html", "https://guides.micronaut.io/latest/tag-hotwire.html", target: :_blank %>
+  <%= link_to "https://discuss.hotwired.dev/t/turbo-integration-with-the-micronaut-framework/4284", "https://discuss.hotwired.dev/t/turbo-integration-with-the-micronaut-framework/4284", target: :_blank %><br>
 <% end %>

@@ -1,0 +1,9 @@
+---
+title: Cable Shared Worker
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "le0pard/cable-shared-worker", "https://github.com/le0pard/cable-shared-worker", target: :_blank %><br>
+<% end %>

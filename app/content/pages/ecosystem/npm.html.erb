@@ -9,7 +9,7 @@ order: 8
     resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
   ) %>
 
-  Stimulus-related:<br/>
-  https://github.com/adrienpoly/stimulus-conductor<br/>
-  https://github.com/vytant/stimulus-decorators<br/>
+  Stimulus-related:<br>
+  https://github.com/adrienpoly/stimulus-conductor<br>
+  https://github.com/vytant/stimulus-decorators<br>
 <% end %>

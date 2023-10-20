@@ -5,5 +5,5 @@ title: Chartkick
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "basecamp/local_time", "https://github.com/basecamp/local_time", target: :blank %><br/>
+  <%= link_to "basecamp/local_time", "https://github.com/basecamp/local_time", target: :_blank %><br>
 <% end %>

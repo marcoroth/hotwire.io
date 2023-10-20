@@ -1,0 +1,28 @@
+---
+title: Education
+subtitle: Educational Resources for Hotwire
+
+additional_credit_paths:
+  - app/content/data/channels.yml
+  - app/content/data/courses.yml
+  - app/content/data/communities.yml
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("subtitle")) %>
+
+  <h2 class="text-2xl font-bold mt-4 mb-4">Channels publishing Hotwire content</h2>
+  <% Channel.order(name: :asc).each do |channel| %>
+    <%= link_to channel.name, channel.url, target: :blank %><br>
+  <% end %>
+
+  <h2 class="text-2xl font-bold mt-4 mb-4">Courses</h2>
+  <% Course.order(name: :asc).each do |course| %>
+    <%= link_to course.name, course.url, target: :blank %><br>
+  <% end %>
+
+  <h2 class="text-2xl font-bold mt-4 mb-4">Online-Communities</h2>
+  <% Community.order(name: :asc).each do |community| %>
+    <%= link_to "#{community.name} (#{community.type})", community.url, target: :blank %><br>
+  <% end %>
+<% end %>

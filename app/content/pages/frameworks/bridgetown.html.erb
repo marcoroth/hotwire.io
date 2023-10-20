@@ -2,10 +2,12 @@
 title: Getting started with Hotwire in Bridgetown
 framework: Bridgetown
 language: Ruby
+description: A next-generation, progressive site generator & fullstack framework, powered by Ruby.
+image: frameworks/bridgetown.png
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://www.bridgetownrb.com/docs/bundled-configurations
+  <%= link_to "https://www.bridgetownrb.com/docs/bundled-configurations", "https://www.bridgetownrb.com/docs/bundled-configurations", target: :_blank %><br>
 <% end %>
