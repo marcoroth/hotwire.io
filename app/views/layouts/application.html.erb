@@ -14,6 +14,8 @@
     <%= vite_javascript_tag "packs/application", media: 'all', "data-turbo-track": "reload" %>
     <%= vite_stylesheet_tag "packs/application", media: 'all', "data-turbo-track": "reload" unless ViteRuby.instance.dev_server_running? %>
 
+    <%= display_meta_tags title: current_page.data["title"] %>
+
     <script defer data-domain="hotwire.io" src="https://plausible.io/js/plausible.js"></script>
   </head>
 
