@@ -3,6 +3,7 @@ title: Turbo Ruby
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "marcoroth/turbo-ruby", "https://github.com/marcoroth/turbo-ruby", target: :_blank %><br>

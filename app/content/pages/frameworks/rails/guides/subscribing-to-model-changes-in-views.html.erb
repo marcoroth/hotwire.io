@@ -5,6 +5,7 @@ library: turbo
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://cableready.stimulusreflex.com/guide/updatable.html

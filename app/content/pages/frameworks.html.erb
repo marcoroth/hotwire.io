@@ -1,8 +1,10 @@
 ---
 title: Getting started with Hotwire in any framework
+breadcrumb: Getting started... 
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <ul class="grid md:grid-cols-2 gap-4">

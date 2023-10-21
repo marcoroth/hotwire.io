@@ -3,6 +3,7 @@ title: Turbo Native iOS
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://youtube.com/watch?v=83wOvrNtZX4<br>

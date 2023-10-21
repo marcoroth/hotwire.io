@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 class Page::ContainerComponent < ViewComponent::Base
-  renders_one :title, "UI::TitleComponent"
-  renders_one :authors, "Page::AuthorsComponent"
+  renders_one :breadcrumbs, 'UI::BreadcrumbsComponent'
+  renders_one :title, 'UI::TitleComponent'
+  renders_one :authors, 'Page::AuthorsComponent'
 
   def initialize(page:)
     @page = page

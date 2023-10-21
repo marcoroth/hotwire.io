@@ -3,6 +3,7 @@ title: Drag and Drop
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://code.avi.nyc/turbo-forms-drag-and-drop-in-ruby-on-rails-part-1<br>

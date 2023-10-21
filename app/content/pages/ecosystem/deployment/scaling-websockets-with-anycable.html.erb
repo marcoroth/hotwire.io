@@ -3,6 +3,7 @@ title: Scaling Websockets with AnyCable
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "anycable/anycable", "https://github.com/anycable/anycable", target: :_blank %><br>

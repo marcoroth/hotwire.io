@@ -4,6 +4,7 @@ image: formulus.png
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "marcoroth/formulus", "https://github.com/marcoroth/formulus", target: :_blank %><br>

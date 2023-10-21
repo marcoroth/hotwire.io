@@ -1,4 +1,8 @@
 <%= render UI::ContainerComponent.new do %>
+  <% if breadcrumbs? %>
+    <%= render breadcrumbs %>
+  <% end %>
+
   <% if title? %>
     <%= title %>
   <% end %>
