@@ -5,8 +5,7 @@
         <%= link_to breadcrumb[:text],
           breadcrumb[:path],
           class: "font-medium text-sm text-slate-300 hover:text-white transition transition duration-150 ease-in-out #{i == @breadcrumbs.size - 1 ? "text-slate-50" : ''}",
-          itemprop: "item" 
-        %>
+          itemprop: "item" %>
         <span class="text-slate-300 ml-2">
           <% unless i == @breadcrumbs.size - 1 %> > <% end %>
         </span>
