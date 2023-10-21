@@ -5,13 +5,13 @@ class Page::ContainerComponent < ViewComponent::Base
   renders_one :title, "UI::TitleComponent"
   renders_one :authors, "Page::AuthorsComponent"
 
-  def initialize(page:, options: {})
+  def initialize(page:, render_breadcrumbs: true)
     @page = page
-    @options = options
+    @render_breadcrumbs = render_breadcrumbs
   end
 
   def render_breadcrumbs?
-    @options.fetch(:render_breadcrumbs, true)
+    @render_breadcrumbs
   end
 
   def credit_paths
