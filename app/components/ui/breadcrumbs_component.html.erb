@@ -1,0 +1,14 @@
+<nav aria-label="Breadcrumbs" class="w-full mb-12 md:mb-0">
+  <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="flex flex-col items-start gap-3 grow flex-wrap sm:flex-row sm:items-center">
+    <% @breadcrumbs.each_with_index do |breadcrumb, i| %>
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <%= link_to breadcrumb[:text],
+          breadcrumb[:path],
+          class: "font-medium text-sm text-slate-300 hover:text-white transition transition duration-150 ease-in-out #{i == @breadcrumbs.size - 1 ? "text-slate-50" : ''}",
+          itemprop: "item" %>
+        <span class="text-slate-300 ml-2">
+          <% unless i == @breadcrumbs.size - 1 %> > <% end %>
+        </span>
+    <% end %>
+  </ul>
+</nav>
