@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
       reverse: true,
       separator: '·',
       description: description,
+      canonical: request.original_url,
+      noindex: Rails.env.local?,
       keywords: ['hotwire', 'stimulus.js', 'turbo drive', 'turbo streams', 'turbo frames', 'documentation', 'community'],
       twitter: {
         title: title,
@@ -24,7 +26,7 @@ class ApplicationController < ActionController::Base
         title: title,
         description: description,
         type: 'website',
-        url: root_url,
+        url: request.original_url,
         image: [
           {
             _: image,
