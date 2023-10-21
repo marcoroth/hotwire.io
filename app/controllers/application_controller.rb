@@ -4,33 +4,33 @@ class ApplicationController < ActionController::Base
   private
 
   def set_default_meta_tags
-    title = 'Hotwire.io'
+    title = "Hotwire.io"
     description = "Community-driven documentation and resource Hub for Hotwire."
     image = "#{root_url}og-image.png"
 
     tags = {
       site: title,
       reverse: true,
-      separator: '·',
+      separator: "·",
       description: description,
       canonical: request.original_url,
       noindex: Rails.env.local?,
-      keywords: ['hotwire', 'stimulus.js', 'turbo drive', 'turbo streams', 'turbo frames', 'documentation', 'community'],
+      keywords: ["hotwire", "stimulus.js", "turbo drive", "turbo streams", "turbo frames", "documentation", "community"],
       twitter: {
         description: description,
-        card: 'summary_large_image',
-        image: image,
+        card: "summary_large_image",
+        image: image
       },
       og: {
         description: description,
-        type: 'website',
+        type: "website",
         url: request.original_url,
         image: [
           {
             _: image,
             width: 1200,
-            height: 630,
-          },
+            height: 630
+          }
         ]
       }
     }
