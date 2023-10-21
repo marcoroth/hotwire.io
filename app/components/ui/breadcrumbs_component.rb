@@ -9,7 +9,7 @@ class UI::BreadcrumbsComponent < ViewComponent::Base
       }
     ]
 
-    current_page[:page].parents.each do |page|
+    current_page[:page].parents.compact.each do |page|
       breadcrumb_data = {
         text: page.data.fetch('breadcrumb', page.data.fetch('title')),
         path: page.request_path

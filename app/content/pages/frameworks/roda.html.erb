@@ -4,10 +4,10 @@ framework: Roda
 language: Ruby
 description: A simple, modular, and scalable Ruby framework.
 image: frameworks/roda.png
+breadcrumb: Roda
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>

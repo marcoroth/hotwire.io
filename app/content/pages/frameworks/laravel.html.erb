@@ -4,10 +4,10 @@ framework: Laravel
 language: PHP
 description: PHP web application framework with expressive, elegant syntax.
 icon_class: devicon-laravel-plain-wordmark colored text-6xl
+breadcrumb: Laravel
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "https://github.com/hotwired-laravel", "https://github.com/hotwired-laravel", target: :_blank %><br>

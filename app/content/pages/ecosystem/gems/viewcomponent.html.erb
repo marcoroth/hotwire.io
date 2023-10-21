@@ -3,7 +3,6 @@ title: ViewComponent
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "viewcomponent/view_component", "https://github.com/viewcomponent/view_component", target: :_blank %><br>

@@ -4,10 +4,10 @@ framework: Hanami
 language: Ruby
 description: Ruby framework designed to create well-architected and maintainable software.
 image: frameworks/hanami.png
+breadcrumb: Hanami
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>

@@ -1,4 +1,4 @@
 class CommunityModel < Sitepress::Model
-  collection glob: "**/community/*.html*"
-  data :title, :breadcrumb
+  collection glob: '**/community/*.html*'
+  data :title
 end

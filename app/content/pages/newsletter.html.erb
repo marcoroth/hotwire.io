@@ -1,9 +1,7 @@
 ---
 title: Hotwire Weekly
 ---
-
-<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
+<%= render Page::ContainerComponent.new(page: current_page, options: { :render_breadcrumbs => false }) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= image_tag image_path("weekly.png"), class: "w-1/2 mx-auto" %>

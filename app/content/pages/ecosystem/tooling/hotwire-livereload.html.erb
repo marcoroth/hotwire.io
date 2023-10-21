@@ -3,7 +3,6 @@ title: Hotwire Livereload
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "kirillplatonov/hotwire-livereload", "https://github.com/kirillplatonov/hotwire-livereload", target: :_blank %><br>

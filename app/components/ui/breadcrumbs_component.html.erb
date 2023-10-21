@@ -4,7 +4,7 @@
       <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
         <%= link_to breadcrumb[:text],
           breadcrumb[:path],
-          class: "text-sm text-slate-400 hover:text-slate-200 transition transition duration-150 ease-in-out #{i == @breadcrumbs.size - 1 ? "text-slate-50" : ''}",
+          class: "font-medium text-sm text-slate-300 hover:text-white transition transition duration-150 ease-in-out #{i == @breadcrumbs.size - 1 ? "text-slate-50" : ''}",
           itemprop: "item" 
         %>
         <span class="text-slate-300 ml-2">

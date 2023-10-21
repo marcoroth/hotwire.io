@@ -3,7 +3,6 @@ title: Stimulus Use
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "stimulus-use/stimulus-use", "https://github.com/stimulus-use/stimulus-use", target: :_blank %><br>

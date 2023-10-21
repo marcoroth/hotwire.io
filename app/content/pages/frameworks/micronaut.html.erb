@@ -4,10 +4,10 @@ framework: Micronaut
 language: Java
 description: A modern, JVM-based, full-stack framework for building modular serverless applications.
 image: frameworks/micronaut.png
+breadcrumb: Micronaut
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "https://guides.micronaut.io/latest/tag-hotwire.html", "https://guides.micronaut.io/latest/tag-hotwire.html", target: :_blank %>
