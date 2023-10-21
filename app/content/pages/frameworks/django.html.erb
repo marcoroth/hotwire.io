@@ -4,10 +4,10 @@ framework: Django
 language: Python
 description: Python web framework that encourages rapid development and clean, pragmatic design.
 icon_class: devicon-django-plain text-5xl
+breadcrumb: Django
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "https://github.com/hotwire-django", "https://github.com/hotwire-django", target: :_blank %><br>

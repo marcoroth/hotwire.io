@@ -4,7 +4,6 @@ subtitle: Interacting with the HTML5 Canvas
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
   <%= link_to "HTML5 Canvas on Rails - Series (Ariel Fogel)", "https://www.fogel.dev/canvas_on_rails_1", target: "_blank" %>

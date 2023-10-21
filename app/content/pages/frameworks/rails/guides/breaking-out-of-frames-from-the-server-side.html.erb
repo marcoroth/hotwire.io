@@ -5,7 +5,6 @@ library: turbo
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   https://github.com/hotwired/turbo-rails/pull/367<br>

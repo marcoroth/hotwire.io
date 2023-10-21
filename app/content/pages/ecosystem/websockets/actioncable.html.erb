@@ -3,7 +3,6 @@ title: ActionCable
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_breadcrumbs(page: current_page) %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <%= link_to "actioncable", "https://guides.rubyonrails.org/action_cable_overview.html", target: :_blank %><br>
