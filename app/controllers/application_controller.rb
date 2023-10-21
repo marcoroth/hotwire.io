@@ -15,13 +15,11 @@ class ApplicationController < ActionController::Base
       description: description,
       keywords: ['hotwire', 'stimulus.js', 'turbo drive', 'turbo streams', 'turbo frames', 'documentation', 'community'],
       twitter: {
-        title: title,
         description: description,
         card: 'summary_large_image',
         image: image,
       },
       og: {
-        title: title,
         description: description,
         type: 'website',
         url: root_url,
