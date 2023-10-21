@@ -77,6 +77,9 @@ gem "standard", "~> 1.31"
 # Lint your ERB or HTML files
 gem "erb_lint", "~> 0.5.0"
 
+# Search Engine Optimization (SEO) for Ruby on Rails applications.
+gem "meta-tags"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows]
@@ -100,5 +103,3 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem "meta-tags"
