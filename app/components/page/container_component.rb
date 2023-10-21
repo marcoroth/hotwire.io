@@ -17,7 +17,7 @@ class Page::ContainerComponent < ViewComponent::Base
   def credit_paths
     [
       @page.asset.path.path,
-      *@page.data.dig('additional_credit_paths')
+      *@page.data.dig("additional_credit_paths")
     ].compact.uniq
   end
 end
