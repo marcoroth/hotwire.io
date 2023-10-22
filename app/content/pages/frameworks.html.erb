@@ -6,23 +6,28 @@ breadcrumb: Getting started
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <ul class="grid md:grid-cols-2 gap-4">
-    <% FrameworkModel.all.sort_by(&:framework).each do |page| %>
-      <li class="flex">
-        <%= link_to page.request_path, class: "p-6 space-x-6 md:h-39 flex items-center hover:bg-gray-900 border border-gray-800 hover:border-gray-700 rounded-lg w-full" do %>
-          <div class="rounded-full max-w-[60px] relative flex justify-center items-center">
-            <% if page.image %>
-              <img src="<%= image_path(page.image) %>" alt="<%= page.framework %> Logo" class="w-full">
-            <% elsif page.icon_class %>
-              <i class="<%= page.icon_class %>"></i>
-            <% end %>
-          </div>
-          <div class="space-y-1.5 flex-1">
-            <h2 class="font-bold text-xl"><%= page.framework %></h2>
-            <p class="text-medium text-gray-400"><%= page.description %></p>
-          </div>
-        <% end %>
-      </li>
-    <% end %>
-  </ul>
+  <% FrameworkModel.grouped_by_language.each do |language, pages| %>
+    <h2 class="font-bold mb-3 mt-12"><%= language %> frameworks</h2>
+
+    <ul class="grid md:grid-cols-2 gap-4">
+      <% pages.each do |page| %>
+        <li class="flex">
+          <%= link_to page.request_path, class: "p-6 space-x-6 md:h-39 flex items-center hover:bg-gray-900 border border-gray-800 hover:border-gray-700 rounded-lg w-full" do %>
+            <div class="rounded-full max-w-[60px] relative flex justify-center items-center">
+              <% if page.image %>
+                <%= image_tag image_path(page.image), alt: "#{page.framework} Logo", class: "w-full" %>
+              <% elsif page.icon_class %>
+                <%= tag.i class: page.icon_class %>
+              <% end %>
+            </div>
+
+            <div class="space-y-1.5 flex-1">
+              <h2 class="font-bold text-xl"><%= page.framework %></h2>
+              <p class="text-medium text-gray-400"><%= page.description %></p>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
 <% end %>
