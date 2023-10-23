@@ -3,8 +3,8 @@ title: Native
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <div class="prose prose-invert max-w-full">
-    <%== render_markdown(File.read(Rails.root.join("app/content/pages/documentation/turbo/turbo-site/_source/handbook/05_native.md")).split("---").last) %>
+  <div class="prose prose-invert max-w-full mt-6">
+    <%== turbo_documentation_page("handbook/05_native.md") %>
 
     <%= render partial: "turbo_site_navigation", locals: { current_page: current_page, model: TurboHandbookModel } %>
   </div>
