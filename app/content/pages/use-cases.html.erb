@@ -5,7 +5,7 @@ title: Use Cases
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-2 md:grid-cols-3">
     <% UseCasesModel.all.sort_by(&:title).each do |page| %>
       <div class="flex flex-col gap-x-4">
         <h2 class="font-bold text-lg underline"><%= link_to page.title, page.request_path %></h2>
