@@ -4,8 +4,6 @@ order: 1
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-
   <%= render Page::CardSectionComponent.new(
     title: current_page.data.fetch("title"),
     resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
