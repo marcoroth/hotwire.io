@@ -1,5 +1,5 @@
 class FrameworkModel < Sitepress::Model
-  collection glob: "**/frameworks/*.html*", sort: :language
+  collection glob: "**/frameworks/*.html*"
   data :title, :framework, :language, :description, :icon_class, :image
 
   def self.grouped_by_language
