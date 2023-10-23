@@ -1,0 +1,13 @@
+---
+title: Install Stimulus LSP
+breadcrumb: Install
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% subpages = site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") } %>
+
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: subpages,
+  ) %>
+<% end %>

@@ -1,0 +1,12 @@
+---
+title: Nova
+subtitle: Install Stimulus LSP in Nova
+editor: nova
+breadcrumb: Nova
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("subtitle")) %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>
