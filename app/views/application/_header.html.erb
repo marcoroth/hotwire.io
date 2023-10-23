@@ -1,21 +1,32 @@
 <header class="w-full z-30 mb-12 md:mb-0">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="md:flex items-center justify-between h-16 md:h-20">
+    <div class="md:flex items-center justify-between h-16 md:h-20 z-29">
+      <input type="checkbox" id="click" class="hidden peer" hidden>
 
-      <div class="shrink-0 mr-4">
-        <a class="block" href="/" aria-label="Hotwire">
+      <div class="flex-wrap flex justify-between py-2">
+        <a href="/" aria-label="Hotwire">
           <img src="<%= image_path("logo.svg") %>" width="150" height="100" alt="Hotwire.io">
         </a>
+        <div class="md:hidden">
+          <label for="click">
+            <div class="cursor-pointer w-10 h-10 border border-[#ffe801] rounded-lg flex flex-col place-content-center space-y-1 items-center">
+              <div class="w-8 h-1 bg-white"></div>
+              <div class="w-8 h-1 bg-white"></div>
+              <div class="w-8 h-1 bg-white"></div>
+            </div>
+          </label>
+        </div>
       </div>
 
-      <nav class="mt-3 flex grow">
-        <ul class="flex gap-3 grow justify-end flex-wrap items-center">
-          <li><a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/ecosystem">Ecosystem</a></li>
-          <li><a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/documentation">Documentation</a></li>
-          <li><a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/use-cases">Use-Cases</a></li>
-          <li><a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/frameworks">Frameworks</a></li>
-          <li><a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/community">Community</a></li>
-          <li><a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/newsletter">Newsletter</a></li>
+      <!-- menu-bar  -->
+      <nav class="flex-col grow-0 w-full -top-[1200px] bg-black transition-[top] ease-in-out duration-700 md:flex md:flex-row md:grow md:h-10 md:justify-end max-md:absolute max-md:h-screen max-md:pt-10 peer-checked:top-16">
+        <ul class="flex gap-8 md:gap-3 flex-wrap items-center max-md:flex-col">
+          <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/ecosystem">Ecosystem</a></li>
+          <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/documentation">Documentation</a></li>
+          <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/use-cases">Use-Cases</a></li>
+          <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/frameworks">Frameworks</a></li>
+          <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/community">Community</a></li>
+          <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/newsletter">Newsletter</a></li>
         </ul>
       </nav>
     </div>
