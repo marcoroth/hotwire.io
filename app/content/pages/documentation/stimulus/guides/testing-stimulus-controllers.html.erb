@@ -1,0 +1,13 @@
+---
+title: Testing Stimulus Controllers
+library: stimulus
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  https://github.com/symfony/stimulus-testing
+  https://modern-web.dev/docs/test-runner/overview
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>

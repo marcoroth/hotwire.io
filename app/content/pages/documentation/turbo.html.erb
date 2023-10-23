@@ -5,9 +5,9 @@ title: Turbo
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <div class="grid grid-cols-3">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6">
     <div>
-      <h3>Handbook</h3>
+      <h3 class="font-bold text-lg">Handbook</h3>
 
       <% TurboHandbookModel.all.sort_by(&:request_path).each do |page| %>
         <li>
@@ -17,7 +17,7 @@ title: Turbo
     </div>
 
     <div>
-      <h3>Reference</h3>
+      <h3 class="font-bold text-lg">Reference</h3>
 
       <% TurboReferenceModel.all.sort_by(&:request_path).each do |page| %>
         <li>
@@ -27,7 +27,7 @@ title: Turbo
     </div>
 
     <div>
-      <h3>Guides</h3>
+      <h3 class="font-bold text-lg"><a href="/documentation/turbo/guides">Guides</a></h3>
 
       <% site.resources.glob("documentation/turbo/guides/*.html.*").sort_by(&:request_path).each do |page| %>
         <li>

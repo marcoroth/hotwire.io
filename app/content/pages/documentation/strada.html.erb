@@ -5,5 +5,31 @@ title: Strada
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6">
+    <div>
+      <h3 class="font-bold text-lg">Handbook</h3>
+
+      <li>
+        <a href="https://strada.hotwired.dev/handbook/introduction" target="_blank">Handbook</a>
+      </li>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg">Reference</h3>
+
+      <li>
+        <a href="https://strada.hotwired.dev/reference/components" target="_blank">Reference</a>
+      </li>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg"><a href="/documentation/strada/guides">Guides</a></h3>
+
+      <% site.resources.glob("documentation/strada/guides/*.html.*").sort_by(&:request_path).each do |page| %>
+        <li>
+          <a href="<%= page.request_path %>"> <%= page.data.fetch("title") %></a>
+        </li>
+      <% end %>
+    </div>
+  </div>
 <% end %>

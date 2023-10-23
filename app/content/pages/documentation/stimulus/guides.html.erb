@@ -1,0 +1,17 @@
+---
+title: Stimulus Guides
+library: stimulus
+breadcrumb: Guides
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <h3 class="font-bold text-lg">Guides</h3>
+
+  <% site.resources.glob("documentation/stimulus/guides/*.html.*").sort_by(&:request_path).each do |page| %>
+    <li>
+      <a href="<%= page.request_path %>"> <%= page.data.fetch("title") %></a>
+    </li>
+  <% end %>
+<% end %>
