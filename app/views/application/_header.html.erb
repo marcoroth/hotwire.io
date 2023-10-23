@@ -9,17 +9,21 @@
         </a>
         <div class="md:hidden">
           <label for="click">
-            <div class="cursor-pointer w-10 h-10 border border-[#ffe801] rounded-lg flex flex-col place-content-center space-y-1 items-center">
-              <div class="w-8 h-1 bg-white"></div>
-              <div class="w-8 h-1 bg-white"></div>
-              <div class="w-8 h-1 bg-white"></div>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 cursor-pointer">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+            </svg>
           </label>
         </div>
       </div>
 
       <!-- menu-bar  -->
-      <nav class="flex-col grow-0 w-full -top-[1200px] bg-black transition-[top] ease-in-out duration-700 md:flex md:flex-row md:grow md:h-10 md:justify-end max-md:absolute max-md:h-screen max-md:pt-10 peer-checked:top-16">
+      <nav class="flex-col grow-0 w-full overflow-hidden -top-[150vh] bg-black transition-[top] ease-in-out duration-300 md:flex md:flex-row md:grow md:h-10 md:justify-end max-md:absolute max-md:h-full max-md:pt-6 peer-checked:top-0">
+        <label for="click" class="flex flex-row-reverse md:hidden cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-6 mb-12 w-12 h-12 hover:text-gray-300">
+            <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+          </svg>
+        </label>
+
         <ul class="flex gap-8 md:gap-3 flex-wrap items-center max-md:flex-col">
           <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/ecosystem">Ecosystem</a></li>
           <li><a class="font-medium md:text-sm text-2xl text-slate-300 hover:text-white" href="/documentation">Documentation</a></li>
