@@ -1,6 +1,10 @@
 <% if @title %>
   <h2 class="text-2xl font-bold mt-12 mb-6">
-    <%= @title %>
+    <% if @all_url %>
+      <%= link_to @title, @all_url %>
+    <% else %>
+      <%= @title %>
+    <% end %>
   </h2>
 <% end %>
 
@@ -12,6 +16,12 @@
 
 <% if @all_url %>
   <%= link_to @all_url do %>
-    View all <span class="tracking-normal text-white ml-1">-&gt;</span>
+    View all
+
+    <% if @total && @total > @count %>
+      (<%= @total - @count %> more)
+    <% end %>
+
+    <span class="tracking-normal text-white ml-1">-&gt;</span>
   <% end %>
 <% end %>

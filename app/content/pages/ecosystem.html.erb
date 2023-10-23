@@ -6,9 +6,12 @@ title: Ecosystem
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
   <% EcosystemModel.all.sort_by(&:order).each do |page| %>
+    <% subpages = site.resources.glob("#{page.page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") } %>
+
     <%= render Page::CardSectionComponent.new(
       title: page.title,
-      resources: site.resources.glob("#{page.page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") }.take(3),
+      resources: subpages,
+      count: 6,
       all_url: page.request_path
     ) %>
   <% end %>
