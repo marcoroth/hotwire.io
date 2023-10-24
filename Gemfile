@@ -81,7 +81,7 @@ gem "erb_lint", "~> 0.5.0"
 gem "meta-tags"
 
 # A sitemap generator gem for Rails
-gem 'sitemap_generator', '~> 6.3'
+gem "sitemap_generator", "~> 6.3"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
