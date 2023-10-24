@@ -46,7 +46,7 @@ To run ERB linters with the provided configuration, follow these steps:
 2. Run the linting command:
 
  ```bash
- erb-lint
+bin/lint
  ```
 
 3. Review the linting results.
