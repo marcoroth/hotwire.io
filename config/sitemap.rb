@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "https://www.hotwire.io"
+SitemapGenerator::Sitemap.default_host = "https://hotwire.io"
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
