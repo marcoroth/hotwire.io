@@ -1,0 +1,9 @@
+---
+title: Solder
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "julianrubisch/solder", "https://github.com/julianrubisch/solder", target: :_blank %><br>
+<% end %>

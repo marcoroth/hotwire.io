@@ -1,0 +1,11 @@
+---
+title: State Management
+order: 12
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <%= render Page::CardSectionComponent.new(
+    title: current_page.data.fetch("title"),
+    resources: site.resources.glob("#{current_page.request_path}/*.html.erb".delete_prefix("/")).sort_by { |site| site.data.fetch("title") },
+  ) %>
+<% end %>
