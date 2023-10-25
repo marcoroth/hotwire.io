@@ -40,9 +40,9 @@ open http://localhost:3000
 
 #### Running linters locally
 
-To run ERB linters with the provided configuration, follow these steps:
+To run the linters with the provided configuration, follow these steps:
 
-1. Open your project's root directory in the terminal.
+1. Open the project's root directory in the terminal.
 2. Run the linting command:
 
  ```bash
@@ -50,18 +50,7 @@ bin/lint
  ```
 
 3. Review the linting results.
-4. Make necessary corrections to your ERB templates.
-
-- You can use the ``` --lint-all ``` option to lint all ERB files in the current directory and its descendants.
-- You can use the ``` --autocorrect ``` option to automatically correct some linting errors.
-- You can use the ``` -f ``` option to specify a different configuration file.
-- You can use the ``` -h ```  option to see a list of all available options.
-
-For example, to lint all ERB files in the current directory and its descendants and automatically correct some linting errors, you would run the following command:
-
-```bash
- erb-lint --lint-all --autocorrect
-```
+4. Commit changes to your branch
 
 #### Contributing
 
