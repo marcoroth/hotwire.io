@@ -1,11 +1,17 @@
 <nav aria-label="Breadcrumbs" class="w-full mb-12 md:mb-0">
   <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="flex items-start gap-3 grow flex-wrap sm:items-center">
     <% @breadcrumbs.each_with_index do |breadcrumb, index| %>
-      <li class="flex items-center" itemprop="itemListElement" itemscope name="<%= breadcrumb[:text] %>" postition="<%= index + 1 %>" itemtype="https://schema.org/ListItem">
-        <%= link_to breadcrumb[:text],
+      <li class="flex items-center" itemprop="itemListElement" itemscope postition="<%= index + 1 %>" itemtype="https://schema.org/ListItem">
+        <%= link_to(
           breadcrumb[:path],
           class: "font-medium text-sm text-slate-300 hover:text-white transition transition duration-150 ease-in-out #{index == @breadcrumbs.size - 1 ? "text-slate-50" : ''}",
-          itemprop: "item" %>
+          itemprop: "item"
+        ) do %>
+          <span itemprop="name"><%= breadcrumb[:text] %></span>
+        <% end %>
+
+        <meta itemprop="position" content="<%= index + 1 %>">
+
         <span class="text-slate-300 ml-2">
           <% unless index == @breadcrumbs.size - 1 %>
             <svg class="h-5 w-5 flex-shrink-0 text-slate-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -13,6 +19,7 @@
             </svg>
           <% end %>
         </span>
+      </li>
     <% end %>
   </ul>
 </nav>
