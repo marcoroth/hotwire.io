@@ -1,6 +1,3 @@
-- name: Hotrails.dev
-  url: https://www.hotrails.dev
-
 - name: Learn Hotwire by Building a Forum
   url: https://store.afomera.dev/learn-hotwire
 
@@ -9,9 +6,6 @@
 
 - name: "The Pragmatic Studio: Hotwire for Rails Developers"
   url: https://pragmaticstudio.com/hotwire-rails
-
-- name: Turbo Laravel Bootcamp
-  url: https://bootcamp.turbo-laravel.com
 
 - name: Turbo Native Workshop
   url: https://masilotti.com/turbo-native-workshop
