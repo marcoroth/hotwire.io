@@ -15,3 +15,6 @@
 
 - name: Advanced CableReady
   url: https://julianrubisch.gumroad.com/l/acr
+
+- name: The Definitive Guide to Hotwire and Django (2.0.0)
+  url: https://leanpub.com/hotwire-django
