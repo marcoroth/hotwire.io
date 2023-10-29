@@ -1,0 +1,9 @@
+---
+title: Universal ID
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "hopsoft/universalid", "https://github.com/hopsoft/universalid", target: :_blank %><br>
+<% end %>
