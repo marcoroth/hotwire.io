@@ -10,11 +10,16 @@ breadcrumb: Laravel
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "https://github.com/hotwired-laravel", "https://github.com/hotwired-laravel", target: :_blank %><br>
-  <%= link_to "https://turbo-laravel.com", "https://turbo-laravel.com", target: :_blank %><br>
-  <%= link_to "https://laravel-news.com/use-basecamps-hotwire-in-laravel", "https://laravel-news.com/use-basecamps-hotwire-in-laravel", target: :_blank %><br>
-  <%= link_to "https://symfonycasts.com/screencast/stimulus", "https://symfonycasts.com/screencast/stimulus", target: :_blank %><br>
-  <%= link_to "https://github.com/tonysm/rich-text-laravel", "https://github.com/tonysm/rich-text-laravel", target: :_blank %><br>
-  <%= link_to "https://github.com/tonysm/importmap-laravel", "https://github.com/tonysm/importmap-laravel", target: :_blank %><br>
-  <%= link_to "https://github.com/tonysm/globalid-laravel", "https://github.com/tonysm/globalid-laravel", target: :_blank %><br>
+  <h3 class="mt-12 text-2xl font-bold">Setup</h3>
+
+  <%= link_to "Turbo Laravel Website & Documentation", "https://turbo-laravel.com", target: :_blank %><br>
+  <%= link_to "Stimulus Laravel", "https://github.com/hotwired-laravel/stimulus-laravel", target: :_blank %><br>
+  <%= link_to "Importmap Laravel", "https://github.com/tonysm/importmap-laravel", target: :_blank %><br>
+  <%= link_to "TailwindCSS Laravel", "https://github.com/tonysm/tailwindcss-laravel", target: :_blank %><br>
+  <%= link_to "Rich Text Laravel (Trix)", "https://github.com/tonysm/rich-text-laravel", target: :_blank %><br>
+
+  <h3 class="mt-12 text-2xl font-bold">Guides</h3>
+  
+  <%= link_to "LaravelNews Post Introducing Turbo Laravel", "https://laravel-news.com/use-basecamps-hotwire-in-laravel", target: :_blank %><br>
+  <%= link_to "Free Introduction Screencasts by Maintainer of Turbo Laravel (2021)", "https://www.tonysm.com/courses/hotwire-laravel/", target: :_blank %><br>
 <% end %>
