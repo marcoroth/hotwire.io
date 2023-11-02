@@ -1,0 +1,15 @@
+---
+title: Using Stimulus within Wagtail
+framework: Wagtail
+language: Python
+description: Wagtail is an open source CMS built on Django, with a strong community and commercial support. Focused on user experience with precise control for designers and developers.
+icon_class: devicon-python-plain text-5xl
+breadcrumb: Wagtail
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "Documentation", "https://docs.wagtail.org/en/stable/extending/extending_client_side.html#extending-with-stimulus", target: :_blank %><br>
+  <%= link_to "5.2 Release Notes", "https://docs.wagtail.org/en/stable/releases/5.2.html#support-extending-wagtail-client-side-with-stimulus", target: :_blank %><br>
+<% end %>
