@@ -1,0 +1,10 @@
+---
+title: Enhanced PostgreSQL Adapter for ActionCable
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "reclaim-the-stack/actioncable-enhanced-postgresql-adapter", "https://github.com/reclaim-the-stack/actioncable-enhanced-postgresql-adapter", target: :_blank %><br>
+  <%= link_to "Open Pull Request for upstreaming the adapter to Rails", "https://github.com/rails/rails/pull/49634", target: :_blank %><br>
+<% end %>
