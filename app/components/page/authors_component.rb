@@ -22,7 +22,11 @@ class Page::AuthorsComponent < ViewComponent::Base
     []
   end
 
+  def last_commit
+    commits.last
+  end
+
   def last_commit_date
-    commits.last&.author_date
+    last_commit.try(:author_date)
   end
 end

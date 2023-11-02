@@ -1,6 +1,6 @@
 <% if last_commit_date %>
   <div class="flex mt-24 mb-3 justify-between items-center content-center gap-3 border-t pt-6 border-gray-600">
-    <div>
+    <%= link_to helpers.github_commit_url(last_commit), target: :_blank do %>
       <% page_authors.each_with_index do |(name, email), index| %>
         <%= image_tag "https://avatars.githubusercontent.com/u/e?email=#{email}&s=128", class: "relative z-#{index * 10} inline-block h-6 w-6 rounded-full ring-1 ring-white", data: { controller: "tippy", tippy_content: name } %>
       <% end %>
@@ -8,7 +8,7 @@
       <span class="text-gray-300 ml-3">
         Last modified: <%= time_ago_in_words(last_commit_date) %> ago
       </span>
-    </div>
+    <% end %>
 
     <%= link_to helpers.github_edit_file_url(@paths.first), class: "text-gray-300 hover:text-white flex" do %>
       <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
