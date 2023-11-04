@@ -1,0 +1,12 @@
+---
+title: Drawers
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  Inspiration: <br>
+  <%= link_to "Vaul", "https://vaul.emilkowal.ski", target: :_blank %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>

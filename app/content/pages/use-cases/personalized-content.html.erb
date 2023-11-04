@@ -1,0 +1,11 @@
+---
+title: Personalized Content
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "Hotwire & Personalised Content", "https://domchristie.co.uk/posts/hotwire-personalised-content", target: :_blank %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>

@@ -1,0 +1,15 @@
+---
+title: "When to use button_to, link_to, remote: true, data-turbo-method etc."
+framework: rails
+library: turbo
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  Ahmed Nadar's series:<br>
+  <%= link_to "Part 1", "https://dev.to/ahmednadar/mastering-rails-web-navigation-with-linkto-and-buttonto-helpers-part-1-3gbg", target: :_blank %><br>
+  <%= link_to "Part 2", "https://dev.to/ahmednadar/mastering-rails-web-navigation-with-linkto-and-buttonto-helpers-part-2-4dk1", target: :_blank %><br>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>
