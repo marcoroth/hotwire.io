@@ -12,7 +12,15 @@ class Page::AuthorsComponent < ViewComponent::Base
   end
 
   def commits
-    @paths.flat_map { |path| git.gblob(path).log.to_a }.sort_by(&:author_date)
+    @commits ||= @paths.flat_map { |path| git.gblob(path).log.to_a }.sort_by(&:author_date)
+  end
+
+  def last_commit
+    @last_commit ||= commits.last
+  end
+
+  def last_commit_date
+    last_commit.try(:author_date)
   end
 
   def page_authors
@@ -20,13 +28,5 @@ class Page::AuthorsComponent < ViewComponent::Base
   rescue => e
     puts e
     []
-  end
-
-  def last_commit
-    commits.last
-  end
-
-  def last_commit_date
-    last_commit.try(:author_date)
   end
 end
