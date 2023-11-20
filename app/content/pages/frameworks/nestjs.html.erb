@@ -1,0 +1,15 @@
+---
+title: Getting started with Hotwire in NestJS
+framework: NestJS
+language: JavaScript
+description: A progressive Node.js framework for building efficient, reliable and scalable server-side applications.
+icon_class: devicon-nestjs-plain colored text-5xl
+breadcrumb: NestJS
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "Part I", "https://dev.to/mrispoli24/how-to-build-an-app-with-nestjs-and-hotwire-42j1" %><br>
+  <%= link_to "Part II", "https://dev.to/mrispoli24/kicking-the-tires-with-nestjs-and-hotwire-part-ii-33fh" %><br><br>
+<% end %>
