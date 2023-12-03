@@ -1,0 +1,14 @@
+---
+title: Getting started with Hotwire in ASP.NET
+framework: ASP.NET
+language: C#
+description: A framework for building web apps and services with .NET and C#.
+icon_class: devicon-dot-net-plain-wordmark text-5xl
+breadcrumb: ASP.NET
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>
