@@ -1,0 +1,14 @@
+---
+title: Getting started with Hotwire in Spring
+framework: Spring
+language: Java
+description: A popular Java framework that simplifies the development of modern, cloud-based applications.
+icon_class: devicon-spring-plain-wordmark colored text-7xl
+breadcrumb: Spring
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>
