@@ -1,0 +1,9 @@
+---
+title: Zest UI
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "Documentation", "https://zestui.com", target: :_blank %><br>
+<% end %>
