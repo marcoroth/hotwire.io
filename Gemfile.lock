@@ -347,6 +347,7 @@ DEPENDENCIES
   error_highlight (>= 0.4.0)
   frozen_record (~> 0.27.0)
   git (~> 1.18)
+  irb (~> 1.8)
   jbuilder
   jsbundling-rails
   markdown-rails (~> 1.0)
