@@ -53,4 +53,34 @@ The install command will automatically update your `application.html.erb` file w
 
 ## Pinning Imports
 
-Conceptually speaking, your import map in rails can be thought of as servering a similar purpose to a `package.json` file in an NPM package. It's where you declare (or "pin") the local and remote dependencies to be bundled into accessible JS modules for your app. 
+Conceptually speaking, your import map in rails can be thought of as servering a similar purpose to a `package.json` file in an NPM package. It's where you declare (or "pin") the local and remote dependencies to be bundled into accessible JS modules for your app. This is the role of the `config/importmap.rb` file.
+
+Pins can be added manually or using the `bin/importmap pin DEP_NAME` command. For example, pinning the `lodash` library to your import map can be done using:
+
+```sh
+$ bin/importmap pin lodash
+Pinning "lodash" to https://ga.jspm.io/npm:lodash@4.17.21/lodash.js
+```
+
+Which updates the `config/importmap.rb` file to with:
+
+```rb
+pin "lodash", to: "https://ga.jspm.io/npm:lodash@4.17.21/lodash.js"
+```
+
+Conversly, you can remove a pin by deleting its entry in the `config/importmap.rb` file or by running `bin/importmap unpin DEP_NAME`. After removing a pin, make sure to restart your development server.
+
+## Importing modules
+
+After pinning an module, you're able to import it into your `app/javascript/application.js` file. 
+
+```js
+// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+import _ from 'lodash';
+
+_.doSomethingWithLodash
+```
+
+## Conclusion
+
+This is the basic 
