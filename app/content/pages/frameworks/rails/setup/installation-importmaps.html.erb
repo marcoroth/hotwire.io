@@ -8,3 +8,49 @@ framework: rails
 
   <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
 <% end %>
+
+Hotwire is configured by default using import maps in the latest version of Rails 7+. This guide acknowledges and details the various files, gems, and configurations that allow this setup to work out of the box.
+
+## Getting Started
+
+Run the `rails new` command to create a fresh rails project. Once installed, open the Gemfile. Several gems are used to bundle all the required dependencies for the import maps + Hotwire setup. They are:
+
+```rb
+# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
+gem "importmap-rails"
+
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem "turbo-rails"
+
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem "stimulus-rails"
+```
+
+After successfully running `bundle install`, run `rails importmap:install` to add the required configurations and files to your project.
+
+```sh
+$ rails importmap:install
+       apply  /path_to/gems/importmap-rails-1.2.3/lib/install/install.rb
+  Add Importmap include tags in application layout
+      insert    app/views/layouts/application.html.erb
+  Create application.js module as entrypoint
+      create    app/javascript/application.js
+  Use vendor/javascript for downloaded pins
+      create    vendor/javascript
+      create    vendor/javascript/.keep
+  Ensure JavaScript files are in the Sprocket manifest
+      append    app/assets/config/manifest.js
+  Configure importmap paths in config/importmap.rb
+      create    config/importmap.rb
+  Copying binstub
+      create    bin/importmap
+         run  bundle install
+```
+
+## `javascript_importmap_tags`
+
+The install command will automatically update your `application.html.erb` file with an `<%= javascript_importmap_tags %>` ERB tag. The `<script>` tags that this helper generates and inserts into your page `<head>` are influenced by the configurations set in the `config/importmap.rb`.
+
+## Pinning Imports
+
+Conceptually speaking, your import map in rails can be thought of as servering a similar purpose to a `package.json` file in an NPM package. It's where you declare (or "pin") the local and remote dependencies to be bundled into accessible JS modules for your app. 
