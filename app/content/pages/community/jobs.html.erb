@@ -5,7 +5,7 @@ title: Jobs
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  https://railshotwirejobs.com/jobs<br>
-  https://rubyonremote.com/remote-hotwire-jobs/<br>
-  https://gorails.com/jobs<br>
+  <a href="https://railshotwirejobs.com/jobs">https://railshotwirejobs.com/jobs</a><br>
+  <a href="https://rubyonremote.com/remote-hotwire-jobs/">https://rubyonremote.com/remote-hotwire-jobs/</a><br>
+  <a href="https://gorails.com/jobs">https://gorails.com/jobs</a><br>
 <% end %>
