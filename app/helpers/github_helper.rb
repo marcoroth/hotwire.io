@@ -16,4 +16,8 @@ module GitHubHelper
   def github_commit_url(commit)
     "#{github_repo_url}/commit/#{commit.sha}"
   end
+
+  def github_author_image_url(email)
+    "https://avatars.githubusercontent.com/u/e?email=#{email}&s=128"
+  end
 end
