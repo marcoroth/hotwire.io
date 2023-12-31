@@ -85,7 +85,7 @@ GEM
       erubi (~> 1.4)
       parser (>= 2.4)
       smart_properties
-    bigdecimal (3.1.4)
+    bigdecimal (3.1.5)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -106,7 +106,7 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
-    drb (2.1.1)
+    drb (2.2.0)
       ruby2_keywords
     dry-cli (1.0.0)
     erb_lint (0.5.0)
@@ -162,7 +162,7 @@ GEM
     mini_portile2 (2.8.5)
     minitest (5.20.0)
     msgpack (1.7.2)
-    mutex_m (0.1.2)
+    mutex_m (0.2.0)
     net-imap (0.3.7)
       date
       net-protocol
@@ -307,7 +307,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
-    view_component (3.6.0)
+    view_component (3.8.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
@@ -365,7 +365,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
-  view_component (~> 3.6)
+  view_component (~> 3.8)
   vite_rails
   web-console
 
