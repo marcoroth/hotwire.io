@@ -13,7 +13,7 @@
     "autoprefixer": "^10.4.15",
     "chokidar": "^3.5.3",
     "devicon": "^2.15.1",
-    "esbuild": "^0.19.3",
+    "esbuild": "^0.19.11",
     "esbuild-rails": "^1.0.7",
     "postcss": "^8.4.31",
     "stimulus-vite-helpers": "^3.0.0",
