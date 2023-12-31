@@ -6,13 +6,19 @@
         <div class="h-full flex flex-col sm:flex-row lg:flex-col justify-between">
           <div class="mb-4 sm:mb-0">
             <div class="mb-4">
-              <!-- Logo -->
               <a class="block" href="/" aria-label="Hotwire.io">
-                <img src="<%= image_path("logo.svg") %>" width="100" height="100" alt="Hotwire.io">
+                <a href="/" aria-label="Hotwire">
+                  <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white/80 via-white to-white/80">Hotwire</h2>
+                </a>
               </a>
             </div>
-            <div class="text-sm text-slate-300">Hotwire.io <span class="text-slate-500">-</span> Community-maintained Hotwire Hub</div>
+            <a href="/about" class="text-sm text-slate-300 hover:text-white">Hotwire.io <span class="text-slate-300">-</span> Community-maintained Hotwire Hub</a>
+            <ul class="text-sm space-y-2 mt-6">
+              <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/about">About</a></li>
+              <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="https://github.com/marcoroth/hotwire.io" target="_blank">Source-Code</a></li>
+            </ul>
           </div>
+
         </div>
       </div>
 
@@ -21,11 +27,11 @@
           <a class="hover:text-slate-300 transition duration-150 ease-in-out" href="/ecosystem">Ecosystem</a>
         </h6>
         <ul class="text-sm space-y-2">
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/core">Core Libraries</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/extensions">Extending Core</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/new-concepts">New Concepts</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/helpers">Helper Libraries</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/tooling">Editor Tooling</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/core">Core Libraries</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/extensions">Extending Core</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/new-concepts">New Concepts</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/helpers">Helper Libraries</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/ecosystem/tooling">Editor Tooling</a></li>
         </ul>
       </div>
 
@@ -34,12 +40,12 @@
           <a class="hover:text-slate-300 transition duration-150 ease-in-out" href="/documentation">Documentation</a>
         </h6>
         <ul class="text-sm space-y-2">
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/turbo">Turbo</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/stimulus">Stimulus</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/strada">Strada</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/turbo-power">Turbo Power</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/turbo-morph">Turbo Morph</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/formulus">Formulus</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/turbo">Turbo</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/stimulus">Stimulus</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/strada">Strada</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/turbo-power">Turbo Power</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/turbo-morph">Turbo Morph</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/documentation/formulus">Formulus</a></li>
         </ul>
       </div>
 
@@ -48,14 +54,14 @@
           <a class="hover:text-slate-300 transition duration-150 ease-in-out" href="/frameworks">Framework Integrations</a>
         </h6>
         <ul class="text-sm space-y-2">
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/rails">Ruby on Rails</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/laravel">Laravel</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/symfony">Symfony</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/django">Django</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/wagtail">Wagtail</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/hanami">Hanami</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/roda">Roda</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/bridgetown">Bridgetown</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/rails">Ruby on Rails</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/laravel">Laravel</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/symfony">Symfony</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/django">Django</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/wagtail">Wagtail</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/hanami">Hanami</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/roda">Roda</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/frameworks/bridgetown">Bridgetown</a></li>
         </ul>
       </div>
 
@@ -64,15 +70,14 @@
           <a class="hover:text-slate-300 transition duration-150 ease-in-out" href="/community">Community</a>
         </h6>
         <ul class="text-sm space-y-2">
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/education">Education</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/articles">Articles</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/videos">Videos</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/blogs">Blogs</a></li>
-          <li><a class="text-slate-400 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/books">Books</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/education">Education</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/articles">Articles</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/videos">Videos</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/blogs">Blogs</a></li>
+          <li><a class="text-slate-300 hover:text-slate-200 transition duration-150 ease-in-out" href="/community/books">Books</a></li>
         </ul>
       </div>
 
     </div>
-
   </div>
 </footer>
