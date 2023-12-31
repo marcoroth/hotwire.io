@@ -5,7 +5,7 @@
       <div class="max-w-3xl mx-auto text-center pb-12">
         <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">For the community, by the community.</h2>
         <p class="text-xl text-neutral-400 mt-4">
-          Hotwire.io is a <b class="text-white">community-driven</b> effort and is <b class="text-white">not</b> affiliated with the <%= link_to "official Hotwire project", "https://hotwired.dev", target: :_blank, class: "font-bold text-neutral-300 hover:text-white" %> in any way.<br><br>
+          Hotwire.io is a <b class="text-white">community-driven</b> effort and is <b class="text-white">not</b> affiliated with the <%= link_to "official Hotwire project", "https://hotwired.dev", target: :_blank, class: "font-bold text-neutral-300 hover:text-white" %> in any way.<br/><br/>
 
           The purpose is to promote the entire Hotwire ecosystem, show framework-specific documentation, have a place to discover tools and libraries built for the Hotwire ecosystem and also have a place to showcase community created content like blog posts and videos.
         </p>
@@ -39,7 +39,7 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6">
         <% @git ||= (GitRepo.with_cloned_repo { Git.open(GitRepo.path) }) %>
-        <% contibutors = @git.log(600).all.map(&:author).map { |a| [a.name, a.email] }.reject {|a, b| b.ends_with?("@users.noreply.github.com")}.uniq(&:first).uniq(&:last).sort_by(&:last).shuffle %>
+        <% contibutors = @git.log(600).all.map(&:author).map { |a| [a.name, a.email] }.reject {|name, email| ["dependabot[bot]"].include?(name) }.uniq(&:first).uniq(&:last).sort_by(&:last).shuffle %>
 
         <% contibutors.each do |name, email| %>
           <div class="relative flex items-center justify-between py-4 pl-4 pr-3 inset-0 -z-10 border border-neutral-800 bg-opacity-40 bg-neutral-800 hover:bg-neutral-600 rounded-xl">
