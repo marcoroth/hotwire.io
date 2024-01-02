@@ -69,7 +69,7 @@ gem "view_component", "~> 3.8"
 gem "frozen_record", "~> 0.27.0"
 
 # Library to create, read and manipulate Git repositories
-gem "git", "~> 1.18"
+gem "git", "~> 1.19"
 
 # Ruby's bikeshed-proof linter and formatter
 gem "standard", "~> 1.31"

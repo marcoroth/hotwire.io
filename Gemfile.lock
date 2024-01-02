@@ -74,7 +74,7 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
-    addressable (2.8.5)
+    addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.1.1)
@@ -120,7 +120,7 @@ GEM
     erubi (1.12.0)
     frozen_record (0.27.0)
       activemodel
-    git (1.18.0)
+    git (1.19.0)
       addressable (~> 2.8)
       rchardet (~> 1.8)
     globalid (1.2.1)
@@ -185,7 +185,7 @@ GEM
     pg (1.5.4)
     psych (5.1.2)
       stringio
-    public_suffix (5.0.3)
+    public_suffix (5.0.4)
     puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.3)
@@ -347,7 +347,7 @@ DEPENDENCIES
   erb_lint (~> 0.5.0)
   error_highlight (>= 0.4.0)
   frozen_record (~> 0.27.0)
-  git (~> 1.18)
+  git (~> 1.19)
   irb (~> 1.11)
   jbuilder
   jsbundling-rails
