@@ -60,7 +60,7 @@ gem "markdown-rails", "~> 1.0"
 gem "redcarpet", "~> 3.6"
 
 # A pure Ruby code highlighter that is compatible with Pygments
-gem "rouge", "~> 4.1"
+gem "rouge", "~> 4.2"
 
 # A framework for building reusable, testable & encapsulated view components in Ruby on Rails.
 gem "view_component", "~> 3.8"
