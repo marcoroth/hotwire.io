@@ -10,8 +10,8 @@
     <%= csp_meta_tag %>
     <%= vite_client_tag %>
 
-    <%= vite_javascript_tag "packs/application", media: 'all', "data-turbo-track": "reload" %>
-    <%= vite_stylesheet_tag "packs/application", media: 'all', "data-turbo-track": "reload" unless ViteRuby.instance.dev_server_running? %>
+    <%= vite_javascript_tag "packs/application.js", media: 'all', "data-turbo-track": "reload" %>
+    <%= vite_stylesheet_tag "packs/application.js", media: 'all', "data-turbo-track": "reload" unless ViteRuby.instance.dev_server_running? %>
 
     <%= display_meta_tags title: current_page.data["title"] %>
 
