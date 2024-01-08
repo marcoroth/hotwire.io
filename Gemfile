@@ -72,7 +72,7 @@ gem "frozen_record", "~> 0.27.0"
 gem "git", "~> 1.19"
 
 # Ruby's bikeshed-proof linter and formatter
-gem "standard", "~> 1.31"
+gem "standard", "~> 1.33"
 
 # Lint your ERB or HTML files
 gem "erb_lint", "~> 0.5.0"
