@@ -63,7 +63,7 @@ gem "redcarpet", "~> 3.6"
 gem "rouge", "~> 4.2"
 
 # A framework for building reusable, testable & encapsulated view components in Ruby on Rails.
-gem "view_component", "~> 3.8"
+gem "view_component", "~> 3.9"
 
 # Read only ActiveRecord-like interface to query static YAML files
 gem "frozen_record", "~> 0.27.0"
