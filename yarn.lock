@@ -844,10 +844,10 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rollup-plugin-gzip@^3.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-gzip/-/rollup-plugin-gzip-3.1.0.tgz#ce439ba9cd212c0e2c131d91e6214044e8972485"
-  integrity sha512-PFS9s6/w6dCra6/Z8PGD+ug3aaaqKLDCbr5y1Ek71Wd4rQSmMnOqCIIMgwbYxZ9A/gjP3pCN6rA4pAG47jxF0w==
+rollup-plugin-gzip@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-gzip/-/rollup-plugin-gzip-3.1.1.tgz#b24ebc1dde5a7f16ac4918dceeab6ea6dc6a698c"
+  integrity sha512-KhRH3xc5TfbOFsnW0GrmMVf3KZF8oxXY8igqz0b/9JbY4WhRARq53isQPEYlrfgc8Mx3ofXoapfAPb7zyfyBeQ==
 
 rollup@^4.2.0:
   version "4.9.4"
@@ -985,43 +985,35 @@ util-deprecate@^1.0.2:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
-vite-plugin-environment@^1.1:
+vite-plugin-environment@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/vite-plugin-environment/-/vite-plugin-environment-1.1.3.tgz#d01a04abb2f69730a4866c9c9db51d3dab74645b"
   integrity sha512-9LBhB0lx+2lXVBEWxFZC+WO7PKEyE/ykJ7EPWCq95NEcCpblxamTbs5Dm3DLBGzwODpJMEnzQywJU8fw6XGGGA==
 
-vite-plugin-full-reload@^1.0:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/vite-plugin-full-reload/-/vite-plugin-full-reload-1.0.5.tgz#6cddfa94e51909843bc7156ab728dbac972b8560"
-  integrity sha512-kVZFDFWr0DxiHn6MuDVTQf7gnWIdETGlZh0hvTiMXzRN80vgF4PKbONSq8U1d0WtHsKaFODTQgJeakLacoPZEQ==
+vite-plugin-full-reload@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-full-reload/-/vite-plugin-full-reload-1.1.0.tgz#ca6fa32631024a459ea9e5613dd4c0ff0f3b7995"
+  integrity sha512-3cObNDzX6DdfhD9E7kf6w2mNunFpD7drxyNgHLw+XwIYAgb+Xt16SEXo0Up4VH+TMf3n+DSVJZtW2POBGcBYAA==
   dependencies:
     picocolors "^1.0.0"
     picomatch "^2.3.1"
 
-vite-plugin-manifest-sri@^0.1:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-manifest-sri/-/vite-plugin-manifest-sri-0.1.0.tgz#e2b9d0cebf7c7c307cee8aab3a8b3cf604bca921"
-  integrity sha512-m4gcEXwcA1MfCVYTLVHYsB03Xsc6L4VYfhxXmcYcS+rN3kTjuWkXMaA8OuOV1gFdi1bMJFkLTJCPciYApvCm/g==
+vite-plugin-manifest-sri@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-manifest-sri/-/vite-plugin-manifest-sri-0.2.0.tgz#cb1cfd11692ee81f5d1194926cbea6d3a38b8599"
+  integrity sha512-Zt5jt19xTIJ91LOuQTCtNG7rTFc5OziAjBz2H5NdCGqaOD1nxrWExLhcKW+W4/q8/jOPCg/n5ncYEQmqCxiGQQ==
 
-vite-plugin-rails@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-rails/-/vite-plugin-rails-0.1.0.tgz#e01f034f8b08c5159fe949592dd7709c5a9ffcd9"
-  integrity sha512-XA6rIgXwXnwHOr/o8BrTFyk7rsgzSC08ANm+pNSHeAHhbd9m1ItJZeY8N2Q47PweSYpQP28ic3pqd+lDSn2WVg==
+vite-plugin-rails@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-rails/-/vite-plugin-rails-0.5.0.tgz#fe29827b6f42abbc6e6537748963bb93871f468c"
+  integrity sha512-PR3zTHW96X8c7dRsuL2Mu1EAXXeO8fQjQ2KanwIC7EWgBST+D8AKjJyEUAr13IakrIYvd1cM3LcQUcrKmCMePg==
   dependencies:
-    rollup-plugin-gzip "^3.0"
-    vite-plugin-environment "^1.1"
-    vite-plugin-full-reload "^1.0"
-    vite-plugin-manifest-sri "^0.1"
-    vite-plugin-ruby "^3.1"
-    vite-plugin-stimulus-hmr "^3.0"
-
-vite-plugin-ruby@^3.1:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-ruby/-/vite-plugin-ruby-3.2.2.tgz#a174bc435b11350cfcb1b976342ca740d0bcaed2"
-  integrity sha512-cuHG1MajRWPR8YdfF6lvgsQRnKFEBRwZF//asFbRiI1psacxB5aPlHSvYZYxAu5IflrAa0MdR0HxEq+g98M3iQ==
-  dependencies:
-    debug "^4.3.4"
-    fast-glob "^3.2.12"
+    rollup-plugin-gzip "^3.1.0"
+    vite-plugin-environment "^1.1.3"
+    vite-plugin-full-reload "^1.1.0"
+    vite-plugin-manifest-sri "^0.2.0"
+    vite-plugin-ruby "^5.0.0"
+    vite-plugin-stimulus-hmr "^3.0.0"
 
 vite-plugin-ruby@^5.0.0:
   version "5.0.0"
@@ -1031,7 +1023,7 @@ vite-plugin-ruby@^5.0.0:
     debug "^4.3.4"
     fast-glob "^3.3.2"
 
-vite-plugin-stimulus-hmr@^3.0:
+vite-plugin-stimulus-hmr@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/vite-plugin-stimulus-hmr/-/vite-plugin-stimulus-hmr-3.0.0.tgz#60410a69486e86a8c1a769fe4b10039ac5f8d910"
   integrity sha512-KElOiZOlaG4XilQQHrzK8M1u5UfK4EFfADJKQYbnmsUMifDOnPR6anVYgHAN95QyWJ67Q/rYWe5BB9M5OxocfQ==

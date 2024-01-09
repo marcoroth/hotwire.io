@@ -20,7 +20,7 @@
     "swiper": "^11.0.5",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.0",
-    "vite-plugin-rails": "^0.1.0",
+    "vite-plugin-rails": "^0.5.0",
     "vite-plugin-ruby": "^5.0.0"
   },
   "dependencies": {
