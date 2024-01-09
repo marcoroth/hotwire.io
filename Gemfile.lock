@@ -148,9 +148,11 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.2)
-    markdown-rails (1.0.0)
-      rails
-      rdiscount (>= 1.6.8)
+    markdown-rails (2.1.0)
+      actionview (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
+      redcarpet (>= 3.0.0)
     matrix (0.4.2)
     meta-tags (2.20.0)
       actionpack (>= 6.0.0, < 7.2)
@@ -231,7 +233,6 @@ GEM
     rainbow (3.1.1)
     rake (13.1.0)
     rchardet (1.8.0)
-    rdiscount (2.2.7.1)
     rdoc (6.6.2)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
@@ -349,7 +350,7 @@ DEPENDENCIES
   irb (~> 1.11)
   jbuilder
   jsbundling-rails
-  markdown-rails (~> 1.0)
+  markdown-rails (~> 2.1)
   meta-tags
   pg (~> 1.1)
   puma (>= 5.0)
