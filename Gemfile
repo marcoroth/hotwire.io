@@ -54,7 +54,7 @@ gem "bootsnap", require: false
 gem "sitepress-rails"
 
 # Markdown as a static templating language
-gem "markdown-rails", "~> 1.0"
+gem "markdown-rails", "~> 2.1"
 
 # The safe Markdown parser, reloaded.
 gem "redcarpet", "~> 3.6"
