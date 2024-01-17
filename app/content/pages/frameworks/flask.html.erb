@@ -1,0 +1,14 @@
+---
+title: Getting started with Hotwire in Flask
+framework: Flask
+language: Python
+description: Python web framework that provides configuration, conventions, and extensions to create and deploy web applications.
+icon_class: devicon-flask-original text-5xl
+breadcrumb: Flask
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>

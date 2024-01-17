@@ -1,0 +1,59 @@
+<section>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="py-12 md:py-20">
+
+      <div class="max-w-3xl mx-auto text-center pb-12">
+        <h2 class="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">For the community, by the community.</h2>
+        <p class="text-xl text-neutral-400 mt-4">
+          Hotwire.io is a <b class="text-white">community-driven</b> effort and is <b class="text-white">not</b> affiliated with the <%= link_to "official Hotwire project", "https://hotwired.dev", target: :_blank, class: "font-bold text-neutral-300 hover:text-white" %> in any way.<br><br>
+
+          The purpose is to promote the entire Hotwire ecosystem, show framework-specific documentation, have a place to discover tools and libraries built for the Hotwire ecosystem and also have a place to showcase community created content like blog posts and videos.
+        </p>
+      </div>
+
+      <a href="https://hotwired.dev" target="_blank" class="max-w-3xl mx-auto block px-5 py-4 border border-neutral-800 rounded-lg shadow-sm text-white no-underline bg-opacity-40 bg-neutral-800 hover:bg-opacity-70">
+        <article class="flex items-start gap-5">
+          <div class="bg-orange bg-opacity-10 rounded-md p-2 relative">
+            <svg class="w-8" viewBox="0 0 314.62 320.9" xmlns="http://www.w3.org/2000/svg">
+              <path d="m145.35 104.25 17.94-58.55 11.76 60.1 44.82-41.74-19.87 57.93 59.68-13.74-46.17 40.24 58.55 17.94-60.1 11.76 41.74 44.81-57.93-19.87 13.74 59.69-40.24-46.18-17.94 58.56-11.76-60.11-44.81 41.75 19.87-57.93-59.68 13.74 46.17-40.24-58.56-17.94 60.11-11.76-41.75-44.82 57.94 19.87-13.75-59.68z" fill="#fff"></path>
+              <path d="m144.49 130.87-2.44-130.87 22.27 128.99 74.95-107.32-57.79 117.45 123.71-42.77-115.79 61.05 125.23 38.11-129.56-18.67 78.9 104.44-93.84-91.26 2.45 130.88-22.28-128.99-74.95 107.32 57.8-117.45-123.72 42.77 115.79-61.05-125.22-38.11 129.56 18.67-78.91-104.44z" fill="#fff"></path>
+              <path fill="#ffe000" d="m157.31 143.16 8.95-16.12-.3 18.43 15.81-9.48-9.48 15.81 18.43-.3-16.12 8.95 16.12 8.95-18.43-.31 9.48 15.81-15.81-9.48.3 18.43-8.95-16.11-8.95 16.11.31-18.43-15.81 9.48 9.48-15.81-18.43.31 16.11-8.95-16.11-8.95 18.43.3-9.48-15.81 15.81 9.48-.31-18.43z"></path>
+              <path fill="#ffe000" d="m155.39 150.94 7.48-38.68-1.52 39.37 28.78-26.9-24.37 30.95 39.1-4.84-37.91 10.72 34.47 19.07-36.96-13.62 16.68 35.69-21.91-32.74-7.48 38.68 1.53-39.37-28.79 26.89 24.37-30.95-39.09 4.84 37.91-10.71-34.48-19.07 36.97 13.61-16.68-35.69z"></path>
+            </svg>
+          </div>
+
+          <div>
+            <p class="mt-0 mb-1 text-base font-bold">Official website</p>
+            <p class="mb-0 mt-0 text-sm leading-6 text-neutral-400">
+              Visit the official website of the Hotwire project.
+            </p>
+          </div>
+        </article>
+      </a>
+
+      <div class="max-w-3xl mx-auto text-center mt-20 pb-12 md:pb-18">
+        <p class="text-2xl font-semibold text-white mt-4">
+          Hotwire.io is brought to you by these awesome members of the Hotwire community:
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 sm:gap-6">
+        <% @git ||= (GitRepo.with_cloned_repo { Git.open(GitRepo.path) }) %>
+        <% contibutors = @git.log(600).all.map(&:author).map { |a| [a.name, a.email] }.reject {|name, email| ["dependabot[bot]"].include?(name) }.uniq(&:first).uniq(&:last).sort_by(&:last).shuffle %>
+
+        <% contibutors.each do |name, email| %>
+          <div class="relative flex items-center justify-between py-4 pl-4 pr-3 inset-0 -z-10 border border-neutral-800 bg-opacity-40 bg-neutral-800 hover:bg-neutral-600 rounded-xl">
+            <div class="flex items-center space-x-4">
+              <%= image_tag github_author_image_url(email), class: "shrink-0 rounded-full", width: "48", height: "48", alt: name %>
+              <div class="grow">
+                <div class="font-bold text-slate-100 mb-0.5"><%= name %></div>
+                <div class="text-sm text-yellow-500 font-medium">Contributor</div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</section>
