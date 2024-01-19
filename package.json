@@ -10,7 +10,7 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "aos": "^2.3.4",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.17",
     "chokidar": "^3.5.3",
     "devicon": "^2.15.1",
     "esbuild": "^0.19.11",
