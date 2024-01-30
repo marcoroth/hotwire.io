@@ -10,9 +10,16 @@ breadcrumb: Django
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "https://github.com/hotwire-django", "https://github.com/hotwire-django", target: :_blank %><br>
-  <%= link_to "https://discuss.hotwired.dev/t/django-backend-support-for-hotwire/1570", "https://discuss.hotwired.dev/t/django-backend-support-for-hotwire/1570", target: :_blank %><br>
+  <h3 class="mt-12 text-2xl font-bold">Packages</h3>
 
-  <%= link_to "rails-inspire-django/django-turbo-helper", "https://github.com/rails-inspire-django/django-turbo-helper", target: :_blank %><br>
-  <%= link_to "rails-inspire-django/django-actioncable", "https://github.com/rails-inspire-django/django-actioncable", target: :_blank %><br>
+  <%= link_to "django-turbo-helper (Hotwire/Turbo helpers for Django)", "https://github.com/rails-inspire-django/django-turbo-helper", target: :_blank %><br>
+  <%= link_to "django-actioncable (Provides Rails Action Cable support to Django Channels)", "https://github.com/rails-inspire-django/django-actioncable", target: :_blank %><br>
+  <%= link_to "python-webpack-boilerplate (Django Webpack boilerplate & Flask Webpack boilerplate)", "https://github.com/AccordBox/python-webpack-boilerplate", target: :_blank %><br>
+
+  <h3 class="mt-12 text-2xl font-bold">Learning Resources</h3>
+
+  <%= link_to "Blog: How to create ChatGPT-alike interface with Hotwire, Django and Celery", "https://saashammer.com/blog/creating-chatgpt-interface-with-hotwire-django-celery/", target: :_blank %><br>
+  <%= link_to "Free ebook: Hotwire Django Tutorial", "https://github.com/rails-inspire-django/hotwire-django-tutorial", target: :_blank %><br>
+  <%= link_to "ebook: The Definitive Guide to Hotwire and Django", "https://leanpub.com/hotwire-django", target: :_blank %><br>
+
 <% end %>
