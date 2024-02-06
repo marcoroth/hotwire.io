@@ -12,7 +12,7 @@
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.17",
     "chokidar": "^3.5.3",
-    "devicon": "^2.15.1",
+    "devicon": "^2.16.0",
     "esbuild": "^0.20.0",
     "esbuild-rails": "^1.0.7",
     "postcss": "^8.4.33",
