@@ -11,7 +11,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.17",
-    "chokidar": "^3.5.3",
+    "chokidar": "^3.6.0",
     "devicon": "^2.16.0",
     "esbuild": "^0.20.0",
     "esbuild-rails": "^1.0.7",
