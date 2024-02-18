@@ -1,0 +1,10 @@
+---
+title: stimulus-store
+image: https://raw.githubusercontent.com/omarluq/stimulus-store/main/docs/images/stimulus_store_logo_bg_black_high_dif.png
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "omarluq/stimulus-store", "https://github.com/omarluq/stimulus-store", target: :_blank %><br>
+<% end %>
