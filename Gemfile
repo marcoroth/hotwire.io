@@ -66,7 +66,7 @@ gem "rouge", "~> 4.2"
 gem "view_component", "~> 3.10"
 
 # Read only ActiveRecord-like interface to query static YAML files
-gem "frozen_record", "~> 0.27.0"
+gem "frozen_record", "~> 0.27.1"
 
 # Library to create, read and manipulate Git repositories
 gem "git", "~> 1.19"
