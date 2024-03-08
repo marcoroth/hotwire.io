@@ -3,12 +3,8 @@ title: Installation using Importmaps
 framework: rails
 ---
 
-<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
-<% end %>
-
+<% markdown = capture do %>
 In Rails 7+, Hotwire is configured by default using import maps. This guide will walk you through the files, gems, and configurations essential for this setup, ensuring a smooth integration right out of the box. Further information on Import maps can also be found on [Rails Guides, Working with Javascript in Rails](https://guides.rubyonrails.org/working_with_javascript_in_rails.html).
 
 ## Setup
@@ -54,7 +50,7 @@ $ rails importmap:install
 
 ## 2. `javascript_importmap_tags`
 
-The installation command will automatically modify your `application.html.erb` file by adding the `<%= javascript_importmap_tags %>` ERB tag. The `<script>` tags inserted in your page header will correspond to the configurations in `config/importmap.rb`.
+The installation command will automatically modify your `application.html.erb` file by adding the `<%%= javascript_importmap_tags %>` ERB tag. The `<script>` tags inserted in your page header will correspond to the configurations in `config/importmap.rb`.
 
 ## 3. Pinning Imports
 
@@ -94,3 +90,13 @@ This makes the Turbo instance globally accessible via `window.Turbo`.
 ## Conclusion
 
 This guide provides a basic overview of setting up import maps in Rails 7. Each component discussed offers its own set of configurable options, allowing you to tailor the setup to your application's specific needs.
+
+<% end %>
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <div class="prose prose-invert max-w-full mt-6">
+    <%== render_markdown(markdown) %>
+  </div>
+<% end %>
