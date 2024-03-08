@@ -3,7 +3,6 @@ title: Installation using Importmaps
 framework: rails
 ---
 
-
 <% markdown = capture do %>
 In Rails 7+, Hotwire is configured by default using import maps. This guide will walk you through the files, gems, and configurations essential for this setup, ensuring a smooth integration right out of the box. Further information on Import maps can also be found on [Rails Guides, Working with Javascript in Rails](https://guides.rubyonrails.org/working_with_javascript_in_rails.html).
 
@@ -50,7 +49,7 @@ $ rails importmap:install
 
 ## 2. `javascript_importmap_tags`
 
-The installation command will automatically modify your `application.html.erb` file by adding the `<%%= javascript_importmap_tags %>` ERB tag. The `<script>` tags inserted in your page header will correspond to the configurations in `config/importmap.rb`.
+The installation command will automatically modify your `application.html.erb` file by adding the <code>&lt;%= javascript_importmap_tags %&gt;</code> ERB tag. The <code>&lt;script&gt;</code> tags inserted in your page header will correspond to the configurations in `config/importmap.rb`.
 
 ## 3. Pinning Imports
 
