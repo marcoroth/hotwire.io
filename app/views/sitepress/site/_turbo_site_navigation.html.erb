@@ -1,4 +1,4 @@
-<% pages = model.all.sort_by { |page| page.page.asset.path.to_s }.to_a %>
+<% pages = model.all.sort_by { |page| page.data.fetch(:order) }.to_a %>
 <% page = pages.find { |page| page.page.asset.path == current_page.asset.path } %>
 
 <% prev_page = pages[pages.index(page) - 1] %>

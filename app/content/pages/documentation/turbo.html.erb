@@ -9,7 +9,7 @@ title: Turbo
     <div>
       <h3 class="font-bold text-lg">Handbook</h3>
 
-      <% TurboHandbookModel.all.sort_by(&:request_path).each do |page| %>
+      <% TurboHandbookModel.all.sort_by(&:order).each do |page| %>
         <li>
           <a href="<%= page.request_path %>"> <%= page.data.fetch("title") %></a>
         </li>
@@ -19,7 +19,7 @@ title: Turbo
     <div>
       <h3 class="font-bold text-lg">Reference</h3>
 
-      <% TurboReferenceModel.all.sort_by(&:request_path).each do |page| %>
+      <% TurboReferenceModel.all.sort_by(&:order).each do |page| %>
         <li>
           <a href="<%= page.request_path %>"> <%= page.data.fetch("title") %></a>
         </li>

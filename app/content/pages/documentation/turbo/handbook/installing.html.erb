@@ -1,10 +1,11 @@
 ---
-title: Frames
+title: Installing
+order: 8
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <div class="prose prose-invert max-w-full mt-6">
-    <%== turbo_documentation_page("handbook/03_frames.md") %>
+    <%== turbo_documentation_page("handbook/08_installing.md") %>
 
     <%= render partial: "turbo_site_navigation", locals: { current_page: current_page, model: TurboHandbookModel } %>
   </div>

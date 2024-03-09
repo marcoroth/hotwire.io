@@ -1,10 +1,11 @@
 ---
-title: Installing
+title: Page Refreshes
+order: 3
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <div class="prose prose-invert max-w-full mt-6">
-    <%== turbo_documentation_page("handbook/07_installing.md") %>
+    <%== turbo_documentation_page("handbook/03_page_refreshes.md") %>
 
     <%= render partial: "turbo_site_navigation", locals: { current_page: current_page, model: TurboHandbookModel } %>
   </div>
