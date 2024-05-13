@@ -119,8 +119,10 @@ GEM
     erubi (1.12.0)
     frozen_record (0.27.1)
       activemodel
-    git (1.19.1)
+    git (2.0.0)
+      activesupport (>= 5.0)
       addressable (~> 2.8)
+      process_executer (~> 1.1)
       rchardet (~> 1.8)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -184,9 +186,10 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.6)
+    process_executer (1.1.0)
     psych (5.1.2)
       stringio
-    public_suffix (5.0.4)
+    public_suffix (5.0.5)
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
@@ -345,7 +348,7 @@ DEPENDENCIES
   debug
   erb_lint (~> 0.5.0)
   frozen_record (~> 0.27.1)
-  git (~> 1.19)
+  git (~> 2.0)
   irb (~> 1.13)
   jbuilder
   jsbundling-rails
