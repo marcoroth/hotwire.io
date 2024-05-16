@@ -4,7 +4,12 @@ title: Animations
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://animate.style<br>
-  https://yozu.co.uk/tech-blog-turbocharged-animations-introducing-hotwire-animate - https://hotwireanimate.com -   https://github.com/Project-X-Repo/hotwire-animate<br>
+  <ul>
+    <% UseCases::Animation.order(name: :asc).each do |link| %>
+      <li>
+        <%= link_to link.name, link.url, target: :_blank %>
+        <br>
+      </li>
+    <% end %>
+  </ul>
 <% end %>
