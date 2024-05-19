@@ -4,6 +4,7 @@ title: Autocomplete
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://github.com/afcapel/stimulus-autocomplete<br>
+  <ul>
+    <%= render partial: "components/link", collection: UseCases::Autocomplete.order(name: :asc) %>
+  </ul>
 <% end %>
