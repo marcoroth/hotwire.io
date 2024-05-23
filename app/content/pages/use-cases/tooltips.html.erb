@@ -4,8 +4,7 @@ title: Tooltips
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://atomiks.github.io/tippyjs/<br>
-  https://popper.js.org/<br>
-  https://getbootstrap.com/docs/5.3/components/tooltips/<br>
+  <ul>
+    <%= render partial: "components/link", collection: UseCases::Tooltip.all %>
+  </ul>
 <% end %>

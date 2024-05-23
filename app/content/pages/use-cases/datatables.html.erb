@@ -4,7 +4,7 @@ title: Datatables
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  <%= link_to "Grid.js", "https://github.com/grid-js/gridjs", target: :_blank %>
-  <%= link_to "Datatables.net", "https://datatables.net", target: :_blank %>
+  <ul>
+    <%= render partial: "components/link", collection: UseCases::Database.all %>
+  </ul>
 <% end %>

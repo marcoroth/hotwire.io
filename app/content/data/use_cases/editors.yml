@@ -1,0 +1,26 @@
+# Rich Text Editors
+- name: Trix
+  url: https://trix-editor.org
+- name: Rhino
+  url: https://rhino-editor.vercel.app
+- name: RicherText
+  url: https://richer-text.vercel.app
+
+# Libraries for building Rich Text Editors
+- name: Tiptap
+  url: https://tiptap.dev
+- name: ProseMirror
+  url: https://prosemirror.net
+- name: Lexical
+  url: https://lexical.dev
+
+# Rails
+- name: Action Text Guides
+  url: https://edgeguides.rubyonrails.org/action_text_overview.html
+
+# Laravel
+
+- name: Rich Text Laravel
+  url: https://github.com/tonysm/rich-text-laravel
+- name: Introductiont to Rich Text Laravel (screencast)
+  url: https://www.youtube.com/watch?v=VX4-4iWnGIo

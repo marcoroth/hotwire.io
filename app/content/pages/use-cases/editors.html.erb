@@ -5,24 +5,25 @@ title: WYSIWYG Editors
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <h3 class="mt-12 text-2xl font-bold">Rich Text Editors</h3>
+  <% links = UseCases::Editor.all %>
 
-  <%= link_to "Trix", "https://trix-editor.org", target: :_blank %><br>
-  <%= link_to "Rhino", "https://rhino-editor.vercel.app", target: :_blank %><br>
-  <%= link_to "RicherText", "https://richer-text.vercel.app", target: :_blank %><br>
+  <h3 class="mt-12 text-2xl font-bold">Rich Text Editors</h3>
+  <ul>
+    <%= render partial: "components/link", collection: links[0..2] %>
+  </ul>
 
   <h3 class="mt-12 text-2xl font-bold">Libraries for building Rich Text Editors</h3>
-
-  <%= link_to "Tiptap", "https://tiptap.dev", target: :_blank %><br>
-  <%= link_to "ProseMirror", "https://prosemirror.net", target: :_blank %><br>
-  <%= link_to "lexical", "https://lexical.dev", target: :_blank %><br>
+  <ul>
+    <%= render partial: "components/link", collection: links[3..5] %>
+  </ul>
 
   <h3 class="mt-12 text-2xl font-bold">Rails</h3>
-
-  <%= link_to "Action Text Guides", "https://edgeguides.rubyonrails.org/action_text_overview.html", target: :_blank %><br>
+  <ul>
+    <%= render partial: "components/link", collection: links[6..6] %>
+  </ul>
 
   <h3 class="mt-12 text-2xl font-bold">Laravel</h3>
-
-  <%= link_to "Rich Text Laravel", "https://github.com/tonysm/rich-text-laravel", target: :_blank %><br>
-  <%= link_to "Introductiont to Rich Text Laravel (screencast)", "https://www.youtube.com/watch?v=VX4-4iWnGIo", target: :_blank %><br>
+  <ul>
+    <%= render partial: "components/link", collection: links[7..8] %>
+  </ul>
 <% end %>
