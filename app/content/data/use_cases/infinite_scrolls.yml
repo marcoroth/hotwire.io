@@ -1,0 +1,6 @@
+- name: Using Fetch
+  url: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+- name: RequestJS @ GitHub
+  url: https://github.com/rails/request.js
+- name: RequestJS-Rails @ GitHub
+  url: https://github.com/rails/requestjs-rails
