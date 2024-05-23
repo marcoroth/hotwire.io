@@ -119,7 +119,7 @@ GEM
     erubi (1.12.0)
     frozen_record (0.27.1)
       activemodel
-    git (2.0.0)
+    git (2.0.1)
       activesupport (>= 5.0)
       addressable (~> 2.8)
       process_executer (~> 1.1)
