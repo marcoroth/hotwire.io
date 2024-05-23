@@ -3,9 +3,4 @@ title: HTML5 Canvas
 subtitle: Interacting with the HTML5 Canvas
 ---
 
-<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("subtitle")) %>
-  <ul>
-    <%= render partial: "components/link", collection: UseCases::Html5Canvas.all %>
-  </ul>
-<% end %>
+<%= render partial: "components/link_collection", locals: { collection: UseCases::Html5Canvas.all } %>

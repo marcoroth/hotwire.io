@@ -3,9 +3,4 @@ title: AJAX
 subtitle: Asynchronous JavaScript HTTP Requests (AJAX)
 ---
 
-<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <%= render UI::TitleComponent.new(title: current_page.data.fetch("subtitle")) %>
-  <ul>
-    <%= render partial: "components/link", collection: UseCases::Http.all %>
-  </ul>
-<% end %>
+<%= render partial: "components/link_collection", locals: { collection: UseCases::Http.all } %>

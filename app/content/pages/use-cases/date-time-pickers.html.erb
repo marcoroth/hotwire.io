@@ -2,9 +2,4 @@
 title: Date and Time Pickers
 ---
 
-<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
-  <% page.with_title(title: current_page.data.fetch("title")) %>
-  <ul>
-    <%= render partial: "components/link", collection: UseCases::DateTimePicker.all %>
-  </ul>
-<% end %>
+<%= render partial: "components/link_collection", locals: { collection: UseCases::DateTimePicker.all } %>
