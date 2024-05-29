@@ -1,7 +1,8 @@
 - name: Turn
-  url: https://github.com/domchristie/turn<br>
-- name: Turbo PR for transitions
-  url: https://github.com/hotwired/turbo/pull/935<br>
+  url: https://github.com/domchristie/turn
+
 - name: Swup
   url: https://swup.js.org
 
+- name: Turbo PR for transitions
+  url: https://github.com/hotwired/turbo/pull/935

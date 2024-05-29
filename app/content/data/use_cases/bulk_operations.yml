@@ -1,8 +1,11 @@
-- name: Go Rails episode - Bulk Operations in Rails
+- name: GoRails episode - Bulk Operations in Rails
   url: https://gorails.com/episodes/bulk-operations-in-rails
+
 - name: Stimulus-Checkbox Select All Tutorial
   url: https://www.stimulus-components.com/docs/stimulus-checkbox-select-all
+
 - name: Tony Messias - Bulk Operations With Turbo
   url: https://world.hey.com/tonysm/bulk-operations-with-turbo-0566ccae
+
 - name: Tony Messias's Tweet on Bulk Operations With Turbo
   url: https://twitter.com/tonysmdev/status/1704143245167530424

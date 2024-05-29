@@ -1,4 +1,5 @@
 - name: Flatpickr - a lightweight and powerful datetime picker
   url: https://flatpickr.js.org
+
 - name: Stimulus-flatpickr (Repo at GitHub)
   url: https://github.com/adrienpoly/stimulus-flatpickr
