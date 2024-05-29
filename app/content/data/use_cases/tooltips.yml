@@ -1,0 +1,8 @@
+- name: Tippy.js
+  url: https://atomiks.github.io/tippyjs/
+
+- name: Popper.js
+  url: https://popper.js.org/
+
+- name: Bootstrap Tooltips
+  url: https://getbootstrap.com/docs/5.3/components/tooltips/

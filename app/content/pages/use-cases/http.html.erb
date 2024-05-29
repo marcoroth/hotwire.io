@@ -5,8 +5,7 @@ subtitle: Asynchronous JavaScript HTTP Requests (AJAX)
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <%= render UI::TitleComponent.new(title: current_page.data.fetch("subtitle")) %>
-
-  https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch<br>
-  https://github.com/rails/request.js<br>
-  https://github.com/rails/requestjs-rails<br>
+  <ul>
+    <%= render partial: "components/link", collection: UseCases::Http.all %>
+  </ul>
 <% end %>

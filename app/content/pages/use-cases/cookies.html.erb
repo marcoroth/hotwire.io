@@ -5,5 +5,7 @@ title: Cookies
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <%= render UI::TitleComponent.new(title: current_page.data.fetch("title")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <ul>
+    <%= render partial: "components/link", collection: UseCases::Cookie.all %>
+  </ul>
 <% end %>

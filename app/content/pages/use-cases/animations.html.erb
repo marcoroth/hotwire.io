@@ -4,7 +4,7 @@ title: Animations
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  https://animate.style<br>
-  https://yozu.co.uk/tech-blog-turbocharged-animations-introducing-hotwire-animate - https://hotwireanimate.com -   https://github.com/Project-X-Repo/hotwire-animate<br>
+  <ul>
+    <%= render partial: "components/link", collection: UseCases::Animation.all %>
+  </ul>
 <% end %>

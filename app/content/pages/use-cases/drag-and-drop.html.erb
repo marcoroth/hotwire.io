@@ -4,14 +4,7 @@ title: Drag and Drop
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
-
-  <ul>
-    <li>
-      <%= link_to "https://code.avi.nyc/turbo-forms-drag-and-drop-in-ruby-on-rails-part-1", "https://code.avi.nyc/turbo-forms-drag-and-drop-in-ruby-on-rails-part-1" %>
-    </li>
-    <li>
-      <%= link_to "https://maful.web.id/posts/build-drag-and-drop-with-rails-hotwire", "https://maful.web.id/posts/build-drag-and-drop-with-rails-hotwire" %>
-    </li>
-  </ul>
-
+    <ul>
+      <%= render partial: "components/link", collection: UseCases::DragAndDrop.all %>
+    </ul>
 <% end %>

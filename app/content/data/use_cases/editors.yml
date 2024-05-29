@@ -1,0 +1,41 @@
+# Rich Text Editors
+- name: Trix
+  url: https://trix-editor.org
+  category: rich-text-editor
+
+- name: Rhino
+  url: https://rhino-editor.vercel.app
+  category: rich-text-editor
+
+- name: RicherText
+  url: https://richer-text.vercel.app
+  category: rich-text-editor
+
+# Libraries for building Rich Text Editors
+- name: Tiptap
+  url: https://tiptap.dev
+  category: low-level
+
+- name: ProseMirror
+  url: https://prosemirror.net
+  category: low-level
+
+- name: Lexical
+  url: https://lexical.dev
+  category: low-level
+
+
+# Rails
+- name: Action Text Guides
+  url: https://edgeguides.rubyonrails.org/action_text_overview.html
+  category: rails
+
+# Laravel
+
+- name: Rich Text Laravel
+  url: https://github.com/tonysm/rich-text-laravel
+  category: laravel
+
+- name: Introductiont to Rich Text Laravel (screencast)
+  url: https://www.youtube.com/watch?v=VX4-4iWnGIo
+  category: laravel
