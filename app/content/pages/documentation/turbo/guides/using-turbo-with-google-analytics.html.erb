@@ -1,0 +1,12 @@
+---
+title: Using Turbo with Google Analytics
+library: turbo
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  https://github.com/hotwired/turbo/issues/572
+
+  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+<% end %>
