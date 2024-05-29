@@ -5,25 +5,23 @@ title: WYSIWYG Editors
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <% links = UseCases::Editor.all %>
-
   <h3 class="mt-12 text-2xl font-bold">Rich Text Editors</h3>
   <ul>
-    <%= render partial: "components/link", collection: links[0..2] %>
+    <%= render partial: "components/link", collection: UseCases::Editor.where(category: "rich-text-editor") %>
   </ul>
 
   <h3 class="mt-12 text-2xl font-bold">Libraries for building Rich Text Editors</h3>
   <ul>
-    <%= render partial: "components/link", collection: links[3..5] %>
+    <%= render partial: "components/link", collection: UseCases::Editor.where(category: "low-level") %>
   </ul>
 
   <h3 class="mt-12 text-2xl font-bold">Rails</h3>
   <ul>
-    <%= render partial: "components/link", collection: links[6..6] %>
+    <%= render partial: "components/link", collection: UseCases::Editor.where(category: "rails") %>
   </ul>
 
   <h3 class="mt-12 text-2xl font-bold">Laravel</h3>
   <ul>
-    <%= render partial: "components/link", collection: links[7..8] %>
+    <%= render partial: "components/link", collection: UseCases::Editor.where(category: "laravel") %>
   </ul>
 <% end %>
