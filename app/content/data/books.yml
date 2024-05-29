@@ -18,3 +18,6 @@
 
 - name: The Definitive Guide to Hotwire and Django (2.0.0)
   url: https://leanpub.com/hotwire-django
+
+- name: Hypermedia Systems
+  url: https://hypermedia.systems/book/contents
