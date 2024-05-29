@@ -10,7 +10,7 @@ breadcrumb: ASP.NET
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <h3 class="mt-12 text-2xl font-bold">Examples</h3><br/>
+  <h3 class="mt-12 text-2xl font-bold">Examples</h3><br>
 
   <%= link_to "aspnet-hotwire", "https://github.com/matthewblott/aspnet-hotwire", target: :_blank %><br>
   <%= link_to "aspnet-hotwire-nodeless", "https://github.com/matthewblott/aspnet-hotwire-nodeless", target: :_blank %><br>
