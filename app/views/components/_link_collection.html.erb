@@ -1,0 +1,10 @@
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+  <% if collection.empty? %>
+    <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <% else %>
+    <ul>
+      <%= render partial: "components/link", collection: collection %>
+    </ul>
+  <% end %>
+<% end %>

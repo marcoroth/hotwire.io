@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
 module UseCases
-  class OptimisticUi < FrozenRecord::Base
+  class OptimisticUI < FrozenRecord::Base
   end
 end
