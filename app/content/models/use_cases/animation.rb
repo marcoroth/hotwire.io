@@ -1,4 +1,4 @@
 module UseCases
-  class BulkOperationAnimation < FrozenRecord::Base
+  class Animation < FrozenRecord::Base
   end
 end
