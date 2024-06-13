@@ -19,7 +19,7 @@
     "stimulus-vite-helpers": "^3.1.0",
     "swiper": "^11.1.4",
     "tailwindcss": "^3.4.4",
-    "vite": "^5.2.13",
+    "vite": "^5.3.0",
     "vite-plugin-rails": "^0.5.0",
     "vite-plugin-ruby": "^5.0.0"
   },
