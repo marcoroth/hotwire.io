@@ -1,0 +1,12 @@
+---
+title: Hotwire Dev Tools
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  Hotwire Dev Tools is a browser extension to inspect Turbo and Stimulus applications.
+  <br><br>
+
+  <%= link_to "leonvogt/hotwire-dev-tools", "https://github.com/leonvogt/hotwire-dev-tools", target: :_blank %><br>
+<% end %>
