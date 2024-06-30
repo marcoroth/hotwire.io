@@ -1,2 +1,11 @@
-- name: Hotwire: The Demo
+- name: "Hotwire: The Demo"
   url: https://www.youtube.com/watch?v=eKY-QES1XQQ
+
+- name: Making a difference with Turbo
+  url: https://www.youtube.com/watch?v=m97UsXa6HFg
+
+- name: "Hotwire Cookbook: Common Uses, Essential Patterns & Best Practices"
+  url: https://www.youtube.com/watch?v=F75k4Oc6g9Q
+
+- name: Generate Barcodes with JsBarcode. StimulusJS, Importmaps
+  url: https://www.youtube.com/watch?v=urqESWSVzH0
