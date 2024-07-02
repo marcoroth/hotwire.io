@@ -15,7 +15,7 @@
     "devicon": "^2.16.0",
     "esbuild": "^0.23.0",
     "esbuild-rails": "^1.0.7",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.39",
     "stimulus-vite-helpers": "^3.1.0",
     "swiper": "^11.1.4",
     "tailwindcss": "^3.4.4",
