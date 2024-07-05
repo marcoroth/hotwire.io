@@ -8,5 +8,9 @@ additional_credit_paths:
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <%= content_tag :div, class: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-4" do %>
+    <% Video.order(name: :asc).each do |video| %>
+      <%= render Page::VideoResourceCardComponent.new(resource: video) %>
+    <% end %>
+  <% end %>
 <% end %>
