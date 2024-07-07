@@ -1,6 +1,9 @@
 - name: "Hotwire: The Demo"
   url: https://www.youtube.com/watch?v=eKY-QES1XQQ
 
+- name: Introduction to Hotwire
+  url: https://www.youtube.com/watch?v=QJVa6AwK5u8
+
 - name: Making a difference with Turbo
   url: https://www.youtube.com/watch?v=m97UsXa6HFg
 
@@ -9,3 +12,192 @@
 
 - name: Generate Barcodes with JsBarcode. StimulusJS, Importmaps
   url: https://www.youtube.com/watch?v=urqESWSVzH0
+
+- name: Rails World 2023 Opening Keynote
+  url: https://www.youtube.com/watch?v=iqXjGiQ_D-A
+
+- name: The Future of Rails as a Full-Stack Framework powered by Hotwire
+  url: https://www.youtube.com/watch?v=iRjei4nj41o
+
+- name: DataTables without page refresh using Hotwire Turbo Frames
+  url: https://www.youtube.com/watch?v=JUI2Y5tFxj4
+
+- name: Bulk Operations with Turbo
+  url: https://www.youtube.com/watch?v=LLYC9BXwUgA
+
+- name: Advanced Hotwire modals
+  url: https://www.youtube.com/watch?v=DmBBjEQJ2u8
+
+- name: Custom Turbo Streams. How to redirect from a form that is inside a turbo frame?
+  url: https://www.youtube.com/watch?v=OZuLvOYy1Ss
+
+- name: Refactoring Hotwire Modals
+  url: https://www.youtube.com/watch?v=DKKhTutLT5U
+
+- name: "Part 1: Supplement Stack Sharing App with Ruby on Rails"
+  url: https://www.youtube.com/watch?v=uef6vBXyY0M
+
+- name: Turbo 8 Morphing in real life
+  url: https://www.youtube.com/watch?v=ltoAB6vnZ5o
+
+- name: Digging into Turbo 8s Morphing
+  url: https://www.youtube.com/watch?v=wURcezOECD0
+
+- name: Daily Log code deep dive - Strada
+  url: https://www.youtube.com/watch?v=v5XQ_KHEzOc
+
+- name: TurboBoost Commands + ActiveSupport::Rescuable == ❤️
+  url: https://www.youtube.com/watch?v=37dLz-hR7Vk
+
+- name: How to use Bun with Ruby on Rails
+  url: https://www.youtube.com/watch?v=XzXKZduCvII
+
+- name: Turbo Native + Rails live Q&A
+  url: https://www.youtube.com/watch?v=z5vlVeLf9Nw
+
+- name: How to Add Live Reload to Your Rails Application
+  url: https://www.youtube.com/watch?v=Pf3Kpbb4ZHg
+
+- name: The New Hotwire Combobox Rails Gem
+  url: https://www.youtube.com/watch?v=gq8Y289zY9o
+
+- name: "Fullstack LMS: Ruby on Rails 7, Hotwire, Tailwind, Stripe, PostgreSQL"
+  url: https://www.youtube.com/watch?v=HDA9QiHgrsI
+
+- name: Turbo 8, Live Components & Challenges in Morphing
+  url: https://www.youtube.com/watch?v=rs0GDMImzjA
+
+- name: Digging into View Transitions with Turbo 8 and Rails
+  url: https://www.youtube.com/watch?v=gdePV0Beihg
+
+- name: "Turbolist Rails build — part 1: the Superlist walkthrough"
+  url: https://www.youtube.com/watch?v=XANgCLOdqKc
+
+- name: Turbo 8 and Turbo Native
+  url: https://www.youtube.com/watch?v=KHLLZdhb50g
+
+- name: Add Geolocation to Search with Rails and Stimulus.js
+  url: https://www.youtube.com/watch?v=GkqZoIK1HhY
+
+- name: "Back to morphing: working on Turbo 8 & LiveComponents"
+  url: https://www.youtube.com/watch?v=8mjUnzR_UTs
+
+- name: A principle programmer at 37Signals taught me Rails Turbo
+  url: https://www.youtube.com/watch?v=75TwYk6xPR4
+
+- name: Turbo Native live coding
+  url: https://www.youtube.com/watch?v=c__q85LA_do
+
+- name: "Desire fulfilled: Creating Chat-GPT using Turbo + Tailwind"
+  url: https://www.youtube.com/watch?v=yHIwy45uGyg&list=PLvpu5WTDxTKU9nPc27-OVtr2ujxg4Hi6H&index=1
+
+- name: Why You Really Don't Need SPA with Hotwire
+  url: https://www.youtube.com/watch?v=JzxZSs161oU
+
+- name: Instant page loads with Turbo 8 prefetch (aka InstantClick)
+  url: https://www.youtube.com/watch?v=CxWPMnRoud0
+
+- name: Live Coding with Jose Farias from 37Signals - Hotwire Combobox Gem
+  url: https://www.youtube.com/watch?v=V5DSLfNwuTg
+
+- name: Showing Progress of Background Jobs with Turbo
+  url: https://www.youtube.com/watch?v=t5GN2mMX3Fs
+
+- name: Ruby on Rails Turbo App in 10 Minutes
+  url: https://www.youtube.com/watch?v=t1Jzl8ZV8DI
+
+- name: SF Bay Area Ruby Meetup, March 2024
+  url: https://www.youtube.com/watch?v=9-PWz9nbrT8&t=1605s
+
+- name: Frontend Ruby with Glimmer DSL for Web by Andy Maleh
+  url: https://www.youtube.com/watch?v=rIZ-ILUv9ME
+
+- name: Removing Elements Using Turbo Drive Hotwire
+  url: https://www.youtube.com/watch?v=kvlFAFaspIU
+
+- name: How to add a Realtime Search Filter in Ruby on Rails 7
+  url: https://www.youtube.com/watch?v=utuVo6xKIOs
+
+- name: Realtime Docker API Gem with Xterm Logs for Rails
+  url: https://www.youtube.com/watch?v=kIRBzIuXTL0
+
+- name: Rails Developer Answers Questions About Hotwire
+  url: https://www.youtube.com/watch?v=P83KOGl7c2c
+
+- name: Dark Mode for Rails with Tailwind and Stimulus
+  url: https://www.youtube.com/watch?v=gLpBdBvXcPg
+
+- name: "From React to Hotwire: The Adventures of a Frontend Migration"
+  url: https://www.youtube.com/watch?v=7m-yMmXlZaA
+
+- name: How to Start Creating Mobile Apps Using Rails and Turbo Native
+  url: https://www.youtube.com/watch?v=Lm-FPn-LmZw
+
+- name: Update Model with Checkbox using Turbo Morphing
+  url: https://www.youtube.com/watch?v=dB7vFHX7aqY
+
+- name: Toggle Stream Mode w/ Stimulus & Rails
+  url: https://www.youtube.com/watch?v=K29hQdLFbpY
+
+- name: Headless UI with StimulusJS and an Outlet
+  url: https://www.youtube.com/watch?v=fvm0F_f5oBA
+
+- name: Unlocking Turbo on Solidus and Ruby on Rails 7
+  url: https://www.youtube.com/watch?v=poF2JngmpdE
+
+- name: Build a Progressive Web App for Rails
+  url: https://www.youtube.com/watch?v=XO-YRWyXjLI
+
+- name: Weight Tracking with Apex Charts and Tailwind
+  url: https://www.youtube.com/watch?v=CfUuCwDQupI
+
+- name: Build A Ruby on Rails IOS App With Turbo IOS Framework
+  url: https://www.youtube.com/watch?v=XuA4uezDgoY
+
+- name: How To Build An Android App With Ruby on Rails & Turbo Android
+  url: https://www.youtube.com/watch?v=IlIfAWAUDR8
+
+- name: "How To Use Strada: Better Native Experiences For Ruby on Rails Mobile Apps"
+  url: https://www.youtube.com/watch?v=y34_vBwFFZY
+
+- name: Exploring Turbo IOS Framework For Ruby on Rails Mobile Apps
+  url: https://www.youtube.com/watch?v=g46yEcnqPPA
+
+- name: Rails Developer Answers Questions about Strada
+  url: https://www.youtube.com/watch?v=mlaiA48AXaU
+
+- name: Hotwire Comments with Ruby on Rails
+  url: https://www.youtube.com/watch?v=WSzliaAeRVU
+
+- name: Multi Step Forms in Ruby on Rails 7 - Using Turbo
+  url: https://www.youtube.com/watch?v=vCOmpXkV7uo
+
+- name: Adding An Animated Loading Screen with Turbo Tutorial
+  url: https://www.youtube.com/watch?v=lXxFzPU-_uE
+
+- name: Where do I store my HTML state in HOTWire and Stimulus.js
+  url: https://www.youtube.com/watch?v=9wf9yXVJ2d8
+
+- name: Make your tables alive with turbo streams. Redirect vs Turbo Streaming. Which one to choose?
+  url: https://www.youtube.com/watch?v=hc1C0r4a1J4
+
+- name: How to implement infinite scroll pagination for a table using Rails Hotwire Turbo
+  url: https://www.youtube.com/watch?v=khnKX5lqSdE
+
+- name: Modal Dark Mode and Form Field Components
+  url: https://www.youtube.com/watch?v=C5ES6s9xPvE
+
+- name: "Turbo 8: Streams and Morph"
+  url: https://www.youtube.com/watch?v=MQEb2YXxKuA
+
+- name: Rails Hotwire Voting and Flash Messages
+  url: https://www.youtube.com/watch?v=AyfPL6FSoRI
+
+- name: How to close modal after save in Rails (Turbo & Stimulus)
+  url: https://www.youtube.com/watch?v=DTyzFw9JhYs
+
+- name: Inertia JS on Rails Made Easy with React and Tailwind
+  url: https://www.youtube.com/watch?v=YWjA6gR_Lr8
+
+- name: Build a Todo List App with Ruby & Hotwire
+  url: https://www.youtube.com/watch?v=DSlwHE_6aqg
