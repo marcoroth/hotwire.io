@@ -129,7 +129,7 @@ GEM
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.13.2)
+    irb (1.14.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.12.0)
@@ -353,7 +353,7 @@ DEPENDENCIES
   erb_lint (~> 0.5.0)
   frozen_record (~> 0.27.2)
   git (~> 2.1)
-  irb (~> 1.13)
+  irb (~> 1.14)
   jbuilder
   jsbundling-rails
   markdown-rails (~> 2.1)
