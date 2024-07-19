@@ -5,6 +5,25 @@ class Page::VideoResourceCardComponent < Page::ResourceCardComponent
     "https://img.youtube.com/vi/#{video_id}/maxresdefault.jpg"
   end
 
+  def language_emoji
+    case @resource.language.downcase
+    when "english"
+      "🇬🇧"
+    when "french"
+      "🇫🇷"
+    when "japanese"
+      "🇯🇵"
+    when "portuguese"
+      "🇵🇹"
+    when "spanish"
+      "🇪🇸"
+    when "german"
+      "🇩🇪"
+    else
+      @resource.language
+    end
+  end
+
   private
 
   def video_id

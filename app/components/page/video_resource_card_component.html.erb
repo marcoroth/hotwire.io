@@ -1,6 +1,6 @@
 <% if video = @resource.url %>
   <%= link_to video, class: "hover:opacity-75", target: :_blank do %>
     <%= image_tag image_path(thumbnail_url), class: "border border-gray-700 rounded-lg", alt: @resource.name %>
-    <p class="text-md font-semibold mt-2"><%= @resource.name %></p>
+    <p class="text-md font-semibold mt-2"><%= language_emoji %> <%= @resource.name %></p>
   <% end %>
 <% end %>
