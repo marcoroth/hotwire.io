@@ -271,3 +271,15 @@
 - name: Build a Todo List App with Ruby & Hotwire
   url: https://www.youtube.com/watch?v=DSlwHE_6aqg
   language: English
+
+- name: Turbolinksアレルギー患者に捧げるTurbo & Stimulusでの時短実装術 (Using Turbo & Stimulus for faster development)
+  url: https://www.youtube.com/watch?v=8Rdxv7kk7-Y
+  language: Japanese
+
+- name: Hotwire的な設計を追求して「Web紙芝居」に行き着いた話 (Designing Hotwire app)
+  url: https://www.youtube.com/watch?v=xfjBsbT1L_M
+  language: Japanese
+
+- name: Hotwireを使って管理画面を簡単にプチSPA化する (Using Hotwire for admin interface)
+  url: https://www.youtube.com/watch?v=HXoH93yMwPM
+  language: Japanese
