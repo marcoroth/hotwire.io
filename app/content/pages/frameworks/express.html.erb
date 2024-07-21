@@ -1,0 +1,23 @@
+---
+title: Getting started with Hotwire in Express.js
+framework: Express.js
+language: JavaScript
+description: Express is a fast and minimalist web framework for Node.js that supports web and mobile applications, APIs, and middleware.
+icon_class: devicon-express-original-wordmark text-5xl
+breadcrumb: Express.js
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <h3 class="font-bold text-2xl mt-12">Packages:</h3>
+
+  <div class="grid grid-cols-1">
+    <div class="flex flex-col gap-x-4">
+      <h2 class="font-bold text-lg underline">
+        <%= link_to "GitHub: hotwire-turbo-express", "https://github.com/twelve17/hotwire-turbo-express" %>
+      </h2>
+    </div>
+  </div>
+
+<% end %>
