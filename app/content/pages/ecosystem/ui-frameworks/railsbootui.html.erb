@@ -1,0 +1,14 @@
+---
+title: RailsbootUI
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  RailsbootUI is a view component collection for Bootstrap.
+  <br><br>
+
+  <%= link_to "Official Site", "https://railsbootui.com", target: :_blank %><br>
+  <%= link_to "Components", "https://railsbootui.com/components", target: :_blank %><br>
+  <%= link_to "Documentation", "https://railsbootui.com/docs/introduction", target: :_blank %>
+<% end %>
