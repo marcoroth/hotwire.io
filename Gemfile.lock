@@ -79,7 +79,7 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     base64 (0.2.0)
-    better_html (2.0.2)
+    better_html (2.1.1)
       actionview (>= 6.0)
       activesupport (>= 6.0)
       ast (~> 2.0)
@@ -109,12 +109,12 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     dry-cli (1.0.0)
-    erb_lint (0.5.0)
+    erb_lint (0.6.0)
       activesupport
       better_html (>= 2.0.1)
       parser (>= 2.7.1.4)
       rainbow
-      rubocop
+      rubocop (>= 1)
       smart_properties
     erubi (1.13.0)
     frozen_record (0.27.2)
@@ -246,7 +246,7 @@ GEM
     regexp_parser (2.9.2)
     reline (0.5.9)
       io-console (~> 0.5)
-    rexml (3.3.2)
+    rexml (3.3.4)
       strscan
     rouge (4.3.0)
     rubocop (1.64.1)
@@ -350,7 +350,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  erb_lint (~> 0.5.0)
+  erb_lint (~> 0.6.0)
   frozen_record (~> 0.27.2)
   git (~> 2.1)
   irb (~> 1.14)
