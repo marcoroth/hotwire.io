@@ -1,0 +1,16 @@
+---
+title: Getting started with Hotwire in Marten
+framework: Marten
+language: Crystal
+description: Marten is a Crystal web framework that makes building web applications easy, productive, and fun.
+image: frameworks/marten.png
+breadcrumb: Marten
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <h3 class="mt-12 text-2xl font-bold">Libraries</h3><br>
+
+  <%= link_to "marten-turbo", "https://github.com/treagod/marten-turbo", target: :_blank %><br>
+<% end %>
