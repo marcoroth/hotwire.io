@@ -1,11 +1,20 @@
 # syntax = docker/dockerfile:1
 
-# Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
+# This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
+# docker build -t hotwire-io .
+# docker run -d -p 80:80 -p 443:443 --name my-app -e RAILS_MASTER_KEY=<value from config/master.key> my-app
+
+# Make sure RUBY_VERSION matches the Ruby version in .ruby-version
 ARG RUBY_VERSION=3.3.0
-FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
+FROM docker.io/library/ruby:$RUBY_VERSION-slim AS base
 
 # Rails app lives here
 WORKDIR /rails
+
+# Install base packages
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 libsqlite3-0 libvips && \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment
 ENV RAILS_ENV="production" \
@@ -15,11 +24,12 @@ ENV RAILS_ENV="production" \
 
 
 # Throw-away build stage to reduce size of final image
-FROM base as build
+FROM base AS build
 
 # Install packages needed to build gems and node modules
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python-is-python3
+    apt-get install --no-install-recommends -y build-essential curl git libpq-dev libvips node-gyp pkg-config python-is-python3&& \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Install JavaScript dependencies
 ARG NODE_VERSION=20.10.0
@@ -63,13 +73,14 @@ RUN apt-get update -qq && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Copy built artifacts: gems, application
-COPY --from=build /usr/local/bundle /usr/local/bundle
+COPY --from=build "${BUNDLE_PATH}" "${BUNDLE_PATH}"
 COPY --from=build /rails /rails
 
 # Run and own only the runtime files as a non-root user for security
-RUN useradd rails --create-home --shell /bin/bash && \
+RUN groupadd --system --gid 1000 rails && \
+    useradd rails --uid 1000 --gid 1000 --create-home --shell /bin/bash && \
     chown -R rails:rails db log storage tmp
-USER rails:rails
+USER 1000:1000
 
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
