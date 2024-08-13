@@ -8,5 +8,22 @@ breadcrumb: RubyMine
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+
+  <h1 class="text-center text-xl mt-6">
+    RubyMine provides support for Stimulus with the
+    <%= link_to "Stimulus plugin ", "https://plugins.jetbrains.com/plugin/18940-stimulus", target: :_blank, class: "font-bold text-neutral-300 hover:text-white"%>
+  </h1>
+
+  <p class="text-center text-lg mt-3">
+    It is bundled with RubyMine and provides code completion, navigation, and rename refactoring for Stimulus.
+  </p>
+
+  <div class="flex mt-24">
+    <a
+      href="https://www.jetbrains.com/ruby/promo"
+      target="_blank"
+      class="mx-auto rounded-lg bg-[#77E8B9] px-7 py-4 text-lg font-semibold text-black shadow-xl transition hover:brightness-110">
+      Install RubyMine with Stimulus support
+    </a>
+  </div>
 <% end %>
