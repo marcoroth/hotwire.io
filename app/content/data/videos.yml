@@ -283,3 +283,7 @@
 - name: Hotwireを使って管理画面を簡単にプチSPA化する (Using Hotwire for admin interface)
   url: https://www.youtube.com/watch?v=HXoH93yMwPM
   language: Japanese
+
+- name: Utilisation de l'extension Hotwire Dev Tools pour Turbo et Stimulus - Rails
+  url: https://www.youtube.com/watch?v=mA_yhEMsvDw
+  language: French
