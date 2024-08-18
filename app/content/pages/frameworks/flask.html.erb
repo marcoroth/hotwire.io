@@ -9,6 +9,7 @@ breadcrumb: Flask
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
+  <h3 class="mt-8 mb-4 text-2xl font-bold">Packages</h3>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <%= link_to "turbo-flask", "https://github.com/miguelgrinberg/turbo-flask", target: :_blank %><br>
 <% end %>
