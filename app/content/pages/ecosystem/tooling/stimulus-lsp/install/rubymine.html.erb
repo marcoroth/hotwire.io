@@ -8,5 +8,55 @@ breadcrumb: RubyMine
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <h1 class="font-semibold text-xl my-12">There are two ways to get Stimulus Tooling Support in RubyMine.</h1>
+
+  <div class="grid md:grid-cols-2 gap-10">
+    <div class="text-center">
+      <h1 class="text-center font-semibold text-xl my-6">
+        Option 1
+      </h1>
+
+      <div class="w-full flex place-content-center">
+        <img class="max-h-64 rounded-lg border border-gray-700" src="<%= image_path("stimulus-lsp.png") %>">
+      </div>
+
+      <p class="text-lg mt-6">
+        Install the community-driven project <b class="font-bold"><%= link_to "Stimulus LSP", "/ecosystem/tooling/stimulus-lsp" %></b>. This is the recommended way, since this is the plugin built by the community which also works for all editors.
+      <p>
+
+      <div class="flex mt-12">
+        <a
+          href="https://plugins.jetbrains.com/plugin/24408-stimulus-lsp"
+          target="_blank"
+          class="mx-auto rounded-lg bg-[#77E8B9] px-7 py-4 text-lg font-semibold text-black shadow-xl transition hover:brightness-110">
+          Install Stimulus LSP plugin in RubyMine
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <h1 class="text-center font-semibold text-xl my-6">
+        Option 2
+      </h1>
+
+      <div class="w-full flex place-content-center">
+        <img class="max-h-64 rounded-lg border border-gray-700 align-center" src="https://blog.jetbrains.com/wp-content/uploads/2024/08/Featured_Blog_1280x720-2x.png">
+      </div>
+
+      <p class="text-center text-lg mt-6">
+        RubyMine supports Stimulus with the third-party
+        <%= link_to "Stimulus plugin", "https://plugins.jetbrains.com/plugin/18940-stimulus", target: :_blank, class: "font-bold text-neutral-300 hover:text-white" %>.
+        It is bundled and built-in with RubyMine 2024.2 and provides code completion, navigation, and rename refactoring for Stimulus.
+      </p>
+
+      <div class="flex mt-6">
+        <a
+          href="https://www.jetbrains.com/ruby/promo"
+          target="_blank"
+          class="mx-auto rounded-lg bg-[#77E8B9] px-7 py-4 text-lg font-semibold text-black shadow-xl transition hover:brightness-110">
+          Install RubyMine 2024.2 with Stimulus support
+        </a>
+      </div>
+    </div>
+  </div>
 <% end %>
