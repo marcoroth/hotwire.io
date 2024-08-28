@@ -115,7 +115,7 @@ GEM
       rubocop (>= 1)
       smart_properties
     erubi (1.13.0)
-    frozen_record (0.27.2)
+    frozen_record (0.27.4)
       activemodel
     git (2.2.0)
       activesupport (>= 5.0)
@@ -351,7 +351,7 @@ DEPENDENCIES
   capybara
   debug
   erb_lint (~> 0.6.0)
-  frozen_record (~> 0.27.2)
+  frozen_record (~> 0.27.4)
   git (~> 2.2)
   irb (~> 1.14)
   jbuilder
