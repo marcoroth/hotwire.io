@@ -311,7 +311,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
     useragent (0.16.10)
-    view_component (3.14.0)
+    view_component (3.16.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
@@ -369,7 +369,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
-  view_component (~> 3.14)
+  view_component (~> 3.16)
   vite_rails
   web-console
 
