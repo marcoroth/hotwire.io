@@ -75,7 +75,7 @@ gem "git", "~> 2.3"
 gem "standard", "~> 1.41"
 
 # Lint your ERB or HTML files
-gem "erb_lint", "~> 0.6.0"
+gem "erb_lint", "~> 0.7.0"
 
 # Search Engine Optimization (SEO) for Ruby on Rails applications.
 gem "meta-tags"
