@@ -117,7 +117,7 @@ GEM
     erubi (1.13.0)
     frozen_record (0.27.4)
       activemodel
-    git (2.3.0)
+    git (2.3.1)
       activesupport (>= 5.0)
       addressable (~> 2.8)
       process_executer (~> 1.1)
@@ -185,7 +185,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.8)
-    process_executer (1.1.0)
+    process_executer (1.2.0)
     psych (5.1.2)
       stringio
     public_suffix (6.0.1)
