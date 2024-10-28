@@ -244,7 +244,7 @@ GEM
     regexp_parser (2.9.2)
     reline (0.5.10)
       io-console (~> 0.5)
-    rexml (3.3.8)
+    rexml (3.3.9)
     rouge (4.4.0)
     rubocop (1.66.1)
       json (~> 2.3)
