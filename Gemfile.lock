@@ -186,7 +186,7 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.8)
+    pg (1.5.9)
     process_executer (1.2.0)
     psych (5.1.2)
       stringio
