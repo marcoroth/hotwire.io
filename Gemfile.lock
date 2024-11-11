@@ -246,7 +246,7 @@ GEM
     reline (0.5.10)
       io-console (~> 0.5)
     rexml (3.3.9)
-    rouge (4.4.0)
+    rouge (4.5.0)
     rubocop (1.66.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
@@ -361,7 +361,7 @@ DEPENDENCIES
   rails (~> 7.2.2)
   redcarpet (~> 3.6)
   redis (>= 4.0.1)
-  rouge (~> 4.4)
+  rouge (~> 4.5)
   selenium-webdriver
   sitemap_generator (~> 6.3)
   sitepress-rails
