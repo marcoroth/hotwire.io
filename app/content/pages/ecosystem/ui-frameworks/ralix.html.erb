@@ -1,0 +1,11 @@
+---
+title: Ralix
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "ralixjs/ralix", "https://github.com/ralixjs/ralix", target: :_blank %><br>
+  <%= link_to "ralixjs/rails-ralix-tailwind", "https://github.com/ralixjs/rails-ralix-tailwind", target: :_blank %><br>
+  <%= link_to "npm: ralix", "https://www.npmjs.com/package/ralix", target: :_blank %><br>
+<% end %>
