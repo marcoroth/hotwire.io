@@ -129,7 +129,8 @@ GEM
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     io-console (0.8.0)
-    irb (1.14.3)
+    irb (1.15.0)
+      pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.13.0)
@@ -187,8 +188,11 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
     process_executer (1.2.0)
-    psych (5.2.2)
+    psych (5.2.3)
       date
       stringio
     public_suffix (6.0.1)
@@ -236,7 +240,7 @@ GEM
     rainbow (3.1.1)
     rake (13.2.1)
     rchardet (1.8.0)
-    rdoc (6.10.0)
+    rdoc (6.11.0)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
     redis (5.3.0)
@@ -354,7 +358,7 @@ DEPENDENCIES
   erb_lint (~> 0.8.0)
   frozen_record (~> 0.27.4)
   git (~> 2.3)
-  irb (~> 1.14)
+  irb (~> 1.15)
   jbuilder
   jsbundling-rails
   markdown-rails (~> 2.1)
