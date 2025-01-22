@@ -16,12 +16,10 @@
 
 <% if @all_url %>
   <%= link_to @all_url do %>
-    View all
-
     <% if @total && @total > @count %>
+      View all
       (<%= @total - @count %> more)
+      <span class="tracking-normal text-white ml-1">-&gt;</span>
     <% end %>
-
-    <span class="tracking-normal text-white ml-1">-&gt;</span>
   <% end %>
 <% end %>
