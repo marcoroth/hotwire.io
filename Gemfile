@@ -84,7 +84,7 @@ gem "meta-tags"
 gem "sitemap_generator", "~> 6.3"
 
 # Tool to interactively execute Ruby expressions read from the standard input.
-gem "irb", "~> 1.14"
+gem "irb", "~> 1.15"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
