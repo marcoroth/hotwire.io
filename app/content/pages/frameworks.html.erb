@@ -6,8 +6,17 @@ breadcrumb: Getting started
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
+  <p>Hotwire isn't just for Rails, it works with many popular frameworks, check out installation instructions for your preferred language:</p>
+
+  <ul class="flex space-x-2 pt-4">
+    <% FrameworkModel.grouped_by_language.each do |language, pages| %>
+    <li> <a class="font-bold bg-white py-1.5 px-2 rounded-lg text-black hover:bg-yellow-500" href="#<%= language %>"><%= language %></a></li>
+    <% end %>
+  </ul>
+
+
   <% FrameworkModel.grouped_by_language.each do |language, pages| %>
-    <h2 class="font-bold mb-3 mt-12"><%= language %> frameworks</h2>
+    <h2 id="<%= language %>" class="font-bold mb-3 pt-12"><%= language %></h2>
 
     <ul class="grid md:grid-cols-2 gap-4">
       <% pages.each do |page| %>
