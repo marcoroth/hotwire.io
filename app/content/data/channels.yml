@@ -45,3 +45,11 @@
 - name: Nate Hopkins (hopsoft)
   url: https://www.youtube.com/@hopsoft
   image: /assets/youtube/natehopkins.jpg
+
+- name: On Rails Blog
+  url: https://www.youtube.com/@OnRailsBlog/videos
+  image: /assets/youtube/onrailsblog.jpg
+
+- name: Ken Greef
+  url: https://www.youtube.com/@kengreeff
+  image: /assets/youtube/kengreef.jpg
