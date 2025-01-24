@@ -32,12 +32,12 @@ additional_credit_paths:
     <% Course.order(name: :asc).each do |course| %>
       <div class="border p-4 rounded-lg border-slate-600 flex items-center h-24">
           <%= link_to course.name, course.url, target: :_blank, class:"font-bold grow" %> <br>
-          <span class="bg-white inline rounded-lg text-black p-1 text-xs"><%= course.price.capitalize %></span>
+          <span class="bg-white inline rounded-lg text-black py-1 px-1.5 text-xs"><%= course.price.capitalize %></span>
       </div>
     <% end %>
   </div>
 
-  <h2 class="text-2xl font-bold mt-4 mb-4">Tutorials</h2>
+  <h2 class="text-2xl font-bold mt-4 mb-4">Tutorials and learning</h2>
   <% Tutorial.order(name: :asc).each do |tutorial| %>
     <%= link_to tutorial.name, tutorial.url, target: :_blank %><br>
   <% end %>
