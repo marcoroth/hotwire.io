@@ -1,35 +1,47 @@
 - name: GoRails
   url: https://www.youtube.com/@GorailsTV
+  image: /assets/youtube/gorails.jpg
 
 - name: Drifting Ruby
   url: https://www.youtube.com/@DriftingRuby
+  image: /assets/youtube/driftingruby.jpg
 
 - name: Rapid Ruby
   url: https://www.youtube.com/@rapid-ruby
+  image: /assets/youtube/rapidruby.jpg
 
 - name: Mix & Go
   url: https://www.youtube.com/@mixandgo
+  image: /assets/youtube/mixandgo.jpg
 
 - name: SupeRails
   url: https://www.youtube.com/@SupeRails
+  image: /assets/youtube/superails.jpg
 
 - name: Joe Masilotti
   url: https://www.youtube.com/@joemasilotti
+  image: /assets/youtube/joemasilotti.jpg
 
 - name: William Kennedy
   url: https://www.youtube.com/@_williamkennedy
+  image: /assets/youtube/williamkennedy.jpg
 
 - name: Deanin
   url: https://www.youtube.com/@Deanin
+  image: /assets/youtube/deanin.jpg
 
 - name: Tony Messias
   url: https://www.youtube.com/@TonyMessias
+  image: /assets/youtube/tonymessias.jpg
 
 - name: Web-Crunch
   url: https://www.youtube.com/@Webcrunch
+  image: /assets/youtube/webcrunch.jpg
 
 - name: CJ Avilla
   url: https://www.youtube.com/@cjav_dev
+  image: /assets/youtube/cjavilla.jpg
 
 - name: Nate Hopkins (hopsoft)
   url: https://www.youtube.com/@hopsoft
+  image: /assets/youtube/natehopkins.jpg
