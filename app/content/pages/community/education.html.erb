@@ -42,7 +42,7 @@ additional_credit_paths:
     <%= link_to tutorial.name, tutorial.url, target: :_blank %><br>
   <% end %>
 
-  <h2 class="text-2xl font-bold mt-4 mb-4">Online-Communities</h2>
+  <h2 class="text-2xl font-bold mt-4 mb-4">Communities</h2>
   <% Community.order(name: :asc).each do |community| %>
     <%= link_to "#{community.name} (#{community.type})", community.url, target: :_blank %><br>
   <% end %>
