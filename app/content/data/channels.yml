@@ -53,3 +53,7 @@
 - name: Ken Greef
   url: https://www.youtube.com/@kengreeff
   image: /assets/youtube/kengreef.jpg
+
+- name: Sam Johnson
+  url: https://www.youtube.com/@devscoach/videos
+  image: /assets/youtube/samjohnson.jpg
