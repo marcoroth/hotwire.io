@@ -14,12 +14,12 @@ additional_credit_paths:
 
   <h2 class="text-2xl font-bold mt-4 mb-4">Youtube channels</h2>
 
-  <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+  <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-1">
     <% Channel.order(name: :asc).each do |channel| %>
-    <div class="flex flex-col items-center space-y-2 pb-4">
+    <div class="flex flex-col items-center pb-4">
       <%= link_to channel.url, target: :_blank, class: "flex flex-col items-center transition-transform hover:scale-105 aspect-square" do %>
-        <img class="rounded-full size-36" src="<%= channel.image %>" alt="<%= channel.name %>">
-        <span class="text-center font-bold"><%= channel.name %></span>
+        <img class="rounded-full size-24" src="<%= channel.image %>" alt="<%= channel.name %>">
+        <span class="text-center font-bold pt-4"><%= channel.name %></span>
       <% end %>
       <%# link_to "Subscribe", "#{channel.url}?sub_confirmation=1", class:"bg-red-500 text-white py-0.5 px-1.5 rounded-lg text-center text-xs block font-semibold hover:bg-red-600" %>
     </div>
@@ -27,9 +27,15 @@ additional_credit_paths:
   </div>
 
   <h2 class="text-2xl font-bold mt-4 mb-4">Courses</h2>
-  <% Course.order(name: :asc).each do |course| %>
-    <%= link_to course.name, course.url, target: :_blank %><br>
-  <% end %>
+
+  <div class="grid grid-cols-3 gap-4">
+    <% Course.order(name: :asc).each do |course| %>
+      <div class="border p-4 rounded-lg border-slate-600 flex items-center h-24">
+          <%= link_to course.name, course.url, target: :_blank, class:"font-bold grow" %> <br>
+          <span class="bg-white inline rounded-lg text-black p-1 text-xs"><%= course.price.capitalize %></span>
+      </div>
+    <% end %>
+  </div>
 
   <h2 class="text-2xl font-bold mt-4 mb-4">Tutorials</h2>
   <% Tutorial.order(name: :asc).each do |tutorial| %>
