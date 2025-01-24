@@ -57,3 +57,7 @@
 - name: Sam Johnson
   url: https://www.youtube.com/@devscoach/videos
   image: /assets/youtube/samjohnson.jpg
+
+- name: Rails Quest by Kaleb Lape
+  url: https://www.youtube.com/@railsquest
+  image: /assets/youtube/kaleblape.jpg
