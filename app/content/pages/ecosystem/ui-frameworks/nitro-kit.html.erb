@@ -1,0 +1,10 @@
+---
+title: Nitro Kit
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "mikker/nitro_kit", "https://github.com/mikker/nitro_kit", target: :_blank %><br>
+  <%= link_to "Website", "https://nitrokit.dev", target: :_blank %><br>
+<% end %>
