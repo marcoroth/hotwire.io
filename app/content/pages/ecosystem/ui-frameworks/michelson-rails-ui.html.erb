@@ -1,9 +1,9 @@
 ---
-title: Zest UI
+title: michelson/rails-ui
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= link_to "Website", "https://zestui.com", target: :_blank %><br>
+  <%= link_to "michelson/rails-ui", "https://github.com/michelson/rails-ui", target: :_blank %><br>
 <% end %>

@@ -287,3 +287,7 @@
 - name: Utilisation de l'extension Hotwire Dev Tools pour Turbo et Stimulus - Rails
   url: https://www.youtube.com/watch?v=mA_yhEMsvDw
   language: French
+
+- name: "Full-stack 2.0: Creating a New Mobile App with Rails, Hotwire И Capacitor"
+  url: "https://www.youtube.com/watch?v=BYyAIIqH0Ak"
+  language: Ukrainian
