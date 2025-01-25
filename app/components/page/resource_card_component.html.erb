@@ -7,7 +7,7 @@
     <span class="font-bold text-2xl text-center"><%= @resource.data.fetch("title") %></span>
 
     <% status = @resource.data.dig("status") %>
-    <%if status == "missing" %>
+    <% if status == "missing" %>
     <span class="bg-yellow-500 text-black py-0.5 px-1.5 rounded-lg text-xs">Coming soon</span>
     <% end %>
   <% end %>
