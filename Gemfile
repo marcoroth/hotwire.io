@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.2.1"
+gem "rails", "~> 7.2.2"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -60,10 +60,10 @@ gem "markdown-rails", "~> 2.1"
 gem "redcarpet", "~> 3.6"
 
 # A pure Ruby code highlighter that is compatible with Pygments
-gem "rouge", "~> 4.3"
+gem "rouge", "~> 4.5"
 
 # A framework for building reusable, testable & encapsulated view components in Ruby on Rails.
-gem "view_component", "~> 3.14"
+gem "view_component", "~> 3.21"
 
 # Read only ActiveRecord-like interface to query static YAML files
 gem "frozen_record", "~> 0.27.4"
@@ -72,10 +72,10 @@ gem "frozen_record", "~> 0.27.4"
 gem "git", "~> 2.3"
 
 # Ruby's bikeshed-proof linter and formatter
-gem "standard", "~> 1.40"
+gem "standard", "~> 1.44"
 
 # Lint your ERB or HTML files
-gem "erb_lint", "~> 0.6.0"
+gem "erb_lint", "~> 0.9.0"
 
 # Search Engine Optimization (SEO) for Ruby on Rails applications.
 gem "meta-tags"
@@ -84,7 +84,7 @@ gem "meta-tags"
 gem "sitemap_generator", "~> 6.3"
 
 # Tool to interactively execute Ruby expressions read from the standard input.
-gem "irb", "~> 1.14"
+gem "irb", "~> 1.15"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

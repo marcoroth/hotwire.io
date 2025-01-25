@@ -1,0 +1,13 @@
+---
+title: Hotwire Spark
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  Hotwire Spark is a live-reloading system for Hotwire applications. It enhances your development feedback loop by detecting source code changes and updating the page smoothly without requiring a manual reload.
+
+  <br><br>
+
+  <%= link_to "hotwired/spark", "https://github.com/hotwired/spark", target: :_blank %><br>
+<% end %>

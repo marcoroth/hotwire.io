@@ -1,0 +1,10 @@
+---
+title: Ruby UI
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "ruby-ui/ruby_ui", "https://github.com/ruby-ui/ruby_ui", target: :_blank %><br>
+  <%= link_to "Website", "https://rubyui.com", target: :_blank %><br>
+<% end %>

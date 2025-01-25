@@ -6,22 +6,22 @@
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.5",
-    "@tailwindcss/forms": "^0.5.9",
-    "@tailwindcss/typography": "^0.5.15",
+    "@hotwired/turbo-rails": "^8.0.12",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
-    "chokidar": "^3.6.0",
+    "chokidar": "^4.0.3",
     "devicon": "^2.16.0",
-    "esbuild": "^0.23.1",
+    "esbuild": "^0.24.2",
     "esbuild-rails": "^1.0.7",
-    "postcss": "^8.4.45",
+    "postcss": "^8.5.1",
     "stimulus-vite-helpers": "^3.1.0",
-    "swiper": "^11.1.12",
-    "tailwindcss": "^3.4.10",
-    "vite": "^5.0.0",
+    "swiper": "^11.2.1",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.11",
     "vite-plugin-rails": "^0.5.0",
-    "vite-plugin-ruby": "^5.1.0"
+    "vite-plugin-ruby": "^5.1.1"
   },
   "dependencies": {
     "tippy.js": "^6.3.7"

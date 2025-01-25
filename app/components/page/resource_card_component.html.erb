@@ -1,5 +1,5 @@
 <% if image = @resource.data.dig("image") %>
-  <%= link_to @resource.request_path, class: "h-48 flex items-center justify-center bg-black hover:opacity-75 border border-gray-700 rounded-lg w-full overflow-hidden" do %>
+  <%= link_to @resource.request_path, class: "h-24 flex items-center justify-center bg-black hover:opacity-75 border border-gray-700 rounded-lg w-full overflow-hidden" do %>
     <%= image_tag image_path(image) %>
   <% end %>
 <% else %>

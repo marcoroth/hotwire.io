@@ -5,5 +5,9 @@ title: Hotwire Livereload
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
+  Automatically reload Hotwire Turbo when app files are modified.
+
+  <br><br>
+
   <%= link_to "kirillplatonov/hotwire-livereload", "https://github.com/kirillplatonov/hotwire-livereload", target: :_blank %><br>
 <% end %>
