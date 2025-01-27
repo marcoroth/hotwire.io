@@ -1,9 +1,9 @@
 <% if image = @resource.data.dig("image") %>
-  <%= link_to @resource.request_path, class: "h-48 flex items-center justify-center bg-black hover:opacity-75 border border-gray-700 rounded-lg w-full overflow-hidden" do %>
+  <%= link_to @resource.request_path, class: "h-24 flex items-center justify-center bg-black hover:opacity-75 border border-gray-700 rounded-lg w-full overflow-hidden" do %>
     <%= image_tag image_path(image) %>
   <% end %>
 <% else %>
-  <%= link_to @resource.request_path, class: "p-6 h-48 flex items-center justify-center bg-gray-950 hover:bg-gray-900 border border-gray-700 rounded-lg w-full font-bold text-2xl text-center" do %>
+  <%= link_to @resource.request_path, class: "p-6 h-24 flex items-center justify-center bg-gray-950 hover:bg-gray-900 border border-gray-700 rounded-lg w-full font-bold text-2xl text-center" do %>
     <%= @resource.data.fetch("title") %>
   <% end %>
 <% end %>

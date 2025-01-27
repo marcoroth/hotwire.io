@@ -75,7 +75,7 @@ gem "git", "~> 2.3"
 gem "standard", "~> 1.44"
 
 # Lint your ERB or HTML files
-gem "erb_lint", "~> 0.8.0"
+gem "erb_lint", "~> 0.9.0"
 
 # Search Engine Optimization (SEO) for Ruby on Rails applications.
 gem "meta-tags"
@@ -84,7 +84,7 @@ gem "meta-tags"
 gem "sitemap_generator", "~> 6.3"
 
 # Tool to interactively execute Ruby expressions read from the standard input.
-gem "irb", "~> 1.14"
+gem "irb", "~> 1.15"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
