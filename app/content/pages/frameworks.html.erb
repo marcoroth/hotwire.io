@@ -32,6 +32,10 @@ breadcrumb: Getting started
             <div class="space-y-1.5 flex-1">
               <h2 class="font-bold text-xl"><%= page.framework %></h2>
               <p class="text-medium text-gray-400"><%= page.description %></p>
+
+              <% if page.status == "missing" %>
+                <span class="bg-yellow-500 text-black py-0.5 px-1.5 rounded-lg text-xs">Coming soon</span>
+              <% end %>
             </div>
           <% end %>
         </li>

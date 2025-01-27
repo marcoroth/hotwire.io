@@ -3,7 +3,12 @@
     <%= image_tag image_path(image) %>
   <% end %>
 <% else %>
-  <%= link_to @resource.request_path, class: "p-6 h-24 flex items-center justify-center bg-gray-950 hover:bg-gray-900 border border-gray-700 rounded-lg w-full font-bold text-2xl text-center" do %>
-    <%= @resource.data.fetch("title") %>
+  <%= link_to @resource.request_path, class: "p-6 h-48 flex flex-col space-y-2 items-center justify-center bg-gray-950 hover:bg-gray-900 border border-gray-700 rounded-lg w-full" do %>
+    <span class="font-bold text-2xl text-center"><%= @resource.data.fetch("title") %></span>
+
+    <% status = @resource.data.dig("status") %>
+    <% if status == "missing" %>
+    <span class="bg-yellow-500 text-black py-0.5 px-1.5 rounded-lg text-xs">Coming soon</span>
+    <% end %>
   <% end %>
 <% end %>
