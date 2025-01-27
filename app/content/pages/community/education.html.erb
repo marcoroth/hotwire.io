@@ -12,7 +12,7 @@ additional_credit_paths:
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
-  <h2 class="text-2xl font-bold mt-4 mb-4">Youtube channels</h2>
+  <h2 class="text-2xl font-bold mt-4 mb-4">YouTube channels</h2>
 
   <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-1">
     <% Channel.order(name: :asc).each do |channel| %>
