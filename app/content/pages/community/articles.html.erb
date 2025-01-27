@@ -1,9 +1,29 @@
 ---
 title: Articles
+
+additional_credit_paths:
+- app/content/data/articles.yml
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <div class="pb-12">
+    <p class="text-xl text-slate-200">
+    <span class="bg-gradient-to-tl from-orange-600 to-purple-600 bg-clip-text text-transparent font-black"><%= article_count %></span> articles from <span class="bg-gradient-to-tl from-green-400 to-blue-400 bg-clip-text text-transparent font-black"><%= unique_authors_count %></span> authors and counting.
+    </p>
+    <p class="text-slate-400 text-sm">
+      Get new news, tutorials and more <a class="text-blue-400 hover:text-blue-600 underline" href="/newsletter">delivered to your inbox weekly</a>
+    </p>
+  </div>
+
+  <div class="flex flex-col divide-y divide-slate-700 space-y-2">
+    <% Article.all.reverse.each do |article| %>
+      <div class="flex flex-col py-2">
+        <%= link_to article.name, article.url, target: :_blank, class:"text-lg text-slate-200 font-semibold hover:text-yellow-500" %>
+        <span class="text-slate-400"><%= article.author %></span>
+      </div>
+    <% end %>
+  </div>
+
 <% end %>

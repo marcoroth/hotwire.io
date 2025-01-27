@@ -1,2 +1,966 @@
+- name: Javascript embeddable widget with Hotwire Turbo and Stimulus
+  url: https://jamgar.github.io/rails/2023/10/10/javascript-embeddable-widget-with-hotwire-turbo-and-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=welcome-to-hotwire-weekly
+  author: James Garcia
+
 - name: You Don't Need Rails to Start Using Hotwire
   url: https://www.akshaykhot.com/using-hotwire-without-rails/
+  author: Akshay Khot
+
+- name: A happier happy path in Turbo with morphing
+  url: https://dev.37signals.com/a-happier-happy-path-in-turbo-with-morphing/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=welcome-to-hotwire-weekly
+  author: Jorge Manrubia
+
+- name: "Turbo Navigator: Gearing up for the merge into turbo-ios"
+  url: https://masilotti.com/turbo-navigator-upstream/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=welcome-to-hotwire-weekly
+  author: Joe Masilotti
+
+- name: "The future of full-stack Rails: Turbo Morph Drive"
+  url: https://evilmartians.com/chronicles/the-future-of-full-stack-rails-turbo-morph-drive?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-42-welcome-new-subscribers-rails-world
+  author: Vladimir Dementyev
+
+- name: Dynamically changing the favicon in Rails
+  url: https://banurarandika.medium.com/dynamically-changing-the-favicon-in-rails-60c630244d52
+  author: Banura Randika
+
+- name: "The future of full-stack Rails II: Turbo View Transitions"
+  url: https://evilmartians.com/chronicles/the-future-of-full-stack-rails-turbo-view-transitions?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-43-stimulus-lsp-goes-beyond-vs-code-and-ruby
+  author: Vladimir Dementyev
+
+- name: Exploring server-side diffing in Turbo
+  url: https://dev.37signals.com/exploring-server-side-diffing-in-turbo/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-43-stimulus-lsp-goes-beyond-vs-code-and-ruby
+  author: Jorge Manrubia
+
+- name: How to fetch a Turbo Stream?
+  url: https://www.ducktypelabs.com/how-to-fetch-a-turbo-stream/
+  author: Sid Krishnan
+
+- name: Troubleshooting a Hotwire Caching Issue
+  url: https://www.beflagrant.com/blog/troubleshooting-a-hotwire-caching-issue-2023-10-26?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-43-stimulus-lsp-goes-beyond-vs-code-and-ruby
+  author: Amanda Klusmeyer
+
+- name: The anatomy of a Turbo Stream
+  url: https://www.ducktypelabs.com/the-anatomy-of-a-turbo-stream/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-the-anatomy-of-turbo-streams
+  author: Sid Krishnan
+
+- name: How to use Strada with Turbo Navigator
+  url: https://masilotti.com/strada-and-turbo-navigator/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-the-anatomy-of-turbo-streams
+  author: Joe Masilotti
+
+- name: Are you absolutely sure you know how to use the button element?
+  url: https://thoughtbot.com/blog/button-element-tutorial?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-the-anatomy-of-turbo-streams
+  author: Steve Polito
+
+- name: Strada bridged components with TailwindCSS
+  url: https://world.hey.com/sevos/strada-bridged-components-with-tailwindcss-4a7133e4?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-bridged-strada-components-anycable-goes-serverless
+  author: Artur Roszczyk
+
+- name: Building Basecamp project stacks with Hotwire
+  url: https://dev.37signals.com/building-basecamp-project-stacks-with-hotwire/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-bridged-strada-components-anycable-goes-serverless
+  author: Nicklas Ramhöj Holtryd
+
+- name: "DIY PaaS: serverless real-time with one command"
+  url: https://evilmartians.com/chronicles/diy-paas-serverless-real-time-with-one-command?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-bridged-strada-components-anycable-goes-serverless
+  author: Irina Nazarova, Travis Turner
+
+- name: "Kicking the tires with NestJS and Hotwire: Part II"
+  url: https://dev.to/mrispoli24/kicking-the-tires-with-nestjs-and-hotwire-part-ii-33fh?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-using-hotwire-in-nestjs-mustachejs-with-stimulus
+  author: Mike Rispoli
+
+- name: HTML templating with Mustache.js and Stimulus
+  url: https://www.renuo.ch/en/blog/html-templating-with-mustache-js-and-stimulus?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-using-hotwire-in-nestjs-mustachejs-with-stimulus
+  author: Daniel Bengl
+
+- name: Toast alerts with Turbo, Stimulus and Shoelace in Rails
+  url: https://izaguirrejoe.dev/2022/11/09/toast-alerts-shoelace-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-using-hotwire-in-nestjs-mustachejs-with-stimulus
+  author: Joseph Izaguirre
+
+- name: "How Hotwire Transforms Web Development: A Deep Dive into Turbo Drive and Turbo Frames"
+  url: https://medium.com/@naomiyocum24/how-hotwire-transforms-web-development-a-deep-dive-into-turbo-drive-and-turbo-frames-4724b659a39d
+  author: Naomi Yocum
+
+- name: To-do list using only turbo-stream (Rails Hotwire)
+  url: https://www.mateusnava.com/posts/to-do-list-using-only-turbo-stream-rails-hotwire?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-47-the-first-turbo-8-beta-is-here
+  author: Mateus Nava
+
+- name: Demo of page refreshes with morphing
+  url: https://dev.37signals.com/page-refreshes-with-morphing-demo/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-48-turbo-devtools-turbo-without-rails-and-more
+  author: Jorge Manrubia
+
+- name: Turbo 8 in 8 minutes
+  url: https://fly.io/ruby-dispatch/turbo-8-in-8-minutes/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-48-turbo-devtools-turbo-without-rails-and-more
+  author: Brad Gessler
+
+- name: Using Turbo Frames and Streams without Rails
+  url: https://radanskoric.com/experiments/using-turbo-frame-streams-without-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-48-turbo-devtools-turbo-without-rails-and-more
+  author: Radan Skorić
+
+- name: Quick drag and drop sorting with Rails using stimulus and shopify/draggable
+  url: https://www.cjav.dev/articles/quick-drag-and-drop-sorting-with-rails-using-stimulus-and-shopify-draggable?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-48-turbo-devtools-turbo-without-rails-and-more
+  author: CJ Avilla
+
+- name: FormKit's AutoAnimate With Stimulus
+  url: https://world.hey.com/tonysm/formkit-s-autoanimate-with-stimulus-8de09e11?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-49-stimulus-hotkeys-new-turbo-native-app
+  author: Tony Messias
+
+- name: Turbo 8 morphing deep dive - how does it work?
+  url: https://radanskoric.com/articles/turbo-morphing-deep-dive?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-8-deep-dive-hotwire-history-turbo-native-apps
+  author: Radan Skorić
+
+- name: How did we go from AJAX to Turbolinks to Hotwire? A brief web history
+  url: https://buttondown.com/bhumi/archive/how-did-we-go-from-ajax-to-turbolinks-to-hotwire/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-8-deep-dive-hotwire-history-turbo-native-apps
+  author: Bhumi
+
+- name: Stream Updates to Your Users with LiteCable for Ruby on Rails
+  url: https://blog.appsignal.com/2023/12/13/stream-updates-to-your-users-with-litecable-for-ruby-on-rails.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-8-deep-dive-hotwire-history-turbo-native-apps
+  author: Julian Rubisch
+
+- name: Idea to App Store in 7 days
+  url: https://masilotti.com/idea-to-app-store-in-7-days/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-8-deep-dive-hotwire-history-turbo-native-apps
+  author: Joe Masilotti
+
+- name: How and when to break out of a Turbo Frame?
+  url: https://buttondown.com/bhumi/archive/how-and-when-to-break-out-of-a-turbo-frame?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-51-happy-holidays
+  author: Bhumi
+
+- name: Turbo 8 morphing deep dive - how idiomorph works?
+  url: https://radanskoric.com/articles/turbo-morphing-deep-dive-idiomorph?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-51-happy-holidays
+  author: Radan Skorić
+
+- name: Simple Polling With Turbo Frames
+  url: https://www.beflagrant.com/blog/simple-polling-with-turbo-frames?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-51-happy-holidays
+  author: Jonathan Greenberg
+
+- name: Coming to grips with JS - A Rubyist's deep dive
+  url: https://fpsvogel.com/posts/2023/learn-javascript?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-52-happy-new-year
+  author: Felipe Vogel
+
+- name: Turbo 8 Page Refreshes (+ Morphing) Explained at Length
+  url: https://jonsully.net/blog/turbo-8-page-refreshes-morphing-explained-at-length/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-52-happy-new-year
+  author: Jon Sully
+
+- name: 8 Turbo 8 Gotchas
+  url: https://fly.io/ruby-dispatch/8-turbo-8-gotchas/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-01-welcome-to-2024
+  author: Brad Gessler
+
+- name: My thoughts on using Turbo with Rails
+  url: https://dev-blog.maciejbiel.pl/my-thoughts-on-using-turbo-with-rails/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-01-welcome-to-2024
+  author: Maciej Biel
+
+- name: "Introducing Superglue: React ❤️ Rails"
+  url: https://thoughtbot.com/blog/introducing-superglue?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-01-welcome-to-2024
+  author: Johny Ho
+
+- name: Rails Nested Forms with Turbo Streams
+  url: https://code.avi.nyc/rails-nested-forms-with-turbo-streams?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-turbo-in-nodejs-offline-functionality-for-turbo-native
+  author: Avi Flombaum
+
+- name: Turbo Frame Slide Over
+  url: https://code.avi.nyc/turbo-frame-slide-over?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-turbo-in-nodejs-offline-functionality-for-turbo-native
+  author: Avi Flombaum
+
+- name: Bringing Your Turbo Native iOS App Offline
+  url: https://williamkennedy.ninja/ios/2024/01/08/bringing-your-turbo-native-ios-app-offline/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-turbo-in-nodejs-offline-functionality-for-turbo-native
+  author: William Kennedy
+
+- name: From Idea to App Store in 2 hours!
+  url: https://mileswoodroffe.com/articles/idea-to-app-store-in-two-hours?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-turbo-in-nodejs-offline-functionality-for-turbo-native
+  author: Miles Woodroffe
+
+- name: "Pagy Out, Turbo In: Transforming Pagination with Infinite Scrolling and Turbo"
+  url: https://radanskoric.com/guest-articles/pagy-out-turbo-in?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-turbo-in-nodejs-offline-functionality-for-turbo-native
+  author: Radan Skorić
+
+- name: Should you use Hotwire or a Frontend framework on your next Rails project?
+  url: https://radanskoric.com/articles/hotwire-or-frontend-framework?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-03-hotwire-vs-frontend-frameworks-should-you-move-from-react
+  author: Radan Skorić
+
+- name: How to build responsive search with Turbo Frames and Stimulus
+  url: https://buttondown.com/bhumi/archive/how-to-build-responsive-search-with-turbo-frames
+  author: Bhumi
+
+- name: Moving on from React
+  url: https://kellysutton.com/2024/01/15/moving-on-from-react.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-03-hotwire-vs-frontend-frameworks-should-you-move-from-react
+  author: Kelly Sutton
+
+- name: How to Process a Turbo Stream Response in JavaScript using Stimulus
+  url: https://www.writesoftwarewell.com/process-turbo-stream-javascript/
+  author: Akshay Khot
+
+- name: Turbo Native iOS Offline Mode using SQLITE - Part 1
+  url: https://williamkennedy.ninja/ios/2024/01/25/turbo-native-ios-offline-mode-using-sqlite-part-1/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-04-new-turbo-8-betas-using-twilio-with-hotwire
+  author: William Kennedy
+
+- name: Turbo Frame Search Filters
+  url: https://code.avi.nyc/turbo-frame-search-filters?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-04-new-turbo-8-betas-using-twilio-with-hotwire
+  author: Avi Flombaum
+
+- name: Turbo Confirmation Bias
+  url: https://www.beflagrant.com/blog/turbo-confirmation-bias-2024-01-10?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-04-new-turbo-8-betas-using-twilio-with-hotwire
+  author: Jonathan Greenberg
+
+- name: A roadmap for building Hotwire Native apps
+  url: https://masilotti.com/turbo-native-app-roadmap/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-04-new-turbo-8-betas-using-twilio-with-hotwire
+  author: Joe Masilotti
+
+- name: " Browser-Based Calling with Twilio and Hotwire: A Novel Approach"
+  url: https://jonsully.net/blog/browser-based-calling-twilio-hotwire?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-04-new-turbo-8-betas-using-twilio-with-hotwire
+  author: Jon Sully
+
+- name: How to opt out of the cache with Hotwire's Turbo Drive in Rails
+  url: https://kyrylo.org/rails/turbo/2024/01/21/how-to-opt-out-of-the-cache-with-hotwire-turbo-drive-in-rails.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-04-new-turbo-8-betas-using-twilio-with-hotwire
+  author: Kyrylo Silin
+
+- name: The secret tool to launch your Rails business in the app stores
+  url: https://masilotti.com/launch-your-rails-business-in-the-app-store/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-05-turbo-8-release-candidates-apps-are-migrating-to-hotwire
+  author: Joe Masilotti
+
+- name: Filtering Data Tables with Turbo Frame and Stimulus
+  url: https://buttondown.com/bhumi/archive/filtering-data-tables-with-turbo-frame-and/
+  author: Bhumi
+
+- name: Wrapping cleave-zen with Hotwire Stimulus to format date and time input fields
+  url: https://www.botzenhart.io/articles/wrapping-cleave-zen-former-cleave-js-with-hotwire-stimulus-to-format-date-and-time-input-fields-in-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-05-turbo-8-release-candidates-apps-are-migrating-to-hotwire
+  author: Stefan Botzenhart
+
+- name: Turbo 8 released
+  url: https://dev.37signals.com/turbo-8-released/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-06-turbo-8-is-finally-here
+  author: Alberto Fernández-Capel
+
+- name: Turbo Sortable Paginated Tables
+  url: https://code.avi.nyc/turbo-sortable-paginated-tables?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-06-turbo-8-is-finally-here
+  author: Avi Flombaum
+
+- name: Building Infinite Scroll with Turbo Frames and Lazy Loading
+  url: https://buttondown.com/bhumi/archive/building-infinite-scroll-with-turbo-frames-and
+  author: Bhumi
+
+- name: Deconstructing Action Cable
+  url: https://stanko.io/deconstructing-action-cable-DC7F33OsjGmK?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-06-turbo-8-is-finally-here
+  author: Stanko Krtalić Rusendić
+
+- name: Turbo View Transitions in Rails
+  url: https://code.avi.nyc/turbo-view-transitions-in-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-07-turbo-view-transitions-hotwire-livestreams
+  author: Avi Flombaum
+
+- name: Copy to clipboard with stimulus using the Clipboard API
+  url: https://www.botzenhart.io/articles/copy-to-clipboard-with-stimulus-using-the-clipboard-api?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-07-turbo-view-transitions-hotwire-livestreams
+  author: Stefan Botzenhart
+
+- name: Hotwire Modals in Ruby on Rails with Stimulus and Turbo Frames
+  url: https://blog.appsignal.com/2024/02/21/hotwire-modals-in-ruby-on-rails-with-stimulus-and-turbo-frames.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-08-new-turbo-native-releases-playing-sounds-with-the-audio-api
+  author: Ayush Newatia
+
+- name: When do we use Turbo 8 Page Refresh and Morphing?
+  url: https://buttondown.com/bhumi/archive/when-do-we-use-turbo-8-page-refresh-and-morphing
+  author: Bhumi
+
+- name: Playing Sounds in Rails with the Audio API
+  url: https://www.writesoftwarewell.com/rails-audio-api-play-sound-campfire/
+  author: Akshay Khot
+
+- name: Multi-column drag and drop with SortableJS and Stimulus
+  url: https://dev.to/vladyio/multi-column-drag-and-drop-with-sortablejs-and-stimulus-3h6a?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-08-new-turbo-native-releases-playing-sounds-with-the-audio-api
+  author: Vlad Andreev
+
+- name: Preview images on upload with StimulusJS
+  url: https://dev.to/zainbutt/preview-images-on-upload-with-stimulusjs-2mfh?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-08-new-turbo-native-releases-playing-sounds-with-the-audio-api
+  author: Zain Butt
+
+- name: How to add hotkeys to your Rails app with Stimulus
+  url: https://dev.to/railsdesigner/how-to-add-hotkeys-to-your-rails-app-with-stimulus-42bd?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-08-new-turbo-native-releases-playing-sounds-with-the-audio-api
+  author: Rails Designer
+
+- name: How to debug issues with Turbo Morphing
+  url: https://radanskoric.com/articles/how-to-debug-issues-with-turbo-morphing?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-09-turbo-morph-debugging-and-chatgpt-hotwire-rebuild
+  author: Radan Skorić
+
+- name: "Live Components + Turbo Streams: Navigating a Turbo Frame"
+  url: https://symfonycasts.com/blog/redirect-turbo-frame?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-09-turbo-morph-debugging-and-chatgpt-hotwire-rebuild
+  author: Ryan Weaver
+
+- name: Infinite Scroll with Rails and Turbo - No JavaScript
+  url: https://webcrunch.com/posts/infinite-scroll-rails-turbo?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-09-turbo-morph-debugging-and-chatgpt-hotwire-rebuild
+  author: Andy Leverenz
+
+- name: How to add a skeleton UI to Rails with Turbo
+  url: https://dev.to/railsdesigner/how-to-add-a-skeleton-ui-to-rails-with-turbo-1ldh?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-09-turbo-morph-debugging-and-chatgpt-hotwire-rebuild
+  author: Rails Designer
+
+- name: Chartkick and turbo frames - elevating rails visuals
+  url: https://veelenga.github.io/chartkick-and-turbo-frames-elevating-rails-visuals/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-09-turbo-morph-debugging-and-chatgpt-hotwire-rebuild
+  author: Vitalii Elenhaupt
+
+- name: The simplest turbo-frame example
+  url: https://dev.to/bdavidxyz/the-simplest-turbo-frame-example-3n7j?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-09-turbo-morph-debugging-and-chatgpt-hotwire-rebuild
+  author: David Boureau
+
+- name: I’m loving Rails Stimulus; check out this example.
+  url: https://keithschacht.com/2024/Oct/16/im-loving-rails-stimulus-check-out-this-example/
+  author: Keith Schacht
+
+- name: Making a nice 2FA / OTP / SMS field with Tailwind & Stimulus
+  url: https://justin.searls.co/posts/how-to-make-a-nice-2fa-otp-sms-code-form?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-10-hotwire-codex-update-hotwire-videos-turbo-native-apps
+  author: Justin Searls
+
+- name: Sorting Lists with Ranked Model
+  url: https://mileswoodroffe.com/articles/sorting-lists-with-ranked-model?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-10-hotwire-codex-update-hotwire-videos-turbo-native-apps
+  author: Miles Woodroffe
+
+- name: Speeding up mobile development with Turbo
+  url: https://dev.37signals.com/speeding-up-mobile-development-with-turbo?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-10-hotwire-codex-update-hotwire-videos-turbo-native-apps
+  author: Fernando Olivares
+
+- name: Conditionally Add CSS Classes in Your Stimulus Controllers
+  url: https://dev.to/railsdesigner/conditionally-add-css-classes-in-your-stimulus-controllers-42dg?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-10-hotwire-codex-update-hotwire-videos-turbo-native-apps
+  author: Rails Designer
+
+- name: Turbo 8 morphing refreshes on Rails
+  url: https://www.colby.so/posts/turbo-8-morphing-refreshes-on-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-11-turbo-morphing-deep-dive-turbo-streaming-modals
+  author: David Colby
+
+- name: Hotwire Your Buttons
+  url: https://www.beflagrant.com/blog/hotwire-your-buttons-2024-02-27?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-11-turbo-morphing-deep-dive-turbo-streaming-modals
+  author: Jonathan Greenberg
+
+- name: Turbo Streaming Modals in Ruby on Rails
+  url: https://blog.appsignal.com/2024/03/13/turbo-streaming-modals-in-ruby-on-rails.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-11-turbo-morphing-deep-dive-turbo-streaming-modals
+  author: Ayush Newatia
+
+- name: How to add a loading animation to your Turbo Frame with TailwindCSS
+  url: https://blog.arkency.com/how-to-add-a-loading-animation-to-your-turbo-frame-with-tailwindcss?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-11-turbo-morphing-deep-dive-turbo-streaming-modals
+  author: Maciek Korsan
+
+- name: Flash Messages (notifications) in Rails Apps
+  url: https://dev.to/railsdesigner/flash-messages-notifications-in-rails-apps-551b?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-11-turbo-morphing-deep-dive-turbo-streaming-modals
+  author: Rails Designer
+
+- name: Building a sortable table with Turbo 8's page refreshes
+  url: https://www.colby.so/posts/turbo-8-refresh-sorting?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-12-new-turbo-native-releases-sortable-tables-with-turbo-8
+  author: David Colby
+
+- name: Rails Hotwire Inline Edit
+  url: https://keithschacht.com/article/using-hotwire-it-was-simple-to-build-inline-title-editing-10?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-12-new-turbo-native-releases-sortable-tables-with-turbo-8
+  author: Keith Schacht
+
+- name: "Stimulus Tutorial: Moving & Animating Todos"
+  url: https://onrails.blog/2024/03/18/stimulus-moving-and-animating-todos/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-12-new-turbo-native-releases-sortable-tables-with-turbo-8
+  author: John Beatty
+
+- name: Searching and filtering with Turbo 8
+  url: https://www.colby.so/posts/turbo-8-search-and-filter?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-13-happy-easter-2024
+  author: David Colby
+
+- name: Turbo Native iOS and Android apps in 15 minutes
+  url: https://masilotti.com/turbo-native-apps-in-15-minutes/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-13-happy-easter-2024
+  author: Joe Masilotti
+
+- name: Hotwire Combobox is pretty damn slick
+  url: https://justin.searls.co/posts/hotwirecombobox-is-pretty-damn-slick/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-13-happy-easter-2024
+  author: Justin Searls
+
+- name: Considering Morphing or Turbo Frames
+  url: https://onrails.blog/2024/03/26/hotwire-considering-morphing-or-turbo-frames/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-13-happy-easter-2024
+  author: John Beatty
+
+- name: Form Validation Errors with Rails Turbo Frames (modals)
+  url: https://railsdesigner.com/turbo-frame-form-validations/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-14-show-background-jobs-progress-with-turbo
+  author: Rails Designer
+
+- name: "Turbo Tutorial: Animated Deletions and Insertions"
+  url: https://onrails.blog/2024/04/01/hotwire-turbo-tutorial-animated-deletions-and-insertions/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-14-show-background-jobs-progress-with-turbo
+  author: John Beatty
+
+- name: "HTML Streaming Over the Wire 🥳: A Deep Dive"
+  url: https://aralroca.com/blog/html-streaming-over-the-wire?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-15-html-streaming-over-the-wire-anycable-in-real-apps
+  author: Aral Roca
+
+- name: LiveVoice shares how they use AnyCable
+  url: https://blog.anycable.io/p/6cc4536b-790f-4dfa-9bac-8bb606c2efa1?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-15-html-streaming-over-the-wire-anycable-in-real-apps
+  author: AnyCable
+
+- name: Turbo Refreshes, Frames, and Streams
+  url: https://domchristie.co.uk/posts/turbo-refreshes-frames-streams?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-16-turbo-overview-guide-turbo-native-pull-to-refresh
+  author: Dom Christie
+
+- name: Turbo Native and pull-to-refresh
+  url: https://masilotti.com/turbo-native-pull-to-refresh?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-16-turbo-overview-guide-turbo-native-pull-to-refresh
+  author: Joe Masilotti
+
+- name: ViewComponent over Turbo Stream Broadcasts
+  url: https://railsdesigner.com/viewcomponents-in-turbo-streams?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-16-turbo-overview-guide-turbo-native-pull-to-refresh
+  author: Rails Designer
+
+- name: "Turbo Native Android: I Removed JetPack Compose from My App"
+  url: https://www.donnfelker.com/i-removed-jetpack-compose-from-my-app/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-16-turbo-overview-guide-turbo-native-pull-to-refresh
+  author: Donn Felker
+
+- name: Turbo & Progressive Enhancement
+  url: https://domchristie.co.uk/posts/turbo-progressive-enhancement?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-17-dark-mode-with-tailwindstimulus-animating
+  author: Dom Christie
+
+- name: SPA-Like Navigation Preserving Web Component State
+  url: https://aralroca.com/blog/spa-navigation?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-17-dark-mode-with-tailwindstimulus-animating
+  author: Aral Roca
+
+- name: Animate Filtering Data in Turbo
+  url: https://onrails.blog/2024/04/23/animate-filtering-data-in-hotwire/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-17-dark-mode-with-tailwindstimulus-animating
+  author: John Beatty
+
+- name: How to build a Cmd+k search modal with Hotwire
+  url: https://world.hey.com/alexandre/how-to-build-a-cmd-k-search-modal-with-hotwire-981f5159?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-18-hotwire-at-railsconf-migrating-from-react-to-hotwire
+  author: Alexandre Ruban
+
+- name: "AnyCable for Ruby on Rails: How Does it Improve over Action Cable?"
+  url: https://blog.appsignal.com/2024/05/01/anycable-for-ruby-on-rails-how-does-it-improve-over-action-cable.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-18-hotwire-at-railsconf-migrating-from-react-to-hotwire
+  author: Abiodun Olowode
+
+- name: Turbo Teapot
+  url: https://domchristie.co.uk/posts/turbo-teapot/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-18-hotwire-at-railsconf-migrating-from-react-to-hotwire
+  author: Dom Christie
+
+- name: "Stimulus.js and HotWired Tutorial: Update Model with Checkbox using Turbo Morphing"
+  url: https://onrails.blog/2024/03/06/stimulusjs-tutorial-update-model-with-checkbox-using-turbo-morphing/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-18-hotwire-at-railsconf-migrating-from-react-to-hotwire
+  author: John Beatty
+
+- name: How to Add Disabled State to Buttons with Turbo & Tailwind CSS
+  url: https://dev.to/railsdesigner/how-to-add-disabled-state-to-buttons-with-turbo-tailwind-css-2feb?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-18-hotwire-at-railsconf-migrating-from-react-to-hotwire
+  author: Rails Designer
+
+- name: Hotwire Back Button
+  url: https://domchristie.co.uk/posts/hotwire-back-button-2024-05-12/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-19-stimulus-lsp-v10-stimulusreflex-v35
+  author: Dom Christie
+
+- name: Headless UI with StimulusJS and an Outlet
+  url: https://onrails.blog/2024/05/08/headless-ui-with-stimulusjs-and-an-outlet-screencast/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-19-stimulus-lsp-v10-stimulusreflex-v35
+  author: John Beatty
+
+- name: The power of Turbo Native path configuration
+  url: https://masilotti.com/turbo-native-path-configuration/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-20-new-turbo-native-videos-turbo-mount
+  author: Joe Masilotti
+
+- name: "Hidden feature of Turbo: stream actions inside regular HTML"
+  url: https://radanskoric.com/articles/stream-actions-inside-regular-html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-20-new-turbo-native-videos-turbo-mount
+  author: Radan Skorić
+
+- name: Referencing Stimulus Controllers as ViewComponent Sidecar Files with Propshaft Importmaps
+  url: http://blog.theamazingrando.com/posts/rails-propshaft-stimulus-viewcomponent.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-20-new-turbo-native-videos-turbo-mount
+  author: Paul Sadauskas
+
+- name: Custom Confirm Dialog For Turbo and Rails
+  url: https://dev.to/railsdesigner/custom-confirm-dialog-for-turbo-and-rails-3n96?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-20-new-turbo-native-videos-turbo-mount
+  author: Rails Designer
+
+- name: Communicating between Stimulus Controllers using Outlets API
+  url: https://dev.to/railsdesigner/communicating-between-stimulus-controllers-using-outlets-api-4c1o?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-21-turbo-native-book-update-turbo-lsp
+  author: Rails Designer
+
+- name: Adding Stimulus.js to our Django Application
+  url: https://builtwithdjango.com/blog/stimulusjs?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-21-turbo-native-book-update-turbo-lsp
+  author: Rasul Kireev
+
+- name: Hotwire Comments with Ruby on Rails
+  url: https://webcrunch.com/posts/hotwire-comments-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-22-reusing-pages-in-turbo-frame-flows
+  author: Andy Leverenz
+
+- name: How to reuse the same page in different Turbo Frame flows
+  url: https://radanskoric.com/articles/reuse-same-page-in-multiple-frames?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-22-reusing-pages-in-turbo-frame-flows
+  author: Radan Skorić
+
+- name: Customize the Turbo Progress Bar
+  url: https://dev.to/railsdesigner/customize-the-turbo-progress-bar-p6j?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-22-reusing-pages-in-turbo-frame-flows
+  author: Rails Designer
+
+- name: Interactive Modals in Rails with Stimulus.js
+  url: https://onrails.blog/2024/06/01/interactive-modals?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-22-reusing-pages-in-turbo-frame-flows
+  author: John Beatty
+
+- name: "Gemfile of dreams: the libraries we use to build Rails apps"
+  url: https://evilmartians.com/chronicles/gemfile-of-dreams-libraries-we-use-to-build-rails-apps?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-22-reusing-pages-in-turbo-frame-flows
+  author: Vladimir Dementyev
+
+- name: Adding Loading Screen with Turbo
+  url: https://onrails.blog/2022/10/31/55-adding-loading-screen-with-turbo/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-22-reusing-pages-in-turbo-frame-flows
+  author: John Beatty
+
+- name: Update a Progress Bar using Turbo Streams (using Custom Actions)
+  url: https://dev.to/railsdesigner/update-a-progress-bar-using-turbo-streams-using-custom-actions-j2c?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-23-new-hotwire-browser-extension-concurrent-updates-with-stimulus
+  author: Rails Designer
+
+- name: Smooth Concurrent Updates with Stimulus
+  url: https://www.visuality.pl/posts/smooth-concurrent-updates-with-hotwire-stimulus?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-23-new-hotwire-browser-extension-concurrent-updates-with-stimulus
+  author: Michał Łęcicki
+
+- name: "Hotwire: Where do I store my HTML state?"
+  url: https://onrails.blog/2024/03/26/hotwire-where-do-i-store-my-html-state/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-23-new-hotwire-browser-extension-concurrent-updates-with-stimulus
+  author: John Beatty
+
+- name: "The art of Turbo Mount: Hotwire meets modern JS frameworks"
+  url: https://evilmartians.com/chronicles/the-art-of-turbo-mount-hotwire-meets-modern-js-frameworks?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-24-using-react-with-hotwire-refresh-turbo-frames
+  author: Svyatoslav Kryukov
+
+- name: How to refresh the full page when submitting a form inside a Turbo Frame?
+  url: https://radanskoric.com/articles/update-full-page-on-form-in-frame-submit?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-24-using-react-with-hotwire-refresh-turbo-frames
+  author: Radan Skorić
+
+- name: Implementing dark mode with Stimulus
+  url: https://nts.strzibny.name/dark-mode-tailwind-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-24-using-react-with-hotwire-refresh-turbo-frames
+  author: Josef Strzibny
+
+- name: How we build, release and maintain frontend packages
+  url: https://www.bigbinary.com/blog/build-release-frontend-packages?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-24-using-react-with-hotwire-refresh-turbo-frames
+  author: Farhan CK
+
+- name: How Layouts Work in Rails
+  url: https://dev.to/railsdesigner/how-layouts-work-in-rails-2cfl?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-24-using-react-with-hotwire-refresh-turbo-frames
+  author: Rails Designer
+
+- name: "Inertia.js in Rails: a new era of effortless integration"
+  url: https://evilmartians.com/chronicles/inertiajs-in-rails-a-new-era-of-effortless-integration?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-25-inertiajs-in-rails-stimulus-in-the-shadow-dom
+  author: Svyatoslav Kryukov
+
+- name: Running Rails System Tests with Playwright instead of Selenium
+  url: https://justin.searls.co/posts/running-rails-system-tests-with-playwright-instead-of-selenium?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-25-inertiajs-in-rails-stimulus-in-the-shadow-dom
+  author: Justin Searls
+
+- name: Drag and Drop on the Server Side with Stimulus.js and Ruby on Rails
+  url: https://onrails.blog/2024/03/08/hotwire-tutorial-how-do-i-drag-and-drop-items-in-a-list/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-25-inertiajs-in-rails-stimulus-in-the-shadow-dom
+  author: John Beatty
+
+- name: Solving the Challenge of Connecting Stimulus Controllers Inside Shadow DOM
+  url: https://dev.to/lorrydriveloper/solving-the-challenge-of-connecting-stimulus-controllers-inside-shadow-dom-4160?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-25-inertiajs-in-rails-stimulus-in-the-shadow-dom
+  author: Pedro D. Garcia Lopez
+
+- name: How to Create an Undo Action with Rails
+  url: https://dev.to/railsdesigner/how-to-create-an-undo-action-with-rails-39jo?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-25-inertiajs-in-rails-stimulus-in-the-shadow-dom
+  author: Rails Designer
+
+- name: Hotwire Voting and Flash Messages with Ruby on Rails
+  url: https://webcrunch.com/posts/hotwire-voting-flash-messages?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-26-hotwire-voting-and-flash-messages-django-components-with-stimulus
+  author: Andy Leverenz
+
+- name: Reusable Components in Django with Stimulus and Tailwind CSS
+  url: https://testdriven.io/blog/django-reusable-components-part-1/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-26-hotwire-voting-and-flash-messages-django-components-with-stimulus
+  author: Michael Yin
+
+- name: How I test Stimulus controllers
+  url: https://dimiterpetrov.com/blog/how-i-test-stimulus-controllers/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-27-testing-stimulus-controllers-optimistic-ui-with-hotwire
+  author: Dimiter Petrov
+
+- name: Optimistic UI with Ruby on Rails & Hotwire
+  url: https://domchristie.co.uk/posts/optimistic-ui-hotwire-rails/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-27-testing-stimulus-controllers-optimistic-ui-with-hotwire
+  author: Dom Christie
+
+- name: How to use Turbo in your Rails apps with RubyMine
+  url: https://blog.jetbrains.com/ruby/2024/07/how-to-use-turbo-in-your-rails-apps-with-rubymine/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-27-testing-stimulus-controllers-optimistic-ui-with-hotwire
+  author: Darya Sharkova
+
+- name: Creating a React component using Symfony UX
+  url: https://dev.to/icolomina/creating-a-react-component-using-symfony-ux-1bk9?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-27-testing-stimulus-controllers-optimistic-ui-with-hotwire
+  author: Nacho Colomina Torregrosa
+
+- name: "Building Turbo Loading Buttons in Rails: A Step-by-Step Guide"
+  url: https://webcrunch.com/posts/turbo-loading-buttons-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-27-testing-stimulus-controllers-optimistic-ui-with-hotwire
+  author: Andy Leverenz
+
+- name: Connection avalanche safety tips and prepping for real-time applications
+  url: https://evilmartians.com/chronicles/connection-avalanche-safety-tips-and-prepping-for-realtime-applications?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-28-railsconf-2024-videos-managing-connection-avalanches
+  author: Vladimir Dementyev
+
+- name: Swapping out a model div with Turbo Streams and Stimulus
+  url: https://justin.searls.co/posts/recipe-swapping-out-a-model-div-with-turbo-and-stimulus?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-28-railsconf-2024-videos-managing-connection-avalanches
+  author: Justin Searls
+
+- name: "Turbo Frames versus Turbo Streams: What’s the difference?"
+  url: https://webcrunch.com/posts/turbo-frames-vs-streams?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-28-railsconf-2024-videos-managing-connection-avalanches
+  author: Andy Leverenz
+
+- name: Turbo Native without Turbo?
+  url: https://hotwireweekly.com/archive/week-29-new-turbo-releases-turbo-native-without-turbo/
+  author: Dom Christie
+
+- name: Custom Color Schemes with Rails
+  url: https://joyofrails.com/articles/custom-color-schemes-with-ruby-on-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-29-new-turbo-releases-turbo-native-without-turbo
+  author: Ross Kaffenberger
+
+- name: Add a “X is writing…” with Rails and Turbo
+  url: https://railsdesigner.com/ux-is-typing?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-29-new-turbo-releases-turbo-native-without-turbo
+  author: Rails Designer
+
+- name: I built a flag matching game in 6 days. It was played more than 45k times in 2 weeks
+  url: https://kyrylo.org/indie-hacking/2024/07/18/i-built-a-flag-matching-game-in-6-days-and-it-was-played-more-than-45-times-in-2-weeks.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-29-new-turbo-releases-turbo-native-without-turbo
+  author: Kyrylo Silin
+
+- name: Inline Save and Add Another with Rails and Hotwire
+  url: https://railsdesigner.com/inline-save-and-another?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-30-inline-saving-stimulus-image-gallery
+  author: Rails Designer
+
+- name: How to use Stimulus in your Rails apps with RubyMine
+  url: https://blog.jetbrains.com/ruby/2024/07/how-to-use-stimulus-in-your-rails-apps-with-rubymine?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-30-inline-saving-stimulus-image-gallery
+  author: Darya Sharkova
+
+- name: "Exercise: Multiplayer Minesweeper with Rails and Hotwire"
+  url: https://radanskoric.com/experiments/multiplayer-minesweeper-with-rails-and-hotwire?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-31-minesweeper-multiplayer-in-hotwire-kanban-board
+  author: Radan Skorić
+
+- name: "Better Stimulus: Open-Closed Principle"
+  url: https://www.betterstimulus.com/solid/open-closed?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-31-minesweeper-multiplayer-in-hotwire-kanban-board
+  author: Julian Rubisch
+
+- name: Broadcasting real-time database changes on a budget
+  url: https://justin.searls.co/posts/broadcasting-real-time-database-updates-on-a-budget/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-31-minesweeper-multiplayer-in-hotwire-kanban-board
+  author: Justin Searls
+
+- name: Preview an Image Before Upload with Stimulus
+  url: https://railsdesigner.com/preview-images-with-hotwire/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-32-ctos-choose-hotwire-image-upload-preview
+  author: Rails Designer
+
+- name: Why CTOs are choosing Hotwire and Ruby on Rails
+  url: https://thoughtbot.com/blog/the-strategy-behind-hotwire-and-ruby-on-rails-from-the-cto-of-clara?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-32-ctos-choose-hotwire-image-upload-preview
+  author: Kelly Gebo
+
+- name: "Navigating Turbo Native: Where to start"
+  url: https://blog.corsego.com/navigating-turbo-native?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-32-ctos-choose-hotwire-image-upload-preview
+  author: Yaroslav Shmarov
+
+- name: "Better Stimulus: Dependency Inversion Principle"
+  url: https://www.betterstimulus.com/solid/dependency-inversion-principle?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-32-ctos-choose-hotwire-image-upload-preview
+  author: Julian Rubisch
+
+- name: Nested Forms With Turbo (without dependencies)
+  url: https://railsdesigner.com/rails-nested-forms-with-turbo/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-33-rubymine-adds-stimulus-support-sharing-turbo-frames-across-views
+  author: Rails Designer
+
+- name: Conditionally render a Turbo Frame shared between multiple views
+  url: https://thoughtbot.com/blog/conditionally-render-turbo-frame?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-33-rubymine-adds-stimulus-support-sharing-turbo-frames-across-views
+  author: Steve Polito
+
+- name: Custom progress bars with Rails and Hotwire
+  url: https://webcrunch.com/posts/custom-progress-bars-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-33-rubymine-adds-stimulus-support-sharing-turbo-frames-across-views
+  author: Andy Leverenz
+
+- name: A decoupled approach to relaying events between Stimulus controllers
+  url: https://justin.searls.co/posts/a-decoupled-approach-to-relaying-events-between-stimulus-controllers/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-33-rubymine-adds-stimulus-support-sharing-turbo-frames-across-views
+  author: Justin Searls
+
+- name: Build a modal form with Rails, Turbo, and the dialog element
+  url: https://mattbrictson.com/blog/turbo-modal?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-33-rubymine-adds-stimulus-support-sharing-turbo-frames-across-views
+  author: Matt Brictson
+
+- name: Action Web Components Which Span the Server-Client Divide
+  url: https://www.spicyweb.dev/action-web-components?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-33-rubymine-adds-stimulus-support-sharing-turbo-frames-across-views
+  author: Jared White
+
+- name: Combining Hotwire with Django to Ship your SaaS Faster
+  url: https://saashammer.com/hotwire-django/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-34-hotwire-with-django-stimulus-social-share-button
+  author: Michael Yin
+
+- name: Social Share Button with Stimulus
+  url: https://blog.corsego.com/stimulus-share-button?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-34-hotwire-with-django-stimulus-social-share-button
+  author: Yaroslav Shmarov
+
+- name: How to save a recently viewed list of pages with Stimulus and localStorage
+  url: https://codewithrails.com/how-to-save-a-recently-viewed-list-of-pages-with-stimulus-and-localstorage?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-35-new-hotwire-course-hotwire-for-the
+  author: Simon Chiu
+
+- name: Launch a Turbo Modal with URL Params Using Stimulus
+  url: https://railsdesigner.com/rails-turbo-frame-on-load/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-35-new-hotwire-course-hotwire-for-the
+  author: Rails Designer
+
+- name: Structure Your ERb and Partials for more Maintainable Front-end Code in Rails
+  url: https://garrettdimon.com/journal/posts/erb-partials-helpers-and-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-35-new-hotwire-course-hotwire-for-the
+  author: Garrett Dimon
+
+- name: "Better Stimulus: Form Submits"
+  url: https://betterstimulus.com/turbo/form-submits?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-35-new-hotwire-course-hotwire-for-the
+  author: Julian Rubisch
+
+- name: Load a Lazy Loaded Turbo Frame Before it Scrolls Into View
+  url: https://radanskoric.com/articles/load-lazy-loaded-frame-before-it-scrolls-in-view?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-36-lazy-load-turbo-frames-early-turbo-larvel-morphing-support
+  author: Radan Skorić
+
+- name: Dependent Fields with Hotwire
+  url: https://www.driftingruby.com/episodes/dependent-fields-with-hotwire?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-36-lazy-load-turbo-frames-early-turbo-larvel-morphing-support
+  author: David Kimura
+
+- name: Turbo Larvel - Turbo Streams with Morph
+  url: https://world.hey.com/tonysm/turbo-streams-with-morph-0742d38f?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-36-lazy-load-turbo-frames-early-turbo-larvel-morphing-support
+  author: Tony Messias
+
+- name: Building Nested Forms in Rails with Stimulus
+  url: https://railsdesigner.com/rails-nested-form-with-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-36-lazy-load-turbo-frames-early-turbo-larvel-morphing-support
+  author: Rails Designer
+
+- name: Refactor Stimulus Controllers to Use Change Callbacks
+  url: https://railsdesigner.com/refactor-stimulus-change-callbacks/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-36-lazy-load-turbo-frames-early-turbo-larvel-morphing-support
+  author: Rails Designer
+
+- name: The Rails Renaissance
+  url: https://hashrocket.com/blog/posts/the-rails-renaissance?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Jack Rosa, Matt Polito
+
+- name: Turbo Native iOS custom keyboard toolbar
+  url: https://www.karlentwistle.com/turbo_native/2024/09/14/turbo-native-ios-custom-keyboard-toolbar.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Karl Entwistle
+
+- name: Designing Web Components For Morphing
+  url: https://www.konnorrogers.com/posts/2024/designing-web-components-for-morphing?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Konnor Rogers
+
+- name: Making Lit Components Morphable
+  url: https://www.konnorrogers.com/posts/2024/making-lit-components-morphable?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Konnor Rogers
+
+- name: Create a Resizable Navigation with Stimulus
+  url: https://railsdesigner.com/resize-with-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Rails Designer
+
+- name: Connected and Disconnected Target Callbacks with Stimulus
+  url: https://railsdesigner.com/connect-disconnect-targets/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Rails Designer
+
+- name: "Better Stimulus: Don't overuse connect()"
+  url: https://www.betterstimulus.com/lifecycle/connect?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-37-solid-cable-in-rails-8-morphable-web-components
+  author: Julian Rubisch
+
+- name: Turbo Morphing in Practice
+  url: https://jonsully.net/blog/turbo-morphing-in-practice?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-38-turbo-morphing-in-practice-ultimate-rails-pwa-guide
+  author: Jon Sully
+
+- name: Adding your Rails (PWA) app to the Home Screen - the Ultimate Guide
+  url: https://joyofrails.com/articles/add-your-rails-app-to-the-home-screen?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-38-turbo-morphing-in-practice-ultimate-rails-pwa-guide
+  author: Ross Kaffenberger
+
+- name: Conditionally Style Turbo Frame Content
+  url: https://railsdesigner.com/turbo-frame-conditional-styles?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-38-turbo-morphing-in-practice-ultimate-rails-pwa-guide
+  author: Rails Designer
+
+- name: How to Build a Twitter Clone with Rails 8 and Turbo 8
+  url: https://robrace.dev/build-a-twitter-clone-with-rails-8-and-turbo-8/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-38-turbo-morphing-in-practice-ultimate-rails-pwa-guide
+  author: Rob Race
+
+- name: Drag & Drop Images with Preview using Stimulus Outlets
+  url: https://railsdesigner.com/drag-drop-image-preview-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-39-rails-world-2024-hotwire-native-hacktoberfest
+  author: Rails Designer
+
+- name: "Leveraging Turbo 8: Best Additions to Implement in Rails 8 Projects"
+  url: https://robrace.dev/blog/turbo-morphs-presence-channels-and-typing-indicators?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-39-rails-world-2024-hotwire-native-hacktoberfest
+  author: Rob Race
+
+- name: From jQuery to Hotwire - Lessons of a successful migration
+  url: https://www.norydev.com/writing/from-jquery-to-hotwire-lessons-of-a-successful-migration?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-39-rails-world-2024-hotwire-native-hacktoberfest
+  author: Fabien Loup
+
+- name: ActiveStorage Direct Upload with Stimulus
+  url: https://railsdesigner.com/direct-upload-stimulus?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-40-why-your-turbo-form-submission-fails-hotwire-native-content
+  author: Rails Designer
+
+- name: "Why Your Form Submission Fails: Hotwire, Cloudflare, and Missing Validation Messages"
+  url: https://jetthoughts.com/blog/why-your-form-submission-fails-hotwire-cloudflare-missing-validation-messages-rails?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-40-why-your-turbo-form-submission-fails-hotwire-native-content
+  author: JetThoughts
+
+- name: Hotwire Native iOS - Tabs and design customisation
+  url: https://blog.corsego.com/hotwire-native-customisation?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-40-why-your-turbo-form-submission-fails-hotwire-native-content
+  author: Yaroslav Shmarov
+
+- name: Simple Table-of-Contents Highlighting Stimulus Controller
+  url: https://jonsully.net/blog/simple-table-of-contents-stimulus-highlighting?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-40-why-your-turbo-form-submission-fails-hotwire-native-content
+  author: Jon Sully
+
+- name: Turbo Native is dead, long live Hotwire Native!
+  url: https://masilotti.com/turbo-native-is-dead-long-live-hotwire-native?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-41-celebrating-1-year-of-hotwire-weekly
+  author: Joe Masilotti
+
+- name: Smooth Transitions with Turbo Streams
+  url: https://railsdesigner.com/turbo-stream-transitions/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-41-celebrating-1-year-of-hotwire-weekly
+  author: Rails Designer
+
+- name: Changing CSS as You Scroll with Stimulus
+  url: https://railsdesigner.com/change-css-scroll-stimulus?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-42-changing-css-on-scroll-dynamic-form-fields-web-push
+  author: Rails Designer
+
+- name: How to Create Dynamic Form Fields in Rails with Auto-Updates with Hotwire, StimulusJS, and Turbo
+  url: https://vinioyama.com/blog/how-to-create-dynamic-form-fields-in-rails-with-auto-updates-with-hotwire-stimulusjs-and-turbo?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-42-changing-css-on-scroll-dynamic-form-fields-web-push
+  author: Vimícius Alves Oyama
+
+- name: Morphing With Turbo Streams
+  url: https://www.mintbit.com/blog/morphing-with-turbo-streams?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-42-changing-css-on-scroll-dynamic-form-fields-web-push
+  author: Mintbit
+
+- name: Broadcast Turbo Streams without Redis
+  url: https://railsdesigner.com/turbo-stream-without-redis?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-43-turbo-broadcasting-without-redis-web-push-from-rails
+  author: Rails Designer
+
+- name: How do Turbo Streams Work (behind the scenes)
+  url: https://railsdesigner.com/turbo-streams-behind-the-scenes?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-43-turbo-broadcasting-without-redis-web-push-from-rails
+  author: Rails Designer
+
+- name: Hotwire Native iOS Part 1
+  url: https://williamkennedy.ninja/hotwire-native/2024/10/24/hotwire-native-ios-part-1?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-43-turbo-broadcasting-without-redis-web-push-from-rails
+  author: William Kennedy
+
+- name: Create Nested Models with One Form - Nested Attributes Explained
+  url: https://vinioyama.com/blog/rails-nested-attributes-creating-multi-nested-models-at-once-using-one-form/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-comparing-hotwire-with-htmx-nested-models-in-one-form
+  author: Vini Oyama
+
+- name: Hotwire and HTMX - Same Principles, Different Approaches
+  url: https://radanskoric.com/articles/hotwire-and-htmx?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-comparing-hotwire-with-htmx-nested-models-in-one-form
+  author: Radan Skorić
+
+- name: Up and Running with Hotwire Native iOS - Native Screen
+  url: https://williamkennedy.ninja/hotwire-native/2024/10/29/hotwire-native-ios-part-2/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-comparing-hotwire-with-htmx-nested-models-in-one-form
+  author: William Kennedy
+
+- name: Panic at the SPA!
+  url: https://www.hai.haus/blog/panic-at-the-spa/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-44-comparing-hotwire-with-htmx-nested-models-in-one-form
+  author: Daniel Hall
+
+- name: The Ultimate Guide to implementing Hotwire and Turbo in a Rails application
+  url: https://blog.cloud66.com/the-ultimate-guide-to-implementing-hotwired-and-turbo-in-a-rails-application?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-hotwire-live-reload-alpinejs-as-an-alternative
+  author: Julian Rubisch
+
+- name: Store UI State in localStorage with Stimulus
+  url: https://railsdesigner.com/localstorage-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-hotwire-live-reload-alpinejs-as-an-alternative
+  author: Rails Designer
+
+- name: Render Components from Turbo Broadcasts
+  url: https://scottw.com/turbo-broadcast-components?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-hotwire-live-reload-alpinejs-as-an-alternative
+  author: Scott Watermasyks
+
+- name: Cmd+Enter to Submit a form with Stimulus
+  url: https://blog.corsego.com/stimulus-cmd-enter-to-submit?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-hotwire-live-reload-alpinejs-as-an-alternative
+  author: Yaroslav Shmarov
+
+- name: Up and Running with Hotwire Native iOS 3 - Bridge Components
+  url: https://williamkennedy.ninja/hotwire-native/2024/11/07/hotwire-native-ios-part-3/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-45-hotwire-live-reload-alpinejs-as-an-alternative
+  author: William Kennedy
+
+- name: 4 tips when getting started with Hotwire
+  url: https://thoughtbot.com/blog/4-tips-when-getting-started-with-hotwire?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-hotwire-tips-from-thoughtbot-inline-form-updates
+  author: Joël Quenneville
+
+- name: Using Hotwire for Inline Form Updates Without Form Submission
+  url: https://www.writesoftwarewell.com/live-form-updates-with-hotwire/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-hotwire-tips-from-thoughtbot-inline-form-updates
+  author: Akshay Khot
+
+- name: The difference between Turbo Streams and Turbo Frames
+  url: https://blog.arkency.com/the-difference-between-turbo-streams-and-turbo-frames/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-hotwire-tips-from-thoughtbot-inline-form-updates
+  author: Tomasz Stolarczyk
+
+- name: Hotwire Native Bridge UIMenu Component
+  url: https://blog.corsego.com/hotwire-native-ui-menu-dropdown?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-46-hotwire-tips-from-thoughtbot-inline-form-updates
+  author: Yaroslav Shmarov
+
+- name: Process slow network requests with Turbo and Active Model
+  url: https://thoughtbot.com/blog/process-network-requests-with-turbo?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-47-sweet-streams-turbo-considered-harmful
+  author: Steve Polito
+
+- name: Sweet Streams
+  url: https://www.beflagrant.com/blog/sweet-streams-2024-09-17?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-47-sweet-streams-turbo-considered-harmful
+  author: Jonathan Greenberg
+
+- name: Inheritance with Stimulus Controller
+  url: https://railsdesigner.com/inheritance-with-stimulus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-47-sweet-streams-turbo-considered-harmful
+  author: Rails Designer
+
+- name: I Don't Have Time to Learn React
+  url: https://www.keithcirkel.co.uk/i-dont-have-time-to-learn-react/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-47-sweet-streams-turbo-considered-harmful
+  author: Keith Cirkel
+
+- name: Hotwire, htmx, and Unpoly Comparison
+  url: https://github.com/lcmen/hotwire-htmx-unpoly?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-47-sweet-streams-turbo-considered-harmful
+  author: Lucas Mendelowski
+
+- name: Stimulus Features You (Didn’t) Know
+  url: https://railsdesigner.com/lesser-known-stimulus-features/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-48-super-solid-cable-tailwind-4-beta
+  author: Rails Designer
+
+- name: "Hotwire Essentials is here: Learn Hotwire by building a podcast player"
+  url: https://thoughtbot.com/blog/hotwire-essentials-is-here-learn-hotwire-by-building-a-podcast-player?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-49-hotwire-essentials-tutorial-solid-cable
+  author: Lindsey Christensen
+
+- name: Why Disconnect in Stimulus Controller
+  url: https://railsdesigner.com/disconnect-stimulus-controllers/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-49-hotwire-essentials-tutorial-solid-cable
+  author: Rails Designer
+
+- name: "Advanced Stimulus: Custom Action Options"
+  url: https://railsdesigner.com/stimulus-custom-action-options/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-49-hotwire-essentials-tutorial-solid-cable
+  author: Rails Designer
+
+- name: Up and Running with Hotwire Native - Custom iOS Keyboard
+  url: https://williamkennedy.ninja/hotwire-native/2024/11/26/up-and-running-with-hotwire-native-ios-4-bonus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-49-hotwire-essentials-tutorial-solid-cable
+  author: William Kennedy
+
+- name: "Keeping Rails cool: the modern frontend toolkit"
+  url: https://evilmartians.com/chronicles/keeping-rails-cool-the-modern-frontend-toolkit?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-morphing-woes-10-hotwire-native-tips
+  author: Irina Nazarova
+
+- name: 10 tips from 10 years of Hotwire Native
+  url: https://masilotti.com/10-hotwire-native-tips/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-morphing-woes-10-hotwire-native-tips
+  author: Joe Masilotti
+
+- name: Refresh a single Turbo frame
+  url: https://www.norydev.com/writing/refresh-a-single-turbo-frame?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-50-turbo-morphing-woes-10-hotwire-native-tips
+  author: Fabien Loup
+
+- name: Rails + Stimulus + React
+  url: https://blog.codeminer42.com/rails-stimulus-react/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-51-hotwire-native-1-1-hotwire-spark
+  author: Gabriel Quaresma
+
+- name: Building a Native sharing component with Hotwire Native (iOS)
+  url: https://paagman.dev/hotwire-native-share-component?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-51-hotwire-native-1-1-hotwire-spark
+  author: Dennis Paagman
+
+- name: Up and Running with Hotwire Android Part 1 - Setup
+  url: https://williamkennedy.ninja/hotwire-native/2024/12/23/up-and-running-with-hotwire-android-1-setup/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-52-wishing-you-a-smooth-start-to-2025
+  author: William Kennedy
+
+- name: Create iOS apps with Ruby on Rails and Hotwire Native
+  url: https://readingrails.dev/4/create-ios-apps-with-ruby-on-rails-and-hotwire-native-en?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-52-wishing-you-a-smooth-start-to-2025
+  author: José Anchieta, Italo Moura
+
+- name: Up and Running with Hotwire Native Android Part 2 - Path Configuration
+  url: https://williamkennedy.ninja/hotwire-native/2024/12/30/up-and-running-with-hotwire-native-android-2-path-configuration/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-01-happy-2025
+  author: William Kennedy
+
+- name: Building a Budgeting App - Ruby on Rails 8 - Start to Go-Live
+  url: https://www.youtube.com/watch?v=LnYVttF0asI&utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-01-happy-2025
+  author: QuantumFire
+
+- name: Auto-saving Rails forms with Turbo Streams
+  url: https://nts.strzibny.name/rails-autosave-form-turbo-stream/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+  author: Josef Strzibny
+
+- name: A Simple Fix for Dynamicly Added External Widgets in Turbo-Enabled Sites
+  url: https://maciej.litwiniuk.net/posts/2025-01-10-external-widgets-and-turbo/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+  author: Maciej Litwiniuk
+
+- name: Use cases for Turbo's Custom Events
+  url: https://railsdesigner.com/turbo-custom-events/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+
+- name: "Drifting Ruby: Skeleton Frames"
+  url: https://www.driftingruby.com/episodes/skeleton-frames?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+  author: Dave Kimura
+
+- name: Dynamic Charts Using D3 Steaming New Data to Chart via Turbo
+  url: https://www.youtube.com/watch?v=wKAEcxwdxsk&utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+  author: Tomas Valent
+
+- name: Make delete actions stand out in Hotwire Native menus
+  url: https://paagman.dev/make-delete-actions-stand-out-in-hotwire-native-menus/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+  author: Dennis Paagman
+
+- name: Up and Running with Hotwire Native Android Part 3 - Native Screens
+  url: https://williamkennedy.ninja/hotwire-native/2025/01/06/up-and-running-with-hotwire-native-android-part-3-native-screens/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-02-hotwire-native-book-skeleton-frames
+  author: William Kennedy
+
+- name: Moving on from React, a Year Later
+  url: https://kellysutton.com/2025/01/18/moving-on-from-react-a-year-later.html?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-03-hotwire-webinar-reflecting-on-react-to-hotwire-migration
+  author: Kelly Sutton
+
+- name: Adding button loader to Turbo-powered forms
+  url: https://nts.strzibny.name/button-loader-turbo-forms/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-03-hotwire-webinar-reflecting-on-react-to-hotwire-migration
+  author: Josef Strzibny
+
+- name: Up and Running with Hotwire Native Android Part 4 - Bridge Components
+  url: https://williamkennedy.ninja/hotwire-native/2025/01/14/up-and-running-with-hotwire-native-android-part-4-bridge-components/?utm_source=hotwireweekly&utm_medium=email&utm_campaign=week-03-hotwire-webinar-reflecting-on-react-to-hotwire-migration
+  author: William Kennedy

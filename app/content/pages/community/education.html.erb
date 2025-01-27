@@ -12,22 +12,37 @@ additional_credit_paths:
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("subtitle")) %>
 
-  <h2 class="text-2xl font-bold mt-4 mb-4">Channels</h2>
-  <% Channel.order(name: :asc).each do |channel| %>
-    <%= link_to channel.name, channel.url, target: :_blank %><br>
-  <% end %>
+  <h2 class="text-2xl font-bold mt-4 mb-4">YouTube channels</h2>
+
+  <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-1">
+    <% Channel.order(name: :asc).each do |channel| %>
+    <div class="flex flex-col items-center pb-4">
+      <%= link_to channel.url, target: :_blank, class: "flex flex-col items-center transition-transform hover:scale-105 aspect-square" do %>
+        <img class="rounded-full size-24" src="<%= channel.image %>" alt="<%= channel.name %>">
+        <span class="text-center font-bold pt-4"><%= channel.name %></span>
+      <% end %>
+      <%# link_to "Subscribe", "#{channel.url}?sub_confirmation=1", class:"bg-red-500 text-white py-0.5 px-1.5 rounded-lg text-center text-xs block font-semibold hover:bg-red-600" %>
+    </div>
+    <% end %>
+  </div>
 
   <h2 class="text-2xl font-bold mt-4 mb-4">Courses</h2>
-  <% Course.order(name: :asc).each do |course| %>
-    <%= link_to course.name, course.url, target: :_blank %><br>
-  <% end %>
 
-  <h2 class="text-2xl font-bold mt-4 mb-4">Tutorials</h2>
+  <div class="grid grid-cols-3 gap-4">
+    <% Course.order(name: :asc).each do |course| %>
+      <div class="border p-4 rounded-lg border-slate-600 flex items-center h-24">
+          <%= link_to course.name, course.url, target: :_blank, class:"font-bold grow" %> <br>
+          <span class="bg-white inline rounded-lg text-black py-1 px-1.5 text-xs"><%= course.price.capitalize %></span>
+      </div>
+    <% end %>
+  </div>
+
+  <h2 class="text-2xl font-bold mt-4 mb-4">Tutorials and learning</h2>
   <% Tutorial.order(name: :asc).each do |tutorial| %>
     <%= link_to tutorial.name, tutorial.url, target: :_blank %><br>
   <% end %>
 
-  <h2 class="text-2xl font-bold mt-4 mb-4">Online-Communities</h2>
+  <h2 class="text-2xl font-bold mt-4 mb-4">Communities</h2>
   <% Community.order(name: :asc).each do |community| %>
     <%= link_to "#{community.name} (#{community.type})", community.url, target: :_blank %><br>
   <% end %>
