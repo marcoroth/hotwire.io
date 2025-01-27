@@ -39,3 +39,7 @@
 
 - name: Hello Hotwire
   url: https://hellohotwire.com
+
+- name: Learn to build Full-Stack Rails apps with confidence
+  url: https://learnetto.com/users/hrishio/courses/full-stack-rails-mastery
+  price: paid
