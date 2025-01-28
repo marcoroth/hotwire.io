@@ -69,3 +69,7 @@
 - name: AI on Rails
   url: https://www.youtube.com/@AIonRails-v9s/videos
   image: /assets/youtube/aionrails.jpg
+
+- name: Guillaume Briday
+  url: https://www.youtube.com/@GuillaumeBriday
+  image: /assets/youtube/guillaumebriday.jpg
