@@ -65,3 +65,7 @@
 - name: Brian Casel
   url: https://www.youtube.com/@briancasel
   image: /assets/youtube/briancasel.jpg
+
+- name: AI on Rails
+  url: https://www.youtube.com/@AIonRails-v9s/videos
+  image: /assets/youtube/aionrails.jpg
