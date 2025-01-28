@@ -1,0 +1,9 @@
+---
+title: stimulus-zod-form
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "ajaishankar/stimulus-zod-form", "https://github.com/ajaishankar/stimulus-zod-form" %><br>
+<% end %>
