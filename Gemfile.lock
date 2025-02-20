@@ -243,9 +243,9 @@ GEM
     rdoc (6.11.0)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
-    redis (5.3.0)
+    redis (5.4.0)
       redis-client (>= 0.22.0)
-    redis-client (0.22.2)
+    redis-client (0.23.2)
       connection_pool
     regexp_parser (2.10.0)
     reline (0.6.0)
