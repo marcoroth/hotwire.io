@@ -1,8 +1,12 @@
 import Swiper from 'swiper'
+import { Navigation } from 'swiper/modules';
+
+Swiper.use([Navigation]);
 
 document.addEventListener("turbo:load", () => {
   document.querySelectorAll('.carousel').forEach(element => {
     new Swiper(element, {
+      modules: [Navigation],
       breakpoints: {
         320: {
           slidesPerView: 1
