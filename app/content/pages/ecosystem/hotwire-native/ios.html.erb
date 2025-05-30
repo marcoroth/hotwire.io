@@ -1,0 +1,10 @@
+---
+title: Hotwire Native iOS
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "hotwired/hotwire-native-ios", "https://github.com/hotwired/hotwire-native-ios", target: :_blank %><br>
+  <%= link_to "Website", "https://native.hotwired.dev/", target: :_blank %><br>
+<% end %>

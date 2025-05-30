@@ -291,3 +291,7 @@
 - name: "Full-stack 2.0: Creating a New Mobile App with Rails, Hotwire И Capacitor"
   url: "https://www.youtube.com/watch?v=BYyAIIqH0Ak"
   language: Ukrainian
+
+- name: "Hotwire Native Tabs"
+  url: "https://www.youtube.com/watch?v=qGBlFzmyHnk"
+  language: English
