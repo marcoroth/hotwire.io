@@ -1,0 +1,27 @@
+---
+title: Hotwire Native
+status: done
+core: true
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6">
+    <div>
+      <h3 class="font-bold text-lg">Overview</h3>
+
+      <li>
+        <a href="https://native.hotwired.dev/overview/how-it-works" target="_blank">Overview</a>
+      </li>
+    </div>
+
+    <div>
+      <h3 class="font-bold text-lg">Reference</h3>
+
+      <li>
+        <a href="https://native.hotwired.dev/reference/navigation" target="_blank">Reference</a>
+      </li>
+    </div>
+  </div>
+<% end %>

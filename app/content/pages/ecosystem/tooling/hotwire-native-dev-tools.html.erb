@@ -1,10 +1,9 @@
 ---
-title: Setup Strada
-library: strada
+title: Hotwire Native Dev Tools
 ---
 
 <%= render Page::ContainerComponent.new(page: current_page) do |page| %>
   <% page.with_title(title: current_page.data.fetch("title")) %>
 
-  <%= render Page::ContributeComponent.new(file: current_page.asset.path.path) %>
+  <%= link_to "leonvogt/hotwire-native-dev-tools", "https://github.com/leonvogt/hotwire-native-dev-tools", target: :_blank %>
 <% end %>

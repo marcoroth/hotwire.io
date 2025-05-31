@@ -1,0 +1,9 @@
+---
+title: Bridge Components for Hotwire Native apps
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  <%= link_to "joemasilotti/bridge-components", "https://github.com/joemasilotti/bridge-components", target: :_blank %>
+<% end %>
