@@ -2,7 +2,7 @@
 
 module TurboDocumentationHelper
   def turbo_documentation_page(page)
-    ref = "692c6ffe873d4671d6c749eb045c073bae0e032e"
+    ref = "aa10dcf1c6b99eaf69c057ddf0ab6766f7e41124"
     content = Net::HTTP.get(URI("https://raw.githubusercontent.com/hotwired/turbo-site/#{ref}/_source/#{page}"))
     content_without_frontmatter = content.split("---").from(2).join("---")
 
