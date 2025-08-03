@@ -1,6 +1,9 @@
 - name: Hotrails.dev
   url: https://www.hotrails.dev
 
+- name: Turbo Laravel Bootcamp
+  url: https://turbo-laravel.com/bootcamp
+
 - name: Hotwire PowerPlay
   url: https://github.com/hotwire-django/PowerPlay
 
