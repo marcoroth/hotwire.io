@@ -22,13 +22,13 @@
   url: https://symfonycasts.com/screencast/turbo
   price: paid
 
-- name: Hotwire Cookbook
-  url: https://www.hotwirecookbook.com
-  price: paid
-
 - name: "SymfonyCasts - 30 Days with LAST Stack"
   url: https://symfonycasts.com/screencast/last-stack
   price: paid
+
+- name: Hotwire Cookbook
+  url: https://github.com/hotwirecookbook/
+  price: free
 
 - name: "Write Software, Well: Turbo Crash-Course"
   url: https://courses.writesoftwarewell.com/p/hotwire-handbook
