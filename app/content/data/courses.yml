@@ -26,6 +26,10 @@
   url: https://symfonycasts.com/screencast/last-stack
   price: paid
 
+- name: Hotwire Cookbook
+  url: https://github.com/hotwirecookbook/
+  price: free
+
 - name: "Write Software, Well: Turbo Crash-Course"
   url: https://courses.writesoftwarewell.com/p/hotwire-handbook
   price: paid
