@@ -527,10 +527,10 @@ debug@^4.3, debug@^4.3.4:
   dependencies:
     ms "2.1.2"
 
-devicon@^2.16.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/devicon/-/devicon-2.16.0.tgz#67ca4200b44eb74bf35e4be1d63b6d34f6e07de5"
-  integrity sha512-PE5a2HBNeN4av+Iu975OiiWEwS8LJPw5HAvlv0JUHb62jZTdYxTpz4ga+cQyvdtb3x1side2P9Sr1mmOmUkO/g==
+devicon@^2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/devicon/-/devicon-2.17.0.tgz#0473b8be45767b3483e63489ce07e3869c0d6113"
+  integrity sha512-2nKUdjobJlmRSaCHa50PGsVq0VDURnq9gVzQoJggsM/NKN0tLhC/Uq2zmy2pH36Q/1q3gvYwp/GjTgv/R0Ysbg==
 
 didyoumean@^1.2.2:
   version "1.2.2"
