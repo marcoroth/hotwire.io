@@ -8,7 +8,7 @@
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.16",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/typography": "^0.5.18",
+    "@tailwindcss/typography": "^0.5.19",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.21",
     "chokidar": "^4.0.3",
