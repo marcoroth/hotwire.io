@@ -1,0 +1,12 @@
+---
+title: Rails Blocks
+---
+
+<%= render Page::ContainerComponent.new(page: current_page) do |page| %>
+  <% page.with_title(title: current_page.data.fetch("title")) %>
+
+  Rails Blocks is a collection of reusable UI components for Rails built with Tailwind CSS v4+.
+  <br><br>
+
+  <%= link_to "Website", "https://railsblocks.com", target: :_blank %><br>
+<% end %>
