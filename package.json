@@ -25,5 +25,9 @@
   },
   "dependencies": {
     "tippy.js": "^6.3.7"
+  },
+  "engines": {
+    "node": "22.21.0",
+    "yarn": "1.22.22"
   }
 }
