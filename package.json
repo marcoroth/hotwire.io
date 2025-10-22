@@ -2,7 +2,7 @@
   "name": "hotwire.io",
   "private": true,
   "scripts": {
-    "build": "bin/vite build"
+    "vite:build": "bin/vite build"
   },
   "devDependencies": {
     "@hotwired/stimulus": "^3.2.2",
